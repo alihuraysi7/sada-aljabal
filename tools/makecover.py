@@ -50,7 +50,7 @@ await p.goto('file://'+t);await p.waitForTimeout(600);await p.evaluate(()=>docum
 const ov=await p.evaluate(()=>[...document.querySelectorAll('li,h1')].filter(e=>e.scrollHeight>e.clientHeight+2).length+(document.querySelector('.wx').getBoundingClientRect().bottom>document.querySelector('.cta').getBoundingClientRect().top-6?100:0));
 await p.screenshot({path:o});console.log(JSON.stringify({overflow:ov}));await b.close();})();"""
 jsf=os.path.join(os.path.dirname(tmp),"c.js"); open(jsf,"w").write(js)
-env=dict(os.environ); env["NODE_PATH"]=os.path.join(os.getcwd(),"node_modules")
+env=dict(os.environ); env["NODE_PATH"]=":".join(x for x in [os.environ.get("NODE_PATH",""),os.path.join(os.getcwd(),"node_modules"),os.path.expanduser("~/node_modules"),"/home/claude/node_modules"] if x)
 r=subprocess.run(["node",jsf,tmp,os.path.abspath(out)],capture_output=True,text=True,env=env)
 if r.returncode: sys.exit(r.stderr)
 print(r.stdout.strip())

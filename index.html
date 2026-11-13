@@ -11,12 +11,12 @@
 <meta property="og:title" content="صدى الجبل — العدد الأول · الجمعة ١٣ نوفمبر ٢٠٢٦">
 <meta property="og:description" content="محليات · حديث الناس · سياسة · تقنية · كرة قدم · طقس جازان ومحافظاتها الجبلية">
 <meta property="og:url" content="https://alihuraysi7.github.io/sada-aljabal/">
-<meta property="og:image" content="https://alihuraysi7.github.io/sada-aljabal/cover.jpg?v=2026-11-13c">
+<meta property="og:image" content="https://alihuraysi7.github.io/sada-aljabal/cover.jpg?v=2026-11-13d">
 <meta property="og:image:width" content="1080">
 <meta property="og:image:height" content="1350">
 <meta property="og:image:type" content="image/jpeg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://alihuraysi7.github.io/sada-aljabal/cover.jpg?v=2026-11-13c">
+<meta name="twitter:image" content="https://alihuraysi7.github.io/sada-aljabal/cover.jpg?v=2026-11-13d">
 <link rel="icon" href="logo.png">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#1f6b4a">
@@ -84,6 +84,12 @@ p{margin:0 0 .6em}
 
 .kicker{font-family:var(--f-label);font-size:13px;font-weight:700}
 .src{font-family:var(--f-label);font-size:11.5px;color:var(--muted);margin-top:4px}
+.more{display:inline-block;margin-top:6px;font-family:var(--f-label);font-size:13px;font-weight:700;color:var(--blue);text-decoration:none}
+.more:hover{text-decoration:underline}
+.card,.trend li,.week li,.dt{position:relative}
+.card .more::after,.trend .more::after,.week .more::after,.dt .more::after{content:"";position:absolute;inset:0}
+.trend .more,.week .more,.dt .more{font-size:12px;margin-top:3px}
+.trend .more,.dt .more{display:block}
 
 /* الخبر الرئيسي */
 .lead{background:var(--card);border-radius:18px;border-top:6px solid var(--coral);box-shadow:0 2px 0 var(--line);overflow:hidden}
@@ -303,7 +309,7 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
   <h2><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="9" fill="none" stroke="#f5b301" stroke-width="2.2"/><path d="M12 8v5l3 2M9 2h6" stroke="#f5b301" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>في دقيقة</h2>
   <ol>
     <li>اعتراض مسيّرات فوق الشرقية والرياض، وإدانة عربية ودولية لهجمات الحوثيين.</li>
-    <li>ترامب يلوّح بضرب إيران، وطهران تعلن انفجار ناقلة غاز بلغم في هرمز.</li>
+    <li>الحرس الثوري يعلن انفجار ناقلتين عملاقتين في هرمز، وترمب: لا نحتاج إلى اتفاق مع إيران.</li>
     <li>أمطار رعدية متوقعة على جازان ومرتفعاتها، فتجنّب الأودية.</li>
     <li>الأخضر يواجه كوريا الجنوبية وديّاً الليلة ٥:٣٠ م.</li>
     <li>إجازة الخريف للمدارس تبدأ بعد أسبوع (الجمعة ٢٠ نوفمبر).</li>
@@ -314,7 +320,7 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
 <!-- الخبر الرئيسي -->
 <section class="sec">
   <article class="lead">
-    <svg class="art" viewBox="0 0 400 250" role="img" aria-label="رسم توضيحي تقريبي لمضيق هرمز مع ناقلة وسفينة حربية">
+    <svg class="art" viewBox="0 0 400 250" role="img" aria-label="رسم توضيحي تقريبي لمضيق هرمز مع ناقلة مشتعلة وسفينة حربية">
       <rect width="400" height="250" fill="#8fd0f2"/>
       <path d="M0 0 H400 V70 C350 76 318 96 290 112 C266 124 238 118 216 104 C184 82 150 76 116 88 C80 100 40 92 0 82 Z" fill="#f2d9a6"/>
       <path d="M0 0 H400 V40 C340 46 300 60 260 70 C220 58 160 40 100 52 C60 58 30 54 0 48 Z" fill="#e8c483"/>
@@ -338,34 +344,30 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
         <path d="M0 12 H70 L62 22 H8 Z" fill="#5b6475"/>
         <rect x="20" y="2" width="26" height="10" fill="#7a8396"/><rect x="30" y="-8" width="6" height="10" fill="#7a8396"/>
       </g>
-      <!-- رادار في البحرين -->
-      <g transform="translate(40 92)">
-        <circle r="5" fill="#e5533d"/><circle r="11" fill="none" stroke="#e5533d" stroke-width="2"/><circle r="18" fill="none" stroke="#e5533d" stroke-width="1.5" opacity=".6"/>
-      </g>
-      <text x="40" y="126" text-anchor="middle" font-family="Reem Kufi" font-size="13" font-weight="700" fill="#1d1d27">البحرين</text>
       <rect x="208" y="160" width="128" height="26" rx="13" fill="#ffffff"/>
       <text x="272" y="178" text-anchor="middle" font-family="Reem Kufi" font-size="14" font-weight="700" fill="#e5533d">مضيق هرمز</text>
       <text x="330" y="244" text-anchor="middle" font-family="Reem Kufi" font-size="10" fill="#7a4b10">رسم توضيحي تقريبي</text>
     </svg>
     <div class="txt">
       <div class="kicker">الخليج · مضيق هرمز</div>
-      <h1>ترامب يلوّح بضرب إيران «دون تردد» وطهران تعلن انفجار ناقلة غاز بلغم في هرمز</h1>
-      <p class="deck">الحرس الثوري يقول إنه استهدف راداراً أمريكياً في البحرين، وقاليباف: الكرة في ملعب واشنطن</p>
+      <h1>الحرس الثوري يعلن انفجار ناقلتين عملاقتين في هرمز، وترمب: لا نحتاج إلى اتفاق مع إيران</h1>
+      <p class="deck">مجموعة السبع تطالب طهران بوقف الهجمات، والنفط يقفز ٣٫٣٪ إلى قرب ٩٦ دولاراً</p>
       <div class="body">
-        <p>صعّد الرئيس الأمريكي دونالد ترامب لهجته تجاه طهران، متوعداً بضربها فوراً إذا هددت السفن الأمريكية أو حلفاء واشنطن، وقال إنه غير متأكد من أنه يتفق مع حلفائه في الخليج الذين يريدون منه التريث قبل أي ضربات واسعة.</p>
-        <p>في المقابل، أعلن الحرس الثوري الإيراني أن ناقلة غاز مسال انفجرت بعد اصطدامها بلغم في مضيق هرمز، محذراً السفن التي تسلك مسارات غير معتمدة من طهران، وقال إنه استهدف راداراً أمريكياً للإنذار المبكر في البحرين، وهو أول ادعاء من نوعه منذ مطلع سبتمبر بحسب رويترز.</p>
-        <p>سياسياً، قال رئيس البرلمان الإيراني محمد باقر قاليباف إن طهران تريد إنهاء الحرب وإن على واشنطن الرد على مطالبها، فيما تستمر الاتصالات عبر وسطاء دون اختراق معلن.</p>
+        <p>أعلنت الوحدة البحرية في الحرس الثوري الإيراني الخميس أن «انفجاراً هائلاً جداً» عطّل ناقلتي نفط عملاقتين في مضيق هرمز ليل الأربعاء، بعدما سلكتا «مساراً غير مسموح به»، وقالت إنهما تحملان معاً أكثر من أربعة ملايين برميل، دون أن تكشف اسميهما أو جنسيتيهما. وتقول واشنطن إنها أزالت الألغام من المضيق إلى حد كبير، بينما تنفي طهران ذلك.</p>
+        <p>في واشنطن، قال الرئيس الأمريكي دونالد ترمب إن بلاده يمكنها الاستغناء عن التوصل إلى اتفاق مع إيران وإن الضربات العسكرية تبقى خياراً، ودافع عن الحرب خلال مراسم يوم المحاربين القدامى.</p>
+        <p>وكانت مجموعة السبع قد طالبت إيران بوقف الهجمات في هرمز، فيما قفز خام برنت ٣٫٣٪ يوم الخميس إلى قرب ٩٦ دولاراً للبرميل بعد تصريحات ترمب.</p>
       </div>
       <div class="glance">
         <h3>في سطور</h3>
         <ul>
-          <li><b>١</b>ترامب: سنضرب «دون تردد» إن هُدد الحلفاء أو السفن.</li>
-          <li><b>٢</b>الحرس الثوري: انفجار ناقلة غاز بلغم في هرمز.</li>
-          <li><b>٣</b>طهران تدّعي استهداف رادار أمريكي في البحرين.</li>
-          <li><b>٤</b>قاليباف: إيران تريد إنهاء الحرب.</li>
+          <li><b>١</b>انفجار ناقلتين تحملان أكثر من ٤ ملايين برميل.</li>
+          <li><b>٢</b>ترمب: لا نحتاج إلى اتفاق، والضربات خيار قائم.</li>
+          <li><b>٣</b>مجموعة السبع تطالب إيران بوقف هجمات هرمز.</li>
+          <li><b>٤</b>برنت يقفز ٣٫٣٪ إلى قرب ٩٦ دولاراً.</li>
         </ul>
       </div>
-      <div class="src">المصادر: Middle East Eye، الجزيرة، رويترز</div>
+      <a class="more" href="https://aawsat.com/%D8%B4%D8%A4%D9%88%D9%86-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A%D8%A9/5340464-%D8%A7%D9%84%D8%AD%D8%B1%D8%B3-%D8%A7%D9%84%D8%AB%D9%88%D8%B1%D9%8A-%D9%8A%D8%B9%D9%84%D9%86-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%86%D8%A7%D9%82%D9%84%D8%AA%D9%8A%D9%86-%D8%B9%D9%85%D9%84%D8%A7%D9%82%D8%AA%D9%8A%D9%86-%D9%81%D9%8A-%D9%87%D8%B1%D9%85%D8%B2" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a> · <a class="more" href="https://asharqbusiness.com/power/155852/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-13-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1-2026/" target="_blank" rel="noopener">الشرق بلومبرغ ←</a>
+      <div class="src">المصادر: الشرق الأوسط، الشرق بلومبرغ</div>
     </div>
   </article>
 </section>
@@ -384,8 +386,9 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       <div>
         <div class="kicker">أمن</div>
         <h3>التحالف يعترض مسيّرات فوق الشرقية والرياض وإدانات عربية ودولية لهجمات الحوثيين</h3>
-        <p>أعلن تحالف دعم الشرعية الخميس اعتراض وتدمير طائرة مسيّرة في المنطقة الشرقية ومسيّرتين في منطقة الرياض. وكان الحوثيون قد ادّعوا استهداف منشآت نفطية بينها محطة ضخ على خط شرق–غرب ومنشأة في ينبع. ودانت الجامعة العربية الهجمات محذّرة من استهداف مكة والرياض، فيما دان مجلس الأمن الهجمات مؤكداً حق المملكة في الدفاع عن نفسها.</p>
-        <div class="src">واس عبر اليوم السابع، ماسبيرو، سيناء الإخبارية</div>
+        <p>أعلن تحالف دعم الشرعية اعتراض وتدمير مسيّرات أطلقها الحوثيون باتجاه منطقة الرياض والمنطقة الشرقية. ودانت الجامعة العربية الهجمات بما فيها ما استهدف مكة المكرمة والرياض، ودان مجلس الأمن بالإجماع الهجمات مؤكداً حق المملكة في الدفاع عن نفسها.</p>
+        <a class="more" href="https://www.okaz.com.sa/local/saudi-arabia/2275291" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a>
+        <div class="src">عكاظ، سبق، الشرق الأوسط</div>
       </div>
     </article>
 
@@ -393,9 +396,10 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="16" cy="18" r="9" fill="#0c7a3e"/><circle cx="32" cy="18" r="9" fill="#e5533d"/><path d="M8 34c6-6 26-6 32 0" stroke="#1d1d27" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M18 36h12" stroke="#f5b301" stroke-width="4" stroke-linecap="round"/></svg></div>
       <div>
         <div class="kicker">علاقات خارجية</div>
-        <h3>السعودية والصين تبحثان أمن الطاقة وسلامة الملاحة في هرمز وباب المندب</h3>
-        <p>أكد الجانبان أهمية استقرار أسواق الطاقة وضمان حرية الملاحة في المضيقين حفاظاً على انسيابية التجارة العالمية وسلاسل الإمداد.</p>
-        <div class="src">واس عبر ماسبيرو</div>
+        <h3>وزير الخارجية يبحث مع المبعوث الصيني أمن الطاقة وسلامة الملاحة في هرمز وباب المندب</h3>
+        <p>التقى الأمير فيصل بن فرحان في الرياض المبعوث الصيني الخاص للشرق الأوسط، وتناول اللقاء الهجمات الحوثية على المدنيين والمنشآت في المملكة وجهود التهدئة، وشدد الجانبان على أمن الطاقة وحرية الملاحة.</p>
+        <a class="more" href="https://www.okaz.com.sa/local/saudi-arabia/2275328" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a>
+        <div class="src">عكاظ</div>
       </div>
     </article>
 
@@ -404,8 +408,9 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       <div>
         <div class="kicker">طقس وسلامة</div>
         <h3>الأرصاد: أمطار رعدية وسيول وبرد على جازان وعسير والباحة ومكة والمدينة</h3>
-        <p>يتوقع المركز الوطني للأرصاد أمطاراً متوسطة إلى غزيرة مع رياح نشطة، ورفع الهلال الأحمر في تبوك جاهزيته داعياً إلى الابتعاد عن مجاري السيول، وطلب الإسعاف على ٩٩٧.</p>
-        <div class="src">المركز الوطني للأرصاد، واس عبر أحوال</div>
+        <p>يتوقع المركز الوطني للأرصاد أمطاراً متوسطة إلى غزيرة مع رياح نشطة، والنصيحة الابتعاد عن مجاري السيول والأودية، وطلب الإسعاف على ٩٩٧ عند الحاجة.</p>
+        <a class="more" href="https://sabq.org/article/4jj09vz" target="_blank" rel="noopener">اقرأ التفاصيل في سبق ←</a>
+        <div class="src">المركز الوطني للأرصاد عبر سبق والرياض</div>
       </div>
     </article>
 
@@ -415,7 +420,8 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
         <div class="kicker">جمارك</div>
         <h3>إحباط تهريب أكثر من ٤١٣ ألف حبة إمفيتامين عبر منفذ الحديثة</h3>
         <p>ضبط جمرك الحديثة ٤١٣٬٤٥٠ حبة مخبأة في إرسالية واردة إلى المملكة، بحسب هيئة الزكاة والضريبة والجمارك.</p>
-        <div class="src">واس عبر إخبارية طريف</div>
+        <a class="more" href="https://www.okaz.com.sa/local/na/2275381" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a>
+        <div class="src">عكاظ، سبق</div>
       </div>
     </article>
 
@@ -425,7 +431,8 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
         <div class="kicker">تراث</div>
         <h3>أدوات صيد متطورة عمرها ١٢٥ ألف عام في نجران</h3>
         <p>كشفت دراسة لهيئة التراث مع جامعة جريفيث الأسترالية وكاوست في موقع «عروق الجليبة» قرب بحيرة المندفن القديمة أن البشر الأوائل طوّروا تقنيات معقدة للصيد وصناعة الأدوات.</p>
-        <div class="src">واس عبر سرمد</div>
+        <a class="more" href="https://www.alriyadh.com/2214991" target="_blank" rel="noopener">اقرأ التفاصيل في الرياض ←</a>
+        <div class="src">صحيفة الرياض</div>
       </div>
     </article>
 
@@ -433,19 +440,20 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 36l5-10h14l5 10Z" fill="#f5b301"/><path d="M18 26l5-10h14l5 10Z" fill="#ffcf4a"/><path d="M30 36l4-8" stroke="#c98a00" stroke-width="2"/><path d="M40 8v10M36 14l4 4 4-4" stroke="#e5533d" stroke-width="2.6" fill="none" stroke-linecap="round"/></svg></div>
       <div>
         <div class="kicker">اقتصاد</div>
-        <h3>تراجع أسعار الذهب: عيار ٢١ بنحو ٤١٠٫٨٠ ريالاً للغرام</h3>
-        <p>سجّل عيار ٢٤ نحو ٤٦٩٫٤٩ ريالاً للغرام يوم الجمعة، متأثراً بانخفاض المعدن عالمياً.</p>
-        <div class="src">العين الإخبارية</div>
+        <h3>تراجع أسعار الذهب: عيار ٢١ بنحو ٤١١٫٦٣ ريالاً للغرام</h3>
+        <p>سجّل الغرام من عيار ٢١، الأكثر تداولاً في المملكة، نحو ٤١١٫٦٣ ريالاً (١٠٩٫٧٧ دولار) صباح الجمعة، مع اقتراب الذهب عالمياً من أدنى مستوى في عام.</p>
+        <a class="more" href="https://ajel.sa/economy/la644no0i" target="_blank" rel="noopener">اقرأ التفاصيل في عاجل ←</a>
+        <div class="src">عاجل، الشرق بلومبرغ</div>
       </div>
     </article>
 
   </div>
   <div class="markets" aria-label="الأسواق">
-    <div class="mk"><div class="n">تاسي (إغلاق الخميس)</div><div class="v">10,326</div><div class="ch up">▲ 0.18%</div></div>
-    <div class="mk"><div class="n">الذهب عيار ٢١ (ريال/غرام)</div><div class="v">410.80</div><div class="ch dn">▼ تراجع</div></div>
-    <div class="mk"><div class="n">برنت (دولار/برميل)</div><div class="v">95.82</div><div class="ch up">▲ 3.3%</div></div>
+    <div class="mk"><div class="n">تاسي (إغلاق الخميس)</div><div class="v">10,326</div><div class="ch up">▲ 2.3% أسبوعياً</div></div>
+    <div class="mk"><div class="n">الذهب عيار ٢١ (ريال/غرام)</div><div class="v">411.63</div><div class="ch dn">▼ تراجع</div></div>
+    <div class="mk"><div class="n">برنت (دولار/برميل، تقريبي)</div><div class="v">96</div><div class="ch up">▲ 3.3% الخميس</div></div>
   </div>
-  <div class="src">الأسواق: تداول السعودية، العين الإخبارية، الفجر (تسوية برنت الخميس)</div>
+  <div class="src">الأسواق: <a href="https://asharqbusiness.com/sub-live/economics/9733/%D8%A8%D9%88%D8%B1%D8%B5%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%B1%D8%AA%D9%81%D8%B9-%D9%84%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D8%AA%D9%88%D8%A7%D9%84%D9%8A%D8%A7-%D8%A8%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%A3%D8%B3%D9%87%D9%85-%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D8%AF%D9%8A%D8%A9" target="_blank" rel="noopener">الشرق بلومبرغ (تاسي)</a> · <a href="https://ajel.sa/economy/la644no0i" target="_blank" rel="noopener">عاجل (الذهب)</a> · <a href="https://asharqbusiness.com/power/155852/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-13-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1-2026/" target="_blank" rel="noopener">الشرق بلومبرغ (برنت)</a></div>
 </section>
 
 <!-- حديث الناس -->
@@ -456,14 +464,14 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
     <small>الأكثر تداولاً</small>
   </div>
   <ul class="trend">
-    <li><span class="rk">١</span><div><b>هجمات الحوثيين ومنشآت أرامكو</b><span class="d">أكثر ما شغل المتابعين، ودفع البحث عن قناة «العربية الحدث» إلى صدارة بحث جوجل لمتابعة تطورات اليمن والسعودية وإيران.</span><span class="heat">صدارة البحث</span></div></li>
-    <li><span class="rk">٢</span><div><b>الأخضر ضد كوريا الجنوبية</b><span class="d">ودية الليلة ٥:٣٠ م في الدوحة، مع اعتماد العويس قائداً أول ثم كنو وسعود عبدالحميد والعمري في غياب سالم الدوسري المستبعد من المعسكر.</span><span class="heat">رياضة</span></div></li>
-    <li><span class="rk">٣</span><div><b>«نهاية العالم الجمعة ١٣ نوفمبر»</b><span class="d">شائعة انتشرت منذ أكتوبر وبلغت ذروتها اليوم، ويؤكد كتّاب أنها مبنية على معادلة خاطئة عمرها ٦٦ عاماً، واليوم سيمر كأي يوم.</span><span class="heat">شائعة</span></div></li>
-    <li><span class="rk">٤</span><div><b>استقالة رئيس إنفيديا</b><span class="d">قصة جنسن هوانغ ضمن الأكثر بحثاً عالمياً منذ أمس.</span><span class="heat">تقنية</span></div></li>
-    <li><span class="rk">٥</span><div><b>عطل مايكروسوفت</b><span class="d">تجاوزت عمليات البحث عنه ١٠ ملايين في الولايات المتحدة وحدها خلال ساعات.</span><span class="heat">تقنية</span></div></li>
-    <li><span class="rk">٦</span><div><b>الأمطار والسيول</b><span class="d">تنبيهات الأرصاد لجازان والمرتفعات الغربية وصور السيول في المحافظات الجبلية.</span><span class="heat">طقس</span></div></li>
+    <li><span class="rk">١</span><div><b>المسيّرات الحوثية فوق الرياض والشرقية</b><span class="d">اعتراض المسيّرات والإدانات العربية والدولية تصدّرت التغطيات منذ أمس.</span><span class="heat">أمن</span><a class="more" href="https://www.okaz.com.sa/local/saudi-arabia/2275291" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a></div></li>
+    <li><span class="rk">٢</span><div><b>الأخضر ضد كوريا الجنوبية</b><span class="d">ودية اليوم ٥:٣٠ م في الدوحة، في غياب سالم الدوسري بسبب آلام في الركبة.</span><span class="heat">رياضة</span><a class="more" href="https://www.okaz.com.sa/sport/na/2273961" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a></div></li>
+    <li><span class="rk">٣</span><div><b>استقالة رئيس إنفيديا</b><span class="d">جنسن هوانغ يغادر بعد ٣٣ عاماً، وكوليت كريس تقود الشركة مؤقتاً.</span><span class="heat">تقنية</span><a class="more" href="https://www.alarabiya.net/aswaq/special-stories/2026/11/12/%D9%85%D9%86-%D9%87%D9%8A-%D9%83%D9%88%D9%84%D9%8A%D8%AA-%D9%83%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AA%D9%8A-%D8%B3%D8%AA%D9%82%D9%88%D8%AF-%D8%A7%D9%86%D9%81%D9%8A%D8%AF%D9%8A%D8%A7-%D9%85%D8%A4%D9%82%D8%AA%D8%A7-" target="_blank" rel="noopener">اقرأ التفاصيل في العربية ←</a></div></li>
+    <li><span class="rk">٤</span><div><b>عطل مايكروسوفت</b><span class="d">أكثر من ١٣٠ ألف بلاغ عن أوتلوك في ذروة العطل الذي امتد نحو ١٢ ساعة.</span><span class="heat">تقنية</span><a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5340771-%D8%B9%D8%B7%D9%84-%D9%85%D8%A7%D9%8A%D9%83%D8%B1%D9%88%D8%B3%D9%88%D9%81%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A-%D9%8A%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A7%D8%AA" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a></div></li>
+    <li><span class="rk">٥</span><div><b>تراجع الذهب</b><span class="d">عيار ٢١ ينزل إلى ٤١١ ريالاً صباح الجمعة.</span><span class="heat">اقتصاد</span><a class="more" href="https://ajel.sa/economy/la644no0i" target="_blank" rel="noopener">اقرأ التفاصيل في عاجل ←</a></div></li>
+    <li><span class="rk">٦</span><div><b>الأمطار والسيول</b><span class="d">تنبيهات الأرصاد لجازان والمرتفعات الغربية.</span><span class="heat">طقس</span><a class="more" href="https://sabq.org/article/4jj09vz" target="_blank" rel="noopener">اقرأ التفاصيل في سبق ←</a></div></li>
   </ul>
-  <div class="src">رصد لما تصدّر البحث والتغطيات: سيناء الإخبارية، تليجراف مصر، إرم نيوز، مؤشرات Google</div>
+  <div class="src">رصد لأكثر ما تناولته الصحف السعودية منذ أمس، وليس إحصاءً لمنصات التواصل.</div>
 </section>
 
 <!-- الطقس -->
@@ -519,7 +527,7 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
     </div>
   </div>
   <p class="wx-note">أجواء أبرد على هروب والريث (العظمى ٢٥ والصغرى ١٧–١٩)، وأدفأ في العيدابي (٣٣). فرص الأمطار اليوم بين ٤٠ و٥٥٪ في كل المحافظات الجبلية، وتتراجع تدريجياً من يوم الأحد. القراءات تقريبية لمراكز المحافظات، والقمم أبرد منها.</p>
-  <div class="src">التوقعات: خدمة الطقس المدمجة، والتنبيه من المركز الوطني للأرصاد</div>
+  <div class="src">التوقعات: خدمة الطقس المدمجة · التنبيه: <a href="https://ncm.gov.sa" target="_blank" rel="noopener">المركز الوطني للأرصاد</a></div>
 </section>
 
 
@@ -547,13 +555,13 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
     <h2>مواعيد تهمك</h2>
   </div>
   <div class="dates">
-    <div class="dt" data-date="2026-11-20"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>إجازة الخريف للمدارس</h3><p>من الجمعة ٢٠ إلى السبت ٢٨ نوفمبر، والعودة الأحد ٢٩ نوفمبر</p></div></div>
+    <div class="dt" data-date="2026-11-20"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>إجازة الخريف للمدارس</h3><p>من الجمعة ٢٠ إلى السبت ٢٨ نوفمبر، والعودة الأحد ٢٩ نوفمبر</p><a class="more" href="https://sabq.org/services/school-calendar-date" target="_blank" rel="noopener">اقرأ التفاصيل في سبق ←</a></div></div>
     <div class="dt" data-date="2026-11-26"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>رواتب الموظفين</h3><p>الخميس ٢٦ نوفمبر، لأن يوم ٢٧ يوافق الجمعة</p></div></div>
     <div class="dt" data-date="2026-12-01"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>الضمان الاجتماعي ورواتب المتقاعدين</h3><p>الثلاثاء ١ ديسمبر (٢١ جمادى الآخرة)</p></div></div>
     <div class="dt" data-date="2026-12-10"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>حساب المواطن</h3><p>الخميس ١٠ ديسمبر (١ رجب ١٤٤٨هـ)</p></div></div>
-    <div class="dt" data-date="2027-12-23"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>كأس آسيا في السعودية (بعد التأجيل)</h3><p>من ٢٣ ديسمبر ٢٠٢٧ إلى ٢١ يناير ٢٠٢٨</p></div></div>
+    <div class="dt" data-date="2027-12-23"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>كأس آسيا في السعودية (بعد التأجيل)</h3><p>من ٢٣ ديسمبر ٢٠٢٧ إلى ٢١ يناير ٢٠٢٨</p><a class="more" href="https://sabq.org/article/dl1y8i2" target="_blank" rel="noopener">اقرأ التفاصيل في سبق ←</a></div></div>
   </div>
-  <div class="src">سبق، تليجراف مصر، التقويمات الهجرية، الجزيرة نت. المواعيد المالية تقديرية حسب القاعدة المعتادة ما لم تُعلَن رسمياً.</div>
+  <div class="src">سبق. المواعيد المالية تقديرية حسب القاعدة المعتادة ما لم تُعلَن رسمياً.</div>
 </section>
 
 <!-- حصاد الأسبوع -->
@@ -563,14 +571,14 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
     <h2>حصاد الأسبوع</h2><small>عدد الجمعة</small>
   </div>
   <div class="week"><ol>
-    <li><span class="d">السبت ٧ نوفمبر</span>إنذار طوارئ في جازان عبر المنصة الوطنية للإنذار المبكر، ثم إعلان الدفاع المدني زوال الخطر.</li>
-    <li><span class="d">الأحد ٨ نوفمبر</span>تكليف غادي آيزنكوت بتشكيل الحكومة الإسرائيلية بدعم ٦٧ نائباً.</li>
-    <li><span class="d">الأربعاء ١١ والخميس ١٢</span>أمطار غزيرة على جازان، وتنبيه الأرصاد لـ ١٥ محافظة بالبرد والسيول والصواعق.</li>
-    <li><span class="d">الخميس ١٢ نوفمبر</span>استقالة جنسن هوانغ من رئاسة إنفيديا، وعطل واسع في خدمات مايكروسوفت.</li>
-    <li><span class="d">الخميس ١٢ نوفمبر</span>اعتراض مسيّرات فوق الشرقية والرياض، وإدانة الجامعة العربية ومجلس الأمن لهجمات الحوثيين.</li>
-    <li><span class="d">الأسبوع كله</span>برنت يتجه لخسارة أسبوعية ثانية رغم قفزة الخميس، وتاسي يغلق الخميس فوق ١٠ آلاف نقطة.</li>
+    <li><span class="d">السبت ٧ نوفمبر</span>إنذار طوارئ في جازان عبر المنصة الوطنية للإنذار المبكر، ثم إعلان الدفاع المدني زوال الخطر. <a class="more" href="https://ajel.sa/local/3oovvmsdd" target="_blank" rel="noopener">اقرأ التفاصيل في عاجل ←</a></li>
+    <li><span class="d">الأحد ٨ نوفمبر</span>تكليف غادي آيزنكوت بتشكيل الحكومة الإسرائيلية بعد توصية ٦٧ نائباً. <a class="more" href="https://aawsat.com/%D8%B4%D8%A4%D9%88%D9%86-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A%D8%A9/5339017-%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%A8%D8%B9%D9%87%D8%AF%D8%A9-%D8%A2%D9%8A%D8%B2%D9%86%D9%83%D9%88%D8%AA-%D9%88%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%8A%D8%AE%D9%88%D9%81-%D9%85%D9%86-%D8%A7%D9%84%D8%AA%D9%81%D9%83%D9%83" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a></li>
+    <li><span class="d">الأربعاء ١١ والخميس ١٢</span>أمطار غزيرة على جازان، وتنبيهات الأرصاد بالبرد والسيول والصواعق. <a class="more" href="https://sabq.org/article/4jj09vz" target="_blank" rel="noopener">اقرأ التفاصيل في سبق ←</a></li>
+    <li><span class="d">الخميس ١٢ نوفمبر</span>استقالة جنسن هوانغ من رئاسة إنفيديا، وعطل واسع في خدمات مايكروسوفت. <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5340574-%D8%A7%D9%84%D9%82%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D9%82%D9%8A%D8%A9-%D9%84%D9%80%D8%A5%D9%86%D9%81%D9%8A%D8%AF%D9%8A%D8%A7-%D8%AA%D9%87%D8%A8%D8%B7-%D8%AF%D9%88%D9%86-4-%D8%AA%D8%B1%D9%8A%D9%84%D9%8A%D9%88%D9%86%D8%A7%D8%AA-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B3%D8%AA%D9%82%D8%A7%D9%84%D8%A9-%D9%87%D9%88%D8%A7%D9%86%D8%BA" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a></li>
+    <li><span class="d">الخميس ١٢ نوفمبر</span>اعتراض مسيّرات فوق الرياض والشرقية، وإدانة الجامعة العربية ومجلس الأمن لهجمات الحوثيين. <a class="more" href="https://www.okaz.com.sa/local/na/2275269" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a></li>
+    <li><span class="d">الأسبوع كله</span>تاسي يرتفع ٢٫٣٪ للأسبوع الثالث توالياً، وبرنت يتجه لخسارة أسبوعية ثانية رغم قفزة الخميس. <a class="more" href="https://asharqbusiness.com/sub-live/economics/9733/%D8%A8%D9%88%D8%B1%D8%B5%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%B1%D8%AA%D9%81%D8%B9-%D9%84%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D8%AA%D9%88%D8%A7%D9%84%D9%8A%D8%A7-%D8%A8%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%A3%D8%B3%D9%87%D9%85-%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D8%AF%D9%8A%D8%A9" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق بلومبرغ ←</a></li>
   </ol></div>
-  <div class="src">عاجل، سرمد، إسرائيل هيوم، أحوال، CNBC، اليوم السابع، الشرق القطرية، تداول السعودية</div>
+  <div class="src">عاجل، الشرق الأوسط، سبق، عكاظ، الشرق بلومبرغ</div>
 </section>
 
 <!-- السياسة -->
@@ -585,9 +593,10 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 30c6-2 10-8 16-8s8 4 14 2l4 6c-8 6-18 8-26 6Z" fill="#2f6fde"/><path d="M24 22c-2-6 2-12 8-12-2 4-1 8 2 10" fill="#7fb0f5"/><circle cx="36" cy="16" r="1.6" fill="#1d1d27"/><path d="M40 17l5-1-4 3" fill="#ef8a1f"/><path d="M30 30c2 3 4 6 4 10" stroke="#1f9d55" stroke-width="2.4" fill="none" stroke-linecap="round"/><path d="M32 36c3-1 5 0 6 2-3 1-5 0-6-2Z" fill="#1f9d55"/></svg></div>
       <div>
         <div class="kicker">أوكرانيا</div>
-        <h3>أوروبا تنضم إلى جولة المفاوضات المقبلة مع روسيا</h3>
-        <p>أكد زيلينسكي والمبعوث الأمريكي كوشنر مشاركة مندوبين أوروبيين في الجولة القادمة، دون تأكيد من الكرملين بعد. وأعلنت فنلندا رصد ضربة على سفينة حربية روسية في خليج فنلندا.</p>
-        <div class="src">فرانس 24، BBC، الجزيرة</div>
+        <h3>أوروبا تقترب من طاولة مفاوضات أوكرانيا في أبوظبي</h3>
+        <p>التقى كوشنر وويتكوف شركاء من أوكرانيا والاتحاد الأوروبي والناتو قبل المحادثات الثلاثية في أبوظبي، فيما يتمسك الكرملين بأن تقتصر على روسيا وأوكرانيا بوساطة واشنطن.</p>
+        <a class="more" href="https://www.alarabiya.net/arab-and-world/2026/11/09/%D9%83%D9%88%D8%B4%D9%86%D8%B1-%D9%88%D9%88%D9%8A%D8%AA%D9%83%D9%88%D9%81-%D9%8A%D8%AC%D8%AA%D9%85%D8%B9%D8%A7%D9%86-%D9%85%D8%B9-%D8%A7%D9%84%D8%A7%D9%88%D8%B1%D9%88%D8%A8%D9%8A%D9%8A%D9%86-%D9%82%D8%A8%D9%84-%D9%85%D9%81%D8%A7%D9%88%D8%B6%D8%A7%D8%AA-%D8%A7%D8%A8%D9%88-%D8%B8%D8%A8%D9%8A-%D8%A8%D8%B4%D8%A7%D9%86-%D8%A7%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A7" target="_blank" rel="noopener">اقرأ التفاصيل في العربية ←</a>
+        <div class="src">العربية</div>
       </div>
     </article>
     <article class="card w-blue">
@@ -596,16 +605,8 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
         <div class="kicker">إسرائيل</div>
         <h3>آيزنكوت يواصل مساعي تشكيل حكومة تُقصي نتنياهو</h3>
         <p>تسلّم زعيم حزب «ياشار» التكليف في ٨ نوفمبر بدعم ٦٧ نائباً من ١٢٠، ولديه ٢٨ يوماً قابلة للتمديد ١٤ يوماً، ويبقى نتنياهو رئيساً لحكومة تصريف الأعمال.</p>
-        <div class="src">إسرائيل هيوم، الأناضول، شينخوا</div>
-      </div>
-    </article>
-    <article class="card w-blue">
-      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><circle cx="24" cy="24" r="16" fill="#cfe0fb"/><path d="M14 12c6 2 8 8 4 14s2 10 8 12" fill="none" stroke="#2f6fde" stroke-width="2"/><path d="M30 14l4 2-2 5-3-1Z" fill="#1f9d55"/><path d="M33 26l3 1-1 4-3-2Z" fill="#1f9d55"/><circle cx="34" cy="20" r="9" fill="none" stroke="#e5533d" stroke-width="2.4" stroke-dasharray="4 3"/></svg></div>
-      <div>
-        <div class="kicker">آسيا</div>
-        <h3>مجموعة السبع تحذّر من الضغط الصيني شرق تايوان</h3>
-        <p>أصدرت المجموعة تحذيراً موحداً من نشاط الصين المتزايد شرق الجزيرة، معتبرة أنه يهدد الاستقرار الإقليمي وحرية الملاحة.</p>
-        <div class="src">Yeshiva World News</div>
+        <a class="more" href="https://aawsat.com/%D8%B4%D8%A4%D9%88%D9%86-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A%D8%A9/5339017-%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%A8%D8%B9%D9%87%D8%AF%D8%A9-%D8%A2%D9%8A%D8%B2%D9%86%D9%83%D9%88%D8%AA-%D9%88%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%8A%D8%AE%D9%88%D9%81-%D9%85%D9%86-%D8%A7%D9%84%D8%AA%D9%81%D9%83%D9%83" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a>
+        <div class="src">الشرق الأوسط</div>
       </div>
     </article>
   </div>
@@ -621,36 +622,30 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="34" width="32" height="4" rx="2" fill="#1d1d27"/><path d="M12 34V22M20 34V22M28 34V22M36 34V22" stroke="#ef8a1f" stroke-width="4"/><path d="M8 20 24 10l16 10Z" fill="#ef8a1f"/><circle cx="24" cy="16" r="2" fill="#fff"/></svg></div>
       <div>
         <div class="kicker">اليمن</div>
-        <h3>مجلس الأمن يمدد العقوبات على الحوثيين بالإجماع</h3>
-        <p>قرر المجلس تمديد العقوبات وملاحقة مصادر تمويل الجماعة.</p>
-        <div class="src">موقع «يوليو»</div>
+        <h3>مجلس الأمن يدين هجمات الحوثيين ويؤكد حق المملكة في الدفاع عن نفسها</h3>
+        <p>اعتمد المجلس بالإجماع القرار ٢٨٣٧ الذي يجدد حظر السلاح والعقوبات، ويكلّف فريق الخبراء تتبع مصادر تمويل الحوثيين، ورحّب به مجلس التعاون الخليجي.</p>
+        <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5340642-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-%D9%8A%D8%A4%D9%83%D8%AF-%D8%AD%D9%82-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%B9%D9%86-%D9%86%D9%81%D8%B3%D9%87%D8%A7" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a>
+        <div class="src">الشرق الأوسط</div>
       </div>
     </article>
     <article class="card w-orange">
       <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="18" width="14" height="20" fill="#ffd9ad"/><rect x="28" y="18" width="14" height="20" fill="#ffd9ad"/><path d="M20 38V26c0-3 8-3 8 0v12" fill="#ef8a1f"/><path d="M4 18h40l-4-6H8Z" fill="#ef8a1f"/><path d="M30 8l4-4 4 4-4 4Z" fill="#1f9d55"/></svg></div>
       <div>
-        <div class="kicker">غزة</div>
-        <h3>٥٣ دولة ومنظمة تطالب بفتح المعابر</h3>
-        <p>يتصاعد الضغط الدولي لفتح معابر القطاع مع تدهور الأوضاع الإنسانية في مخيمات النازحين.</p>
-        <div class="src">موقع «يوليو»</div>
+        <div class="kicker">لبنان</div>
+        <h3>لبنان يترقب الحكومة الإسرائيلية الجديدة لاستئناف المفاوضات</h3>
+        <p>ينتظر الجانب اللبناني نتيجة مساعي آيزنكوت لتشكيل الحكومة، وموقفه من المفاوضات مع بيروت لا يزال غير معروف.</p>
+        <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5340781-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%8A%D8%AA%D8%B1%D9%82%D8%A8-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D8%A7%D8%B3%D8%AA%D8%A6%D9%86%D8%A7%D9%81-%D8%A7%D9%84%D9%85%D9%81%D8%A7%D9%88%D8%B6%D8%A7%D8%AA-%D9%88%D8%A2%D9%8A%D8%B2%D9%86%D9%83%D9%88%D8%AA-%D9%82%D8%AF" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a>
+        <div class="src">الشرق الأوسط</div>
       </div>
     </article>
     <article class="card w-orange">
       <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 12h32v20H8Z" fill="#fff" stroke="#1d1d27" stroke-width="1.6"/><path d="M14 18h10M14 23h16M14 28h8" stroke="#ef8a1f" stroke-width="2.4" stroke-linecap="round"/><circle cx="36" cy="34" r="8" fill="#e5533d"/><path d="M33 34h6M36 31v6" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg></div>
       <div>
         <div class="kicker">الأمريكيتان</div>
-        <h3>ترامب يهدد المكسيك بمضاعفة الرسوم ويلمّح لكوبا</h3>
-        <p>هدد بمضاعفة الرسوم الجمركية على المكسيك ما لم توقف قافلة مهاجرين متجهة إلى الحدود، وقال إنه سيدرس استخدام القوة ضد سلطات كوبا قبل نهاية ولايته.</p>
-        <div class="src">WORLD Radio، الجزيرة</div>
-      </div>
-    </article>
-    <article class="card w-orange">
-      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6v32M12 38h24" stroke="#1d1d27" stroke-width="2.4" stroke-linecap="round"/><path d="M10 12h28" stroke="#ef8a1f" stroke-width="2.4"/><path d="M10 12l-5 12h10Z M38 12l-5 12h10Z" fill="#ffd9ad" stroke="#ef8a1f" stroke-width="1.8" stroke-linejoin="round"/></svg></div>
-      <div>
-        <div class="kicker">أوروبا</div>
-        <h3>محكمة إسبانية تعلّق نشاط جماعة يمينية متطرفة</h3>
-        <p>جاء القرار قبل الانتخابات العامة في ٢٩ نوفمبر، وبعد ١٤ حالة اعتقال بتهم جرائم كراهية.</p>
-        <div class="src">الجزيرة</div>
+        <h3>ترمب يهدد المكسيك بمضاعفة الرسوم ويريد «إنهاء ملف كوبا»</h3>
+        <p>هدد بمضاعفة الرسوم الجمركية على المكسيك «فوراً» ما لم توقف أكثر من ألف مهاجر يسيرون شمالاً نحو الحدود، وقال إنه يريد إنهاء ملف كوبا قبل مغادرة منصبه.</p>
+        <a class="more" href="https://english.aawsat.com/business/5340568-trump-threatens-double-tariffs-mexico-if-it-does-not-halt-migrants" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a>
+        <div class="src">الشرق الأوسط</div>
       </div>
     </article>
   </div>
@@ -669,21 +664,22 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       <div>
         <div class="kicker">رقائق الذكاء الاصطناعي</div>
         <h3>جنسن هوانغ يستقيل من رئاسة إنفيديا</h3>
-        <p>أعلنت إنفيديا الخميس استقالة مؤسسها بعد اعترافه بعلاقة مع امرأة تشتبه الاستخبارات الأمريكية في تجسسها للصين، وتتولى المديرة المالية كوليت كريس المنصب مؤقتاً. وتقول الشركة إنه لا سبب للاعتقاد بتسرب أسرارها.</p>
-        <div class="src">CNBC، StockTitan، Axios عبر Techmeme</div>
+        <p>أنهت الاستقالة ٣٣ عاماً من قيادته الشركة، بعد تقارير عن علاقتين خارج إطار الزواج إحداهما مع امرأة تشتبه السلطات الأمريكية في ارتباطها بالصين. وتتولى المديرة المالية كوليت كريس المنصب مؤقتاً، وهبطت القيمة السوقية دون ٤ تريليونات دولار.</p>
+        <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5340574-%D8%A7%D9%84%D9%82%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D9%82%D9%8A%D8%A9-%D9%84%D9%80%D8%A5%D9%86%D9%81%D9%8A%D8%AF%D9%8A%D8%A7-%D8%AA%D9%87%D8%A8%D8%B7-%D8%AF%D9%88%D9%86-4-%D8%AA%D8%B1%D9%8A%D9%84%D9%8A%D9%88%D9%86%D8%A7%D8%AA-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B3%D8%AA%D9%82%D8%A7%D9%84%D8%A9-%D9%87%D9%88%D8%A7%D9%86%D8%BA" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a>
+        <div class="src">الشرق الأوسط، العربية</div>
       </div>
       <div class="full">
-        <svg class="chart" viewBox="0 0 320 130" role="img" aria-label="سهم إنفيديا: ١٨٦٫٦٤ دولاراً في ٦ نوفمبر و١٦٦٫١٩ دولاراً في ١٢ نوفمبر">
-          <text x="160" y="20" text-anchor="middle" font-family="Reem Kufi" font-size="12" font-weight="700" fill="#1d1d27">سعر إغلاق السهم (دولار)</text>
+        <svg class="chart" viewBox="0 0 320 130" role="img" aria-label="القيمة السوقية لإنفيديا: نحو ٤٫١٩ تريليون دولار قبل الاستقالة ونحو ٣٫٨٣ تريليون بعدها">
+          <text x="160" y="13" text-anchor="middle" font-family="Reem Kufi" font-size="12" font-weight="700" fill="#1d1d27">القيمة السوقية (تريليون دولار)</text>
           <line x1="20" y1="110" x2="306" y2="110" stroke="#d9cff3"/>
-          <rect x="196" y="34" width="70" height="76" rx="6" fill="#c9b6f5"/>
-          <rect x="70" y="42" width="70" height="68" rx="6" fill="#7b4ddb"/>
-          <text x="231" y="28" text-anchor="middle" font-family="Reem Kufi" font-size="13" font-weight="700" fill="#1d1d27">186.64</text>
-          <text x="105" y="36" text-anchor="middle" font-family="Reem Kufi" font-size="13" font-weight="700" fill="#7b4ddb">166.19</text>
-          <text x="231" y="124" text-anchor="middle" font-family="Reem Kufi" font-size="11" fill="#6a6a75">٦ نوفمبر</text>
-          <text x="105" y="124" text-anchor="middle" font-family="Reem Kufi" font-size="11" fill="#6a6a75">١٢ نوفمبر</text>
-          <rect x="146" y="58" width="44" height="22" rx="11" fill="#e5533d"/>
-          <text x="168" y="74" text-anchor="middle" font-family="Reem Kufi" font-size="12" font-weight="700" fill="#fff">−١١٪</text>
+          <rect x="196" y="42" width="70" height="68" rx="6" fill="#c9b6f5"/>
+          <rect x="70" y="48" width="70" height="62" rx="6" fill="#7b4ddb"/>
+          <text x="231" y="36" text-anchor="middle" font-family="Reem Kufi" font-size="13" font-weight="700" fill="#1d1d27">4.19</text>
+          <text x="105" y="42" text-anchor="middle" font-family="Reem Kufi" font-size="13" font-weight="700" fill="#7b4ddb">3.83</text>
+          <text x="231" y="124" text-anchor="middle" font-family="Reem Kufi" font-size="11" fill="#6a6a75">قبل الاستقالة</text>
+          <text x="105" y="124" text-anchor="middle" font-family="Reem Kufi" font-size="11" fill="#6a6a75">بعدها</text>
+          <rect x="143" y="66" width="50" height="20" rx="10" fill="#e5533d"/>
+          <text x="168" y="80" text-anchor="middle" font-family="Reem Kufi" font-size="9.5" font-weight="700" fill="#fff">−٣٦١ مليار</text>
         </svg>
       </div>
     </article>
@@ -691,18 +687,20 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 34a9 9 0 0 1 1-18 12 12 0 0 1 22 4 7 7 0 0 1-1 14Z" fill="#c9b6f5"/><circle cx="34" cy="34" r="9" fill="#e5533d"/><path d="M31 31l6 6M37 31l-6 6" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><path d="M14 24h10M14 28h6" stroke="#7b4ddb" stroke-width="2.2" stroke-linecap="round"/></svg></div>
       <div>
         <div class="kicker">خدمات سحابية</div>
-        <h3>عطل واسع في Outlook وTeams يمتد لساعات</h3>
-        <p>تعطلت خدمات البريد والتواصل لدى مايكروسوفت منذ ظهر الخميس بتوقيت نيويورك وامتد العطل إلى صباح الجمعة، مع تعافٍ جزئي في بعض المناطق.</p>
-        <div class="src">ABC News</div>
+        <h3>عطل مايكروسوفت العالمي يربك الشركات والحكومات</h3>
+        <p>شمل العطل أوتلوك وتيمز وكوبايلوت لأكثر من ١٢ ساعة وامتد من أمريكا إلى آسيا، وسُجل في ذروته أكثر من ١٣٠ ألف بلاغ عن أوتلوك. وتقول الشركة إنه لا مؤشرات على هجوم إلكتروني.</p>
+        <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5340771-%D8%B9%D8%B7%D9%84-%D9%85%D8%A7%D9%8A%D9%83%D8%B1%D9%88%D8%B3%D9%88%D9%81%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A-%D9%8A%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A7%D8%AA" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a>
+        <div class="src">الشرق الأوسط</div>
       </div>
     </article>
     <article class="card w-violet">
       <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M8 38h32" stroke="#1d1d27" stroke-width="2"/><rect x="11" y="26" width="6" height="12" rx="1.5" fill="#c9b6f5"/><rect x="21" y="20" width="6" height="18" rx="1.5" fill="#a98aeb"/><rect x="31" y="12" width="6" height="26" rx="1.5" fill="#7b4ddb"/><path d="M10 22l10-8 8 4 12-10" stroke="#1f9d55" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg></div>
       <div>
-        <div class="kicker">شركات</div>
-        <h3>«سيريبراس» تسجل إيرادات قياسية ورحيل رئيس البنية التحتية في ميتا</h3>
-        <p>أعلنت سيريبراس إيرادات قياسية بلغت ٢١٠٫٨ ملايين دولار مع رفع توقعاتها، فيما يغادر مسؤول البنية التحتية في ميتا ويخلفه مسؤول سابق في أمازون للخدمات السحابية.</p>
-        <div class="src">StockTitan، CNBC</div>
+        <div class="kicker">سياسات الذكاء الاصطناعي</div>
+        <h3>الاتحاد الأوروبي يعقد أول قمة للذكاء الاصطناعي بحثاً عن اللحاق بأمريكا والصين</h3>
+        <p>تبحث القمة سبل تقليص الفجوة مع واشنطن وبكين في سباق الذكاء الاصطناعي.</p>
+        <a class="more" href="https://aawsat.com/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/5340725-%D8%A7%D9%84%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%8A-%D9%8A%D8%A8%D8%AD%D8%AB-%D9%81%D9%8A-%D8%A3%D9%88%D9%84-%D9%82%D9%85%D8%A9-%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D8%B3%D8%A8%D9%84-%D8%A7%D9%84%D9%84%D8%AD%D8%A7%D9%82-%D8%A8%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D8%A7-%D9%88%D8%A7%D9%84%D8%B5%D9%8A%D9%86" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a>
+        <div class="src">الشرق الأوسط</div>
       </div>
     </article>
   </div>
@@ -734,7 +732,8 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
     <div class="info">
       <div class="kicker">مباراة اليوم · ودية دولية</div>
       <p style="font-size:15px;margin:4px 0 0">يخوض الأخضر بقيادة اليوناني جورجيوس دونيس أولى وديتيه في معسكر الدوحة، ثم يلاقي أوزبكستان الثلاثاء ١٧ نوفمبر عند ٦:٣٠ مساءً.</p>
-      <div class="meta"><span class="chip">استاد جاسم بن حمد · الدوحة</span><span class="chip">النقل: STC TV</span></div>
+      <div class="meta"><span class="chip">استاد جاسم بن حمد · الدوحة</span></div>
+      <a class="more" href="https://sabq.org/article/f6hjou8" target="_blank" rel="noopener">اقرأ التفاصيل في سبق ←</a>
     </div>
   </div>
   <div class="box">
@@ -748,8 +747,8 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       <div class="bar"><span class="pos">٦</span><span class="t">الأهلي</span><span class="track"><span class="fill" style="width:70%;display:block"></span></span><span class="pt">٢١</span></div>
       <div class="bar"><span class="pos">٧</span><span class="t">الاتفاق</span><span class="track"><span class="fill" style="width:63%;display:block"></span></span><span class="pt">١٩</span></div>
     </div>
-    <p class="note">لعب الهلال والنصر والاتحاد والأهلي ١١ مباراة، والبقية ١٢. في القاع: التعاون (٥ نقاط) والفتح (٦). يُستأنف الدوري ٢٠ نوفمبر، ويحل الاتحاد ضيفاً على الخليج.</p>
-    <div class="src">الاتحاد السعودي لكرة القدم، كووورة، العين الإخبارية، الشرق القطرية</div>
+    <p class="note">لعب الهلال والنصر والاتحاد والأهلي ١١ مباراة، والبقية ١٢. في القاع: التعاون (٥ نقاط) والفتح (٦). وأُجّلت الجولة ١٣ لإعادة ترتيب الروزنامة بعد تأجيل كأس آسيا.</p>
+    <div class="src"><a href="https://www.saff.com.sa/championship.php?id=415" target="_blank" rel="noopener">الاتحاد السعودي لكرة القدم</a> · <a href="https://arriyadiyah.com/903966/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D8%A2%D8%B3%D9%8A%D9%88%D9%8A..-%D8%AA%D8%A3%D8%AC%D9%8A%D9%84-%D8%AC%D9%88%D9%84%D8%A9-%C2%AB%D8%B1%D9%88%D8%B4%D9%86%C2%BB" target="_blank" rel="noopener">الرياضية</a></div>
   </div>
 </section>
 
@@ -762,17 +761,15 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
     <h3>نتائج الأمس</h3>
     <ul class="results">
       <li><span>إيطاليا × فرنسا <small style="color:var(--muted)">دوري الأمم</small></span><span class="score">3 - 1</span></li>
-      <li><span>تركيا × بلجيكا</span><span class="score">1 - 2</span></li>
-      <li><span>أوزبكستان × روسيا <small style="color:var(--muted)">ودية</small></span><span class="score">2 - 3</span></li>
-      <li><span>نيوزيلندا × الهند <small style="color:var(--muted)">ودية</small></span><span class="score">5 - 0</span></li>
+      <li><span>بلجيكا × تركيا</span><span class="score">2 - 1</span></li>
     </ul>
-    <p class="note">سجل بيو إسبوزيتو هدفين وقلبت إيطاليا تأخرها لتفوز على فرنسا في أرضها لأول مرة منذ ١٩٦٢، في أول خسارة لزين الدين زيدان مدرباً للديوك.</p>
+    <p class="note">سجل بيو إسبوزيتو هدفين وقلبت إيطاليا تأخرها لتفوز على فرنسا في أرضها لأول مرة منذ ٦٤ عاماً، في أول خسارة لزين الدين زيدان مدرباً للديوك، وتصدرت مجموعتها بفارق الأهداف.</p>
+    <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9/5340646-%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7-%D8%AA%D8%B3%D8%AA%D8%B9%D9%8A%D8%AF-%D9%87%D9%8A%D8%A8%D8%AA%D9%87%D8%A7-%D8%A8%D8%AB%D9%84%D8%A7%D8%AB%D9%8A%D8%A9-%D9%86%D8%A7%D8%B1%D9%8A%D8%A9-%D9%81%D9%8A-%D9%81%D8%B1%D9%86%D8%B3%D8%A7" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a>
   </div>
   <div class="box">
     <h3>مواعيد قادمة · بتوقيت مكة</h3>
     <ul class="results">
       <li><span>صربيا × ألمانيا · هولندا × اليونان</span><span class="when">اليوم ١٠:٤٥ م</span></li>
-      <li><span>الأرجنتين × الأوروغواي</span><span class="when">اليوم</span></li>
       <li><span>البرتغال × الدنمارك</span><span class="when">السبت ١٠:٤٥ م</span></li>
       <li><span>إسبانيا × إنجلترا</span><span class="when">الأحد ١٠:٤٥ م</span></li>
       <li><span>ألمانيا × هولندا</span><span class="when">الاثنين</span></li>
@@ -788,7 +785,7 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       <div class="bar"><span class="pos">٥</span><span class="t">تشيلسي</span><span class="track"><span class="fill" style="width:59%;display:block"></span></span><span class="pt">١٦</span></div>
     </div>
     <p class="note">بعد ١٠ جولات: آرسنال فاز ٩ مرات وخسر مرة واحدة.</p>
-    <div class="src">ESPN، Soccerbase، UEFA، Football Web Pages، Sportradar</div>
+    <div class="src"><a href="https://ar.uefa.com/uefanationsleague/fixtures-results/" target="_blank" rel="noopener">UEFA (المواعيد)</a> · <a href="https://www.espn.com/soccer/standings/_/league/eng.1" target="_blank" rel="noopener">ESPN (الترتيب)</a></div>
   </div>
 </section>
 </div>
@@ -800,7 +797,7 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
     <div>
       <div class="kicker">رقم اليوم</div>
       <div class="big num">١٩٦٢</div>
-      <p>آخر مرة فازت فيها إيطاليا على فرنسا في أرضها قبل ليلة الأمس.</p>
+      <p>آخر مرة فازت فيها إيطاليا على فرنسا في أرضها قبل ليلة الأمس (٦٤ عاماً).</p>
     </div>
     <svg viewBox="0 0 92 92" aria-hidden="true"><circle cx="46" cy="46" r="40" fill="rgba(255,255,255,.2)"/><circle cx="46" cy="46" r="26" fill="#fff"/><path d="M46 30l9 6.5-3.4 10.6H40.4L37 36.5Z" fill="#1d1d27"/><path d="M46 30v-9M55 36.5l8.5-3M51.6 47.1l5.4 7.3M40.4 47.1l-5.4 7.3M37 36.5l-8.5-3" stroke="#1d1d27" stroke-width="2"/><path d="M14 72l6-6M78 72l-6-6M46 84v-6" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
   </div>
@@ -819,8 +816,8 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
 </div>
   <div class="about">
     <b style="font-family:var(--f-label)">عن الصحيفة</b>
-    <p style="margin-top:4px">«صدى الجبل» نشرة يومية تصلكم السادسة صباحاً، تجمع أبرز ما يدور في العالم من سياسة وتقنية وكرة قدم مع طقس جازان ومرتفعاتها. الأخبار مأخوذة من مصادر منشورة ومذكورة تحت كل خبر، والصحيفة لا تتبنى موقفاً سياسياً.</p>
-    <a class="btn" id="wa" href="https://wa.me/?text=%D8%B5%D8%AF%D9%89%20%D8%A7%D9%84%D8%AC%D8%A8%D9%84%20%7C%20%D8%A7%D9%84%D8%B9%D8%AF%D8%AF%201%20%7C%20%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9%2013%20%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1%202026%0A%D9%83%D9%86%20%D8%AC%D8%B2%D8%A1%D8%A7%D9%8B%20%D9%85%D9%86%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%0Ahttps%3A//alihuraysi7.github.io/sada-aljabal/%3Fd%3D20261113b" target="_blank" rel="noopener">
+    <p style="margin-top:4px">«صدى الجبل» نشرة يومية تصلكم السادسة صباحاً، تجمع أبرز ما يدور في العالم من سياسة وتقنية وكرة قدم مع طقس جازان ومرتفعاتها. أخبارنا من وسائل إعلام سعودية مرخّصة وجهات رسمية ووكالات دولية متاحة في المملكة، وينقلك الضغط على أي خبر إلى مصدره لقراءة التفاصيل. والصحيفة لا تتبنى موقفاً سياسياً.</p>
+    <a class="btn" id="wa" href="https://wa.me/?text=%D8%B5%D8%AF%D9%89%20%D8%A7%D9%84%D8%AC%D8%A8%D9%84%20%7C%20%D8%A7%D9%84%D8%B9%D8%AF%D8%AF%201%20%7C%20%D8%A7%D9%84%D8%AC%D9%85%D8%B9%D8%A9%2013%20%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1%202026%0A%D9%83%D9%86%20%D8%AC%D8%B2%D8%A1%D8%A7%D9%8B%20%D9%85%D9%86%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%0Ahttps%3A//alihuraysi7.github.io/sada-aljabal/%3Fd%3D20261113d" target="_blank" rel="noopener">
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg>
       شارك العدد على واتساب
     </a>
@@ -832,16 +829,15 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
 </div>
 
 <footer>
-  <b>مصادر هذا العدد:</b>
+  <b>مصادر هذا العدد (إعلام سعودي مرخّص، وجهات رسمية، ومصادر رياضية دولية متاحة في المملكة):</b>
   <ul>
-    <li><a href="https://dailysummaryof.com/world/2026-11-13">ملخص الأخبار العالمية ١٣ نوفمبر (Middle East Eye، الجزيرة، فرانس 24، BBC)</a></li>
-    <li><a href="https://wng.org/podcasts/friday-morning-news-november-13-2026-1794509912">WORLD Radio</a> · <a href="https://www.theyeshivaworld.com/news/date/2026/11/13">تحذير مجموعة السبع</a> · <a href="https://www.youlyou.com/93336">موقع يوليو</a></li>
-    <li><a href="https://www.israelhayom.com/2026/11/08/eisenkot-tasked-with-forming-government-calls-for-unity/">إسرائيل هيوم</a> · <a href="https://www.chinadailyhk.com/article/642436">شينخوا</a></li>
-    <li><a href="https://www.cnbc.com/technology/">CNBC Tech</a> · <a href="https://stocktitan.net/articles/stock-market-today-live-november-12-2026">StockTitan</a> · <a href="https://abcnews.com/US/outlook-down-microsoft-outage-reported-mail/story?id=138088203">ABC News</a> · <a href="https://techmeme.com/261109/p1">Techmeme</a></li>
-    <li><a href="https://www.saff.com.sa/championship.php?id=415">الاتحاد السعودي لكرة القدم</a> · <a href="https://al-ain.com/article/saudi-arabia-vs-south-korea-friendly-match">العين الإخبارية</a> · <a href="https://www.espn.com/soccer/report/_/gameId/401861151">ESPN</a> · <a href="https://www.soccerbase.com/matches/results.sd">Soccerbase</a> · <a href="https://www.footballwebpages.co.uk/internationals/20261113">Football Web Pages</a></li>
-    <li><a href="https://www.youm7.com/story/2026/11/13/%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%B4%D8%B1%D8%B9%D9%8A%D8%A9-%E2%80%8F%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D9%88%D8%AA%D8%AF%D9%85%D9%8A%D8%B1-%D8%B7%D8%A7%D8%A6%D8%B1%D8%A9-%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D9%81%D9%89-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9/7616523">اليوم السابع (واس)</a> · <a href="https://www.maspero.eg/arab-and-world/2026/11/13/1005190/">ماسبيرو</a> · <a href="https://ahwal.sa/archives/286050">أحوال</a> · <a href="https://www.turaif1.com/419468573.html">إخبارية طريف</a> · <a href="https://sarmad.com/352963/">سرمد</a> · <a href="https://al-ain.com/article/gold-price-saudi-arabia-today-friday-13-nov-2026">العين الإخبارية</a></li>
-    <li><a href="https://www.sinai.news/arts/%D9%82%D9%86%D8%A7%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D8%AF%D8%AB-%D8%AA%D8%AA%D8%B5%D8%AF%D8%B1-%D8%AA%D8%B1%D9%86%D8%AF-%D8%AC%D9%88%D8%AC%D9%84-5-%D9%85%D9%84/">سيناء الإخبارية</a> · <a href="https://www.egypttelegraph.com/article/295488/">تليجراف مصر</a> · <a href="https://www.eremnews.com/sports/93bee9r">إرم نيوز</a></li>
-    <li><a href="https://www.saudiexchange.sa/wps/portal/saudiexchange/ourmarkets/main-market-watch?locale=ar">تداول السعودية</a> · <a href="https://alfajertv.com/cocktail/economy/747470.html">الفجر (برنت)</a> · <a href="https://sabq.org/services/school-calendar-date">سبق (التقويم الدراسي)</a> · <a href="https://hijri-calendars.com/citizen-account-dates.php">مواعيد الرواتب والدعم</a> · <a href="https://www.aljazeera.net/sport/2026/11/3/%D8%B1%D8%B3%D9%85%D9%8A%D8%A7-%D8%AA%D8%A3%D8%AC%D9%8A%D9%84-%D9%83%D8%A3%D8%B3-%D8%A2%D8%B3%D9%8A%D8%A7-2027-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9">الجزيرة نت (كأس آسيا)</a> · <a href="https://ajel.sa/local/3oovvmsdd">عاجل</a> · <a href="https://saudipedia.com/ar/قائمة-المراكز-الإدارية-في-منطقة-جازان">سعوديبيديا</a></li>
+    <li><a href="https://aawsat.com/%D8%B4%D8%A4%D9%88%D9%86-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A%D8%A9/5340464-%D8%A7%D9%84%D8%AD%D8%B1%D8%B3-%D8%A7%D9%84%D8%AB%D9%88%D8%B1%D9%8A-%D9%8A%D8%B9%D9%84%D9%86-%D8%A7%D9%86%D9%81%D8%AC%D8%A7%D8%B1-%D9%86%D8%A7%D9%82%D9%84%D8%AA%D9%8A%D9%86-%D8%B9%D9%85%D9%84%D8%A7%D9%82%D8%AA%D9%8A%D9%86-%D9%81%D9%8A-%D9%87%D8%B1%D9%85%D8%B2" target="_blank" rel="noopener">الشرق الأوسط: هرمز</a> · <a href="https://asharqbusiness.com/power/155852/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-13-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1-2026/" target="_blank" rel="noopener">الشرق بلومبرغ: النفط</a> · <a href="https://asharqbusiness.com/sub-live/economics/9733/%D8%A8%D9%88%D8%B1%D8%B5%D8%A9-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%B1%D8%AA%D9%81%D8%B9-%D9%84%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9-%D8%A7%D9%84%D8%AB%D8%A7%D9%84%D8%AB-%D8%AA%D9%88%D8%A7%D9%84%D9%8A%D8%A7-%D8%A8%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%A3%D8%B3%D9%87%D9%85-%D8%A7%D9%84%D9%82%D9%8A%D8%A7%D8%AF%D9%8A%D8%A9" target="_blank" rel="noopener">الشرق بلومبرغ: تاسي</a></li>
+    <li><a href="https://www.okaz.com.sa/local/saudi-arabia/2275291" target="_blank" rel="noopener">عكاظ: المسيّرات</a> · <a href="https://sabq.org/article/6zn280j" target="_blank" rel="noopener">سبق: الشرقية</a> · <a href="https://www.okaz.com.sa/local/na/2275269" target="_blank" rel="noopener">عكاظ: الجامعة العربية</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5340642-%D9%85%D8%AC%D9%84%D8%B3-%D8%A7%D9%84%D8%A3%D9%85%D9%86-%D8%A7%D9%84%D8%AF%D9%88%D9%84%D9%8A-%D9%8A%D8%A4%D9%83%D8%AF-%D8%AD%D9%82-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%B9%D9%86-%D9%86%D9%81%D8%B3%D9%87%D8%A7" target="_blank" rel="noopener">الشرق الأوسط: مجلس الأمن</a> · <a href="https://www.okaz.com.sa/local/saudi-arabia/2275328" target="_blank" rel="noopener">عكاظ: لقاء المبعوث الصيني</a></li>
+    <li><a href="https://sabq.org/article/4jj09vz" target="_blank" rel="noopener">سبق: الأرصاد</a> · <a href="https://www.alriyadh.com/2215029" target="_blank" rel="noopener">الرياض: الأمطار</a> · <a href="https://www.okaz.com.sa/local/na/2275381" target="_blank" rel="noopener">عكاظ: الجمارك</a> · <a href="https://www.alriyadh.com/2214991" target="_blank" rel="noopener">الرياض: نجران</a> · <a href="https://ajel.sa/economy/la644no0i" target="_blank" rel="noopener">عاجل: الذهب</a> · <a href="https://ajel.sa/local/3oovvmsdd" target="_blank" rel="noopener">عاجل: إنذار جازان</a></li>
+    <li><a href="https://www.alarabiya.net/arab-and-world/2026/11/09/%D9%83%D9%88%D8%B4%D9%86%D8%B1-%D9%88%D9%88%D9%8A%D8%AA%D9%83%D9%88%D9%81-%D9%8A%D8%AC%D8%AA%D9%85%D8%B9%D8%A7%D9%86-%D9%85%D8%B9-%D8%A7%D9%84%D8%A7%D9%88%D8%B1%D9%88%D8%A8%D9%8A%D9%8A%D9%86-%D9%82%D8%A8%D9%84-%D9%85%D9%81%D8%A7%D9%88%D8%B6%D8%A7%D8%AA-%D8%A7%D8%A8%D9%88-%D8%B8%D8%A8%D9%8A-%D8%A8%D8%B4%D8%A7%D9%86-%D8%A7%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A7" target="_blank" rel="noopener">العربية: أوكرانيا</a> · <a href="https://aawsat.com/%D8%B4%D8%A4%D9%88%D9%86-%D8%A5%D9%82%D9%84%D9%8A%D9%85%D9%8A%D8%A9/5339017-%D8%AA%D8%B4%D9%83%D9%8A%D9%84-%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84-%D8%A8%D8%B9%D9%87%D8%AF%D8%A9-%D8%A2%D9%8A%D8%B2%D9%86%D9%83%D9%88%D8%AA-%D9%88%D9%86%D8%AA%D9%86%D9%8A%D8%A7%D9%87%D9%88-%D9%8A%D8%AE%D9%88%D9%81-%D9%85%D9%86-%D8%A7%D9%84%D8%AA%D9%81%D9%83%D9%83" target="_blank" rel="noopener">الشرق الأوسط: آيزنكوت</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D9%85%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/5340781-%D9%84%D8%A8%D9%86%D8%A7%D9%86-%D9%8A%D8%AA%D8%B1%D9%82%D8%A8-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A9-%D8%A7%D9%84%D8%A5%D8%B3%D8%B1%D8%A7%D8%A6%D9%8A%D9%84%D9%8A%D8%A9-%D9%84%D8%A7%D8%B3%D8%AA%D8%A6%D9%86%D8%A7%D9%81-%D8%A7%D9%84%D9%85%D9%81%D8%A7%D9%88%D8%B6%D8%A7%D8%AA-%D9%88%D8%A2%D9%8A%D8%B2%D9%86%D9%83%D9%88%D8%AA-%D9%82%D8%AF" target="_blank" rel="noopener">الشرق الأوسط: لبنان</a> · <a href="https://english.aawsat.com/business/5340568-trump-threatens-double-tariffs-mexico-if-it-does-not-halt-migrants" target="_blank" rel="noopener">الشرق الأوسط: المكسيك</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%8B/5340677-%D8%AA%D8%B1%D9%85%D8%A8-%D8%A3%D8%B1%D9%8A%D8%AF-%D8%A5%D9%86%D9%87%D8%A7%D8%A1-%D9%85%D9%84%D9%81-%D9%83%D9%88%D8%A8%D8%A7-%D9%82%D8%A8%D9%84-%D9%85%D8%BA%D8%A7%D8%AF%D8%B1%D8%A9-%D9%85%D9%86%D8%B5%D8%A8%D9%8A" target="_blank" rel="noopener">الشرق الأوسط: كوبا</a></li>
+    <li><a href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5340574-%D8%A7%D9%84%D9%82%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%B3%D9%88%D9%82%D9%8A%D8%A9-%D9%84%D9%80%D8%A5%D9%86%D9%81%D9%8A%D8%AF%D9%8A%D8%A7-%D8%AA%D9%87%D8%A8%D8%B7-%D8%AF%D9%88%D9%86-4-%D8%AA%D8%B1%D9%8A%D9%84%D9%8A%D9%88%D9%86%D8%A7%D8%AA-%D8%AF%D9%88%D9%84%D8%A7%D8%B1-%D8%A8%D8%B9%D8%AF-%D8%A7%D8%B3%D8%AA%D9%82%D8%A7%D9%84%D8%A9-%D9%87%D9%88%D8%A7%D9%86%D8%BA" target="_blank" rel="noopener">الشرق الأوسط: إنفيديا</a> · <a href="https://www.alarabiya.net/aswaq/special-stories/2026/11/12/%D9%85%D9%86-%D9%87%D9%8A-%D9%83%D9%88%D9%84%D9%8A%D8%AA-%D9%83%D8%B1%D9%8A%D8%B3-%D8%A7%D9%84%D8%AA%D9%8A-%D8%B3%D8%AA%D9%82%D9%88%D8%AF-%D8%A7%D9%86%D9%81%D9%8A%D8%AF%D9%8A%D8%A7-%D9%85%D8%A4%D9%82%D8%AA%D8%A7-" target="_blank" rel="noopener">العربية: كوليت كريس</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5340771-%D8%B9%D8%B7%D9%84-%D9%85%D8%A7%D9%8A%D9%83%D8%B1%D9%88%D8%B3%D9%88%D9%81%D8%AA-%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%D9%8A-%D9%8A%D8%B1%D8%A8%D9%83-%D8%A7%D9%84%D8%B4%D8%B1%D9%83%D8%A7%D8%AA-%D9%88%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D8%A7%D8%AA" target="_blank" rel="noopener">الشرق الأوسط: مايكروسوفت</a> · <a href="https://aawsat.com/%D8%AA%D9%83%D9%86%D9%88%D9%84%D9%88%D8%AC%D9%8A%D8%A7/5340725-%D8%A7%D9%84%D8%A7%D8%AA%D8%AD%D8%A7%D8%AF-%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%8A-%D9%8A%D8%A8%D8%AD%D8%AB-%D9%81%D9%8A-%D8%A3%D9%88%D9%84-%D9%82%D9%85%D8%A9-%D9%84%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A-%D8%B3%D8%A8%D9%84-%D8%A7%D9%84%D9%84%D8%AD%D8%A7%D9%82-%D8%A8%D8%A3%D9%85%D9%8A%D8%B1%D9%83%D8%A7-%D9%88%D8%A7%D9%84%D8%B5%D9%8A%D9%86" target="_blank" rel="noopener">الشرق الأوسط: قمة الذكاء الاصطناعي</a></li>
+    <li><a href="https://sabq.org/article/f6hjou8" target="_blank" rel="noopener">سبق: الأخضر</a> · <a href="https://www.okaz.com.sa/sport/na/2273961" target="_blank" rel="noopener">عكاظ: قائمة الأخضر</a> · <a href="https://www.saff.com.sa/championship.php?id=415" target="_blank" rel="noopener">الاتحاد السعودي لكرة القدم</a> · <a href="https://arriyadiyah.com/903966/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D8%A2%D8%B3%D9%8A%D9%88%D9%8A..-%D8%AA%D8%A3%D8%AC%D9%8A%D9%84-%D8%AC%D9%88%D9%84%D8%A9-%C2%AB%D8%B1%D9%88%D8%B4%D9%86%C2%BB" target="_blank" rel="noopener">الرياضية: تأجيل الجولة ١٣</a> · <a href="https://sabq.org/article/dl1y8i2" target="_blank" rel="noopener">سبق: كأس آسيا</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9/5340646-%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A5%D9%8A%D8%B7%D8%A7%D9%84%D9%8A%D8%A7-%D8%AA%D8%B3%D8%AA%D8%B9%D9%8A%D8%AF-%D9%87%D9%8A%D8%A8%D8%AA%D9%87%D8%A7-%D8%A8%D8%AB%D9%84%D8%A7%D8%AB%D9%8A%D8%A9-%D9%86%D8%A7%D8%B1%D9%8A%D8%A9-%D9%81%D9%8A-%D9%81%D8%B1%D9%86%D8%B3%D8%A7" target="_blank" rel="noopener">الشرق الأوسط: إيطاليا وفرنسا</a> · <a href="https://ar.uefa.com/uefanationsleague/fixtures-results/" target="_blank" rel="noopener">UEFA</a> · <a href="https://www.espn.com/soccer/standings/_/league/eng.1" target="_blank" rel="noopener">ESPN</a></li>
+    <li><a href="https://sabq.org/services/school-calendar-date" target="_blank" rel="noopener">سبق: التقويم الدراسي</a> · <a href="https://ncm.gov.sa" target="_blank" rel="noopener">المركز الوطني للأرصاد</a> · <a href="https://saudipedia.com/ar/قائمة-المراكز-الإدارية-في-منطقة-جازان" target="_blank" rel="noopener">سعوديبيديا</a></li>
   </ul>
   <p style="margin-top:8px;text-align:center">© صدى الجبل ٢٠٢٦ — كن جزءاً من العالم</p>
 </footer>
