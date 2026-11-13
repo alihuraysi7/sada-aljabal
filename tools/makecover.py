@@ -3,7 +3,7 @@
 python3 makecover.py index.html cover.json cover.png
 cover.json: {"issue":"العدد الأول","date":"...","hijri":"...","headline":"...",
  "items":[{"tag":"العالم","color":"#2f6fde","text":"..."}, ...  (5 عناصر)],
- "weather":[["جازان","٣١°/٢٨°"],["فيفاء","٢٩°/٢٣°"],["أبها","٢٠°/١٢°"]]}
+ "weather":[["جازان","٣١°/٢٨°"],["فيفاء","٢٩°/٢٣°"], ... جازان + المحافظات الجبلية الست]}
 يأخذ الشعار ورسم الخبر الرئيسي (svg.logo و svg.art) من index.html، والخطوط من tools/fonts (ينشئها makepdf.py)."""
 import sys, os, re, json, subprocess, tempfile
 HERE=os.path.dirname(os.path.abspath(__file__)); F=os.path.join(HERE,"fonts")
@@ -27,14 +27,14 @@ page=f"""<!DOCTYPE html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><s
 .hills{{position:absolute;left:0;right:0;bottom:0;width:100%;height:70px}}
 .bar{{display:flex;justify-content:center;gap:16px;margin:4px 40px 0;font-family:'Reem Kufi';font-size:28px}}
 .bar span{{background:#fff;border:2px solid #e6e0d2;border-radius:16px;padding:6px 20px}} .bar .y{{background:#f5b301;border-color:#f5b301;font-weight:700}}
-.lead{{margin:22px 40px 0;background:#fff;border-radius:28px;overflow:hidden;border-top:10px solid #e5533d;display:grid;grid-template-columns:1fr 1fr}}
+.lead{{margin:18px 40px 0;max-height:300px;background:#fff;border-radius:28px;overflow:hidden;border-top:10px solid #e5533d;display:grid;grid-template-columns:1fr 1fr}}
 .lead svg{{width:100%;height:100%;display:block}}
 .lead h1{{font-family:'Amiri';font-weight:700;font-size:44px;line-height:1.35;margin:0;padding:24px 26px;display:flex;align-items:center}}
-ul{{list-style:none;margin:22px 40px 0;padding:0;display:grid;gap:16px}}
-li{{display:flex;gap:16px;align-items:center;background:#fff;border-radius:20px;padding:14px 18px;font-size:30px;line-height:1.45;font-weight:600}}
+ul{{list-style:none;margin:18px 40px 0;padding:0;display:grid;gap:11px}}
+li{{display:flex;gap:16px;align-items:center;background:#fff;border-radius:20px;padding:10px 18px;font-size:29px;line-height:1.4;font-weight:600}}
 .t{{flex:none;color:#fff;font-family:'Reem Kufi';font-weight:700;font-size:24px;border-radius:12px;padding:4px 14px;min-width:150px;text-align:center}}
-.wx{{margin:26px 40px 0;display:flex;gap:12px;justify-content:center;font-family:'Reem Kufi';font-size:27px}}
-.wx span{{background:linear-gradient(160deg,#4aa8e8,#2f62c9);color:#fff;border-radius:16px;padding:8px 18px}}
+.wx{{margin:16px 40px 0;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;font-family:'Reem Kufi';font-size:24px}}
+.wx span{{background:linear-gradient(160deg,#4aa8e8,#2f62c9);color:#fff;border-radius:14px;padding:6px 14px}}
 .cta{{position:absolute;bottom:0;left:0;right:0;height:84px;background:#1f9d55;color:#fff;font-family:'Reem Kufi';font-weight:700;font-size:34px;display:flex;align-items:center;justify-content:center}}
 </style></head><body>
 <div class="top">{logo}<div style="text-align:center"><div class="name">صدى الجبل</div><span class="slo">كن جزءاً من العالم</span></div>
@@ -47,7 +47,7 @@ tmp=os.path.join(tempfile.mkdtemp(),"cover.html"); open(tmp,"w",encoding="utf-8"
 js="""const {chromium}=require('playwright');(async()=>{const [t,o]=process.argv.slice(2);
 const b=await chromium.launch({executablePath:'/opt/pw-browsers/chromium'});const p=await b.newPage({viewport:{width:1080,height:1350}});
 await p.goto('file://'+t);await p.waitForTimeout(600);await p.evaluate(()=>document.fonts.ready);
-const ov=await p.evaluate(()=>[...document.querySelectorAll('li,h1')].filter(e=>e.scrollHeight>e.clientHeight+2).length+(document.body.scrollHeight>1350?100:0));
+const ov=await p.evaluate(()=>[...document.querySelectorAll('li,h1')].filter(e=>e.scrollHeight>e.clientHeight+2).length+(document.querySelector('.wx').getBoundingClientRect().bottom>document.querySelector('.cta').getBoundingClientRect().top-6?100:0));
 await p.screenshot({path:o});console.log(JSON.stringify({overflow:ov}));await b.close();})();"""
 jsf=os.path.join(os.path.dirname(tmp),"c.js"); open(jsf,"w").write(js)
 env=dict(os.environ); env["NODE_PATH"]=os.path.join(os.getcwd(),"node_modules")
