@@ -11,13 +11,17 @@
 <meta property="og:title" content="صدى الجبل — العدد الأول · الجمعة ١٣ نوفمبر ٢٠٢٦">
 <meta property="og:description" content="محليات · حديث الناس · سياسة · تقنية · كرة قدم · طقس جازان ومحافظاتها الجبلية">
 <meta property="og:url" content="https://alihuraysi7.github.io/sada-aljabal/">
-<meta property="og:image" content="https://alihuraysi7.github.io/sada-aljabal/cover.jpg?v=2026-11-13b">
+<meta property="og:image" content="https://alihuraysi7.github.io/sada-aljabal/cover.jpg?v=2026-11-13c">
 <meta property="og:image:width" content="1080">
 <meta property="og:image:height" content="1350">
 <meta property="og:image:type" content="image/jpeg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:image" content="https://alihuraysi7.github.io/sada-aljabal/cover.jpg?v=2026-11-13b">
+<meta name="twitter:image" content="https://alihuraysi7.github.io/sada-aljabal/cover.jpg?v=2026-11-13c">
 <link rel="icon" href="logo.png">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#1f6b4a">
+<link rel="apple-touch-icon" href="apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="صدى الجبل">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -176,6 +180,62 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
 .wx .alt{display:block;font-family:var(--f-label);font-size:11.5px;opacity:.85}
 @media (min-width:860px){ .wx{grid-template-columns:repeat(3,1fr)} .trend{grid-template-columns:1fr 1fr} }
 
+
+.minute{background:#1d1d27;color:#fff;border-radius:18px;padding:14px 16px;margin-top:14px}
+.minute h2{font-family:var(--f-label);font-size:18px;display:flex;align-items:center;gap:8px;margin-bottom:8px;color:var(--sun)}
+.minute h2 svg{width:24px;height:24px}
+.minute ol{margin:0;padding:0;list-style:none;display:grid;gap:8px;counter-reset:m}
+.minute li{counter-increment:m;display:grid;grid-template-columns:26px 1fr;gap:8px;font-size:15px;line-height:1.6}
+.minute li::before{content:counter(m,arabic-indic);width:24px;height:24px;border-radius:50%;background:var(--sun);color:#1d1d27;font-family:var(--f-label);font-weight:700;font-size:13px;display:grid;place-items:center;margin-top:2px}
+.minute small{display:block;margin-top:8px;font-family:var(--f-label);font-size:12px;opacity:.7}
+.markets{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.mk{background:var(--card);border-radius:14px;padding:10px 8px;text-align:center;box-shadow:0 2px 0 var(--line)}
+.mk .n{font-family:var(--f-label);font-size:13px;color:var(--muted)}
+.mk .v{font-family:var(--f-head);font-weight:700;font-size:21px;line-height:1.3;direction:ltr}
+.mk .ch{font-family:var(--f-label);font-size:12.5px;font-weight:700;direction:ltr}
+.up{color:#1f9d55}.dn{color:#e5533d}
+.c-prayer{background:#0f766e}.c-dates{background:#c2410c}.c-week{background:#334155}.c-quiz{background:#a21caf}
+.pray{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 2px 0 var(--line)}
+.pray .next{background:linear-gradient(135deg,#0f766e,#14b8a6);color:#fff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.pray .next b{font-family:var(--f-head);font-size:24px}
+.pray .next span{font-family:var(--f-label);font-size:13px;opacity:.9}
+.pray .wrap{overflow-x:auto}
+.pray table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.pray th,.pray td{padding:7px 4px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+.pray th{font-family:var(--f-label);font-size:12.5px;color:#0f766e;background:#ecfdf8}
+.pray td.t{text-align:start;font-weight:700;padding-inline-start:10px}
+.pray tr.main td{background:#f0fdf9;font-weight:700}
+.dates{display:grid;gap:10px}
+.dt{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;background:var(--card);border-radius:16px;padding:10px 12px;box-shadow:0 2px 0 var(--line)}
+.dt .cnt{width:64px;height:64px;border-radius:16px;background:#fff1e6;color:#c2410c;display:grid;place-items:center;text-align:center;line-height:1.05}
+.dt .cnt b{font-family:var(--f-head);font-size:26px;display:block}
+.dt .cnt small{font-family:var(--f-label);font-size:11px}
+.dt h3{font-size:18px;margin:0}
+.dt p{font-size:14px;color:var(--muted);margin:2px 0 0}
+.week{background:var(--card);border-radius:16px;padding:12px 14px;box-shadow:0 2px 0 var(--line)}
+.week ol{margin:0;padding:0;list-style:none;position:relative}
+.week li{position:relative;padding:0 26px 12px 0;font-size:15px;line-height:1.65}
+.week li::before{content:"";position:absolute;right:6px;top:8px;width:12px;height:12px;border-radius:50%;background:#334155}
+.week li::after{content:"";position:absolute;right:11px;top:22px;bottom:0;width:2px;background:#cbd5e1}
+.week li:last-child::after{display:none}
+.week .d{font-family:var(--f-label);font-size:12.5px;color:#334155;font-weight:700;display:block}
+.trio{display:grid;gap:12px}
+.otd{background:var(--card);border-radius:20px;padding:14px;box-shadow:0 2px 0 var(--line);display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center}
+.otd svg{width:72px;height:72px}
+.otd .y{font-family:var(--f-head);font-size:30px;font-weight:700;color:#334155;line-height:1}
+.otd p{font-size:15px;margin:4px 0 0}
+.quiz{background:linear-gradient(150deg,#a21caf,#7c3aed);color:#fff;border-radius:20px;padding:14px}
+.quiz h3{font-family:var(--f-head);font-size:21px;margin:4px 0 10px}
+.quiz .opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.quiz button{font-family:var(--f-label);font-size:17px;font-weight:700;background:rgba(255,255,255,.15);color:#fff;border:2px solid rgba(255,255,255,.45);border-radius:12px;padding:10px;cursor:pointer}
+.quiz button:hover,.quiz button:focus-visible{background:rgba(255,255,255,.28);outline:none}
+.quiz button.on{background:#fff;color:#7c3aed;border-color:#fff}
+.quiz .msg{font-family:var(--f-label);font-size:13px;margin-top:10px;opacity:.92}
+.quiz .prev{background:rgba(255,255,255,.15);border-radius:12px;padding:8px 10px;font-size:14px;margin-bottom:10px}
+.links{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px}
+.links a{font-family:var(--f-label);font-size:14px;font-weight:700;color:#1f6b4a;background:#e2f4ea;border-radius:999px;padding:6px 14px;text-decoration:none}
+@media (min-width:860px){ .trio{grid-template-columns:1fr 1fr 1fr} .markets{max-width:700px} }
+
 /* شاشات أعرض */
 @media (min-width:860px){
   .brand{flex-direction:row;justify-content:center;gap:16px}
@@ -236,6 +296,20 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
 <div class="tags">
   <span class="tag c-ksa">محليات</span><span class="tag c-hot">حديث الناس</span><span class="tag c-blue">سياسة</span><span class="tag c-violet">تقنية</span><span class="tag c-green">كرة قدم</span><span class="tag c-sky">طقس</span>
 </div>
+
+
+<!-- في دقيقة -->
+<section class="minute" aria-label="في دقيقة">
+  <h2><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="9" fill="none" stroke="#f5b301" stroke-width="2.2"/><path d="M12 8v5l3 2M9 2h6" stroke="#f5b301" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>في دقيقة</h2>
+  <ol>
+    <li>اعتراض مسيّرات فوق الشرقية والرياض، وإدانة عربية ودولية لهجمات الحوثيين.</li>
+    <li>ترامب يلوّح بضرب إيران، وطهران تعلن انفجار ناقلة غاز بلغم في هرمز.</li>
+    <li>أمطار رعدية متوقعة على جازان ومرتفعاتها، فتجنّب الأودية.</li>
+    <li>الأخضر يواجه كوريا الجنوبية وديّاً الليلة ٥:٣٠ م.</li>
+    <li>إجازة الخريف للمدارس تبدأ بعد أسبوع (الجمعة ٢٠ نوفمبر).</li>
+  </ol>
+  <small>العدد كاملاً في الأسفل</small>
+</section>
 
 <!-- الخبر الرئيسي -->
 <section class="sec">
@@ -366,6 +440,12 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
     </article>
 
   </div>
+  <div class="markets" aria-label="الأسواق">
+    <div class="mk"><div class="n">تاسي (إغلاق الخميس)</div><div class="v">10,326</div><div class="ch up">▲ 0.18%</div></div>
+    <div class="mk"><div class="n">الذهب عيار ٢١ (ريال/غرام)</div><div class="v">410.80</div><div class="ch dn">▼ تراجع</div></div>
+    <div class="mk"><div class="n">برنت (دولار/برميل)</div><div class="v">95.82</div><div class="ch up">▲ 3.3%</div></div>
+  </div>
+  <div class="src">الأسواق: تداول السعودية، العين الإخبارية، الفجر (تسوية برنت الخميس)</div>
 </section>
 
 <!-- حديث الناس -->
@@ -440,6 +520,57 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
   </div>
   <p class="wx-note">أجواء أبرد على هروب والريث (العظمى ٢٥ والصغرى ١٧–١٩)، وأدفأ في العيدابي (٣٣). فرص الأمطار اليوم بين ٤٠ و٥٥٪ في كل المحافظات الجبلية، وتتراجع تدريجياً من يوم الأحد. القراءات تقريبية لمراكز المحافظات، والقمم أبرد منها.</p>
   <div class="src">التوقعات: خدمة الطقس المدمجة، والتنبيه من المركز الوطني للأرصاد</div>
+</section>
+
+
+<!-- مواقيت الصلاة -->
+<section class="sec">
+  <div class="sec-head c-prayer">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c-3 3-5 5-5 8h10c0-3-2-5-5-8Z" fill="#fff"/><rect x="9" y="12" width="14" height="14" rx="2" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M14 26v-5a2 2 0 0 1 4 0v5M5 26h22" stroke="#fff" stroke-width="2.2" fill="none"/></svg>
+    <h2>مواقيت الصلاة</h2><small>تقويم أم القرى</small>
+  </div>
+  <div class="pray">
+    <div class="next" id="nextp"><div><span>الصلاة القادمة في جازان</span><br><b id="np-name">الفجر</b></div><div style="text-align:left"><span>الموعد</span><br><b id="np-time">٤:٥٦</b></div></div>
+    <div class="wrap"><table>
+      <thead><tr><th style="text-align:start;padding-inline-start:10px">المحافظة</th><th>الفجر</th><th>الشروق</th><th>الظهر</th><th>العصر</th><th>المغرب</th><th>العشاء</th></tr></thead>
+      <tbody><tr class="main"><td class="t">جازان</td><td>٤:٥٦</td><td>٦:١٣</td><td>١١:٥٤</td><td>٣:١٠</td><td>٥:٣٥</td><td>٧:٠٥</td></tr><tr class=""><td class="t">فيفاء</td><td>٤:٥٤</td><td>٦:١١</td><td>١١:٥٢</td><td>٣:٠٧</td><td>٥:٣٢</td><td>٧:٠٢</td></tr><tr class=""><td class="t">الدائر</td><td>٤:٥٤</td><td>٦:١١</td><td>١١:٥٢</td><td>٣:٠٧</td><td>٥:٣٢</td><td>٧:٠٢</td></tr><tr class=""><td class="t">العارضة</td><td>٤:٥٤</td><td>٦:١١</td><td>١١:٥٢</td><td>٣:٠٧</td><td>٥:٣٣</td><td>٧:٠٣</td></tr><tr class=""><td class="t">العيدابي</td><td>٤:٥٥</td><td>٦:١٢</td><td>١١:٥٢</td><td>٣:٠٨</td><td>٥:٣٣</td><td>٧:٠٣</td></tr><tr class=""><td class="t">هروب</td><td>٤:٥٥</td><td>٦:١٢</td><td>١١:٥٢</td><td>٣:٠٧</td><td>٥:٣٢</td><td>٧:٠٢</td></tr><tr class=""><td class="t">الريث</td><td>٤:٥٦</td><td>٦:١٣</td><td>١١:٥٣</td><td>٣:٠٨</td><td>٥:٣٣</td><td>٧:٠٣</td></tr></tbody>
+    </table></div>
+  </div>
+  <div class="src">محسوبة بطريقة أم القرى لمراكز المحافظات، وقد تختلف دقيقة أو دقيقتين عن تقويم مسجدك.</div>
+  <script type="application/json" id="pt-data">["04:56", "06:13", "11:54", "15:10", "17:35", "19:05"]</script>
+</section>
+
+<!-- مواعيد تهمك -->
+<section class="sec">
+  <div class="sec-head c-dates">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="7" width="22" height="20" rx="3" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M5 13h22M11 4v6M21 4v6" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><circle cx="16" cy="20" r="3" fill="#fff"/></svg>
+    <h2>مواعيد تهمك</h2>
+  </div>
+  <div class="dates">
+    <div class="dt" data-date="2026-11-20"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>إجازة الخريف للمدارس</h3><p>من الجمعة ٢٠ إلى السبت ٢٨ نوفمبر، والعودة الأحد ٢٩ نوفمبر</p></div></div>
+    <div class="dt" data-date="2026-11-26"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>رواتب الموظفين</h3><p>الخميس ٢٦ نوفمبر، لأن يوم ٢٧ يوافق الجمعة</p></div></div>
+    <div class="dt" data-date="2026-12-01"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>الضمان الاجتماعي ورواتب المتقاعدين</h3><p>الثلاثاء ١ ديسمبر (٢١ جمادى الآخرة)</p></div></div>
+    <div class="dt" data-date="2026-12-10"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>حساب المواطن</h3><p>الخميس ١٠ ديسمبر (١ رجب ١٤٤٨هـ)</p></div></div>
+    <div class="dt" data-date="2027-12-23"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>كأس آسيا في السعودية (بعد التأجيل)</h3><p>من ٢٣ ديسمبر ٢٠٢٧ إلى ٢١ يناير ٢٠٢٨</p></div></div>
+  </div>
+  <div class="src">سبق، تليجراف مصر، التقويمات الهجرية، الجزيرة نت. المواعيد المالية تقديرية حسب القاعدة المعتادة ما لم تُعلَن رسمياً.</div>
+</section>
+
+<!-- حصاد الأسبوع -->
+<section class="sec">
+  <div class="sec-head c-week">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 6h20v20H6Z" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M10 12h12M10 17h12M10 22h7" stroke="#fff" stroke-width="2.2" stroke-linecap="round"/></svg>
+    <h2>حصاد الأسبوع</h2><small>عدد الجمعة</small>
+  </div>
+  <div class="week"><ol>
+    <li><span class="d">السبت ٧ نوفمبر</span>إنذار طوارئ في جازان عبر المنصة الوطنية للإنذار المبكر، ثم إعلان الدفاع المدني زوال الخطر.</li>
+    <li><span class="d">الأحد ٨ نوفمبر</span>تكليف غادي آيزنكوت بتشكيل الحكومة الإسرائيلية بدعم ٦٧ نائباً.</li>
+    <li><span class="d">الأربعاء ١١ والخميس ١٢</span>أمطار غزيرة على جازان، وتنبيه الأرصاد لـ ١٥ محافظة بالبرد والسيول والصواعق.</li>
+    <li><span class="d">الخميس ١٢ نوفمبر</span>استقالة جنسن هوانغ من رئاسة إنفيديا، وعطل واسع في خدمات مايكروسوفت.</li>
+    <li><span class="d">الخميس ١٢ نوفمبر</span>اعتراض مسيّرات فوق الشرقية والرياض، وإدانة الجامعة العربية ومجلس الأمن لهجمات الحوثيين.</li>
+    <li><span class="d">الأسبوع كله</span>برنت يتجه لخسارة أسبوعية ثانية رغم قفزة الخميس، وتاسي يغلق الخميس فوق ١٠ آلاف نقطة.</li>
+  </ol></div>
+  <div class="src">عاجل، سرمد، إسرائيل هيوم، أحوال، CNBC، اليوم السابع، الشرق القطرية، تداول السعودية</div>
 </section>
 
 <!-- السياسة -->
@@ -664,6 +795,7 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
 
 <!-- الختام -->
 <div class="end sec">
+  <div class="trio">
   <div class="numday">
     <div>
       <div class="kicker">رقم اليوم</div>
@@ -672,6 +804,19 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
     </div>
     <svg viewBox="0 0 92 92" aria-hidden="true"><circle cx="46" cy="46" r="40" fill="rgba(255,255,255,.2)"/><circle cx="46" cy="46" r="26" fill="#fff"/><path d="M46 30l9 6.5-3.4 10.6H40.4L37 36.5Z" fill="#1d1d27"/><path d="M46 30v-9M55 36.5l8.5-3M51.6 47.1l5.4 7.3M40.4 47.1l-5.4 7.3M37 36.5l-8.5-3" stroke="#1d1d27" stroke-width="2"/><path d="M14 72l6-6M78 72l-6-6M46 84v-6" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
   </div>
+  
+  <div class="otd">
+    <svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="33" fill="#e2e8f0"/><path d="M14 52h44M18 52V34h36v18" stroke="#334155" stroke-width="3" fill="none"/><path d="M24 34v-6a12 12 0 0 1 24 0v6" fill="#94a3b8"/><path d="M36 10v6M30 24h12" stroke="#334155" stroke-width="2.6"/><path d="M28 52V42h16v10" fill="#334155"/></svg>
+    <div><div class="kicker" style="color:#334155">في مثل هذا اليوم</div><div class="y">١٩١٨</div><p>قوات الحلفاء تدخل إسطنبول (القسطنطينية) عاصمة الدولة العثمانية بعد الحرب العالمية الأولى. وفي ٢٠١٥ شهدت باريس سلسلة هجمات دامية.</p><div class="src">ويكيبيديا، timeanddate</div></div>
+  </div>
+  <div class="quiz" id="quiz" data-key="q-2026-11-13">
+    <div class="kicker" style="color:#fde68a">سؤال اليوم</div>
+    <h3>كم عدد محافظات منطقة جازان (عدا مدينة جازان)؟</h3>
+    <div class="opts"><button type="button" data-o="أ">١٢</button><button type="button" data-o="ب">١٤</button><button type="button" data-o="ج">١٦</button><button type="button" data-o="د">١٨</button></div>
+    <div class="msg" id="qmsg">اختر إجابتك وناقشها في المجموعة، والجواب الصحيح في عدد الغد.</div>
+  </div>
+  <!-- quiz-answer: ج (١٦ محافظة) | المصدر: سعوديبيديا -->
+</div>
   <div class="about">
     <b style="font-family:var(--f-label)">عن الصحيفة</b>
     <p style="margin-top:4px">«صدى الجبل» نشرة يومية تصلكم السادسة صباحاً، تجمع أبرز ما يدور في العالم من سياسة وتقنية وكرة قدم مع طقس جازان ومرتفعاتها. الأخبار مأخوذة من مصادر منشورة ومذكورة تحت كل خبر، والصحيفة لا تتبنى موقفاً سياسياً.</p>
@@ -680,6 +825,8 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
       شارك العدد على واتساب
     </a>
     <a class="btn" href="issue.pdf" style="background:#2f6fde">تحميل العدد PDF</a>
+    <div class="links"><a href="archive.html">الأعداد السابقة</a><a href="#install" id="inst">أضف الصحيفة لشاشة جوالك</a></div>
+    <p id="install" style="font-size:13.5px;color:var(--muted);margin-top:8px">للإضافة: افتح الصفحة في كروم ثم ⋮ ثم «إضافة إلى الشاشة الرئيسية»، أو في سفاري زر المشاركة ثم «إضافة إلى الشاشة الرئيسية».</p>
     <div class="credit">إعداد ومراجعة: أبو علاء</div>
   </div>
 </div>
@@ -694,10 +841,46 @@ footer ul{margin:4px 0 0;padding-inline-start:18px}
     <li><a href="https://www.saff.com.sa/championship.php?id=415">الاتحاد السعودي لكرة القدم</a> · <a href="https://al-ain.com/article/saudi-arabia-vs-south-korea-friendly-match">العين الإخبارية</a> · <a href="https://www.espn.com/soccer/report/_/gameId/401861151">ESPN</a> · <a href="https://www.soccerbase.com/matches/results.sd">Soccerbase</a> · <a href="https://www.footballwebpages.co.uk/internationals/20261113">Football Web Pages</a></li>
     <li><a href="https://www.youm7.com/story/2026/11/13/%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D8%AF%D8%B9%D9%85-%D8%A7%D9%84%D8%B4%D8%B1%D8%B9%D9%8A%D8%A9-%E2%80%8F%D8%A7%D8%B9%D8%AA%D8%B1%D8%A7%D8%B6-%D9%88%D8%AA%D8%AF%D9%85%D9%8A%D8%B1-%D8%B7%D8%A7%D8%A6%D8%B1%D8%A9-%D9%85%D8%B3%D9%8A%D8%B1%D8%A9-%D9%81%D9%89-%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9-%D8%A7%D9%84%D8%B4%D8%B1%D9%82%D9%8A%D8%A9/7616523">اليوم السابع (واس)</a> · <a href="https://www.maspero.eg/arab-and-world/2026/11/13/1005190/">ماسبيرو</a> · <a href="https://ahwal.sa/archives/286050">أحوال</a> · <a href="https://www.turaif1.com/419468573.html">إخبارية طريف</a> · <a href="https://sarmad.com/352963/">سرمد</a> · <a href="https://al-ain.com/article/gold-price-saudi-arabia-today-friday-13-nov-2026">العين الإخبارية</a></li>
     <li><a href="https://www.sinai.news/arts/%D9%82%D9%86%D8%A7%D8%A9-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D8%AF%D8%AB-%D8%AA%D8%AA%D8%B5%D8%AF%D8%B1-%D8%AA%D8%B1%D9%86%D8%AF-%D8%AC%D9%88%D8%AC%D9%84-5-%D9%85%D9%84/">سيناء الإخبارية</a> · <a href="https://www.egypttelegraph.com/article/295488/">تليجراف مصر</a> · <a href="https://www.eremnews.com/sports/93bee9r">إرم نيوز</a></li>
+    <li><a href="https://www.saudiexchange.sa/wps/portal/saudiexchange/ourmarkets/main-market-watch?locale=ar">تداول السعودية</a> · <a href="https://alfajertv.com/cocktail/economy/747470.html">الفجر (برنت)</a> · <a href="https://sabq.org/services/school-calendar-date">سبق (التقويم الدراسي)</a> · <a href="https://hijri-calendars.com/citizen-account-dates.php">مواعيد الرواتب والدعم</a> · <a href="https://www.aljazeera.net/sport/2026/11/3/%D8%B1%D8%B3%D9%85%D9%8A%D8%A7-%D8%AA%D8%A3%D8%AC%D9%8A%D9%84-%D9%83%D8%A3%D8%B3-%D8%A2%D8%B3%D9%8A%D8%A7-2027-%D9%81%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9">الجزيرة نت (كأس آسيا)</a> · <a href="https://ajel.sa/local/3oovvmsdd">عاجل</a> · <a href="https://saudipedia.com/ar/قائمة-المراكز-الإدارية-في-منطقة-جازان">سعوديبيديا</a></li>
   </ul>
   <p style="margin-top:8px;text-align:center">© صدى الجبل ٢٠٢٦ — كن جزءاً من العالم</p>
 </footer>
 
 </div>
+
+<script>
+(function(){
+  var ar=function(n){return String(n).replace(/[0-9]/g,function(d){return '٠١٢٣٤٥٦٧٨٩'[d]})};
+  // يوم مكة الحالي
+  var now=new Date(Date.now()+ (3*60+new Date().getTimezoneOffset())*60000);
+  var today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  document.querySelectorAll('.dt[data-date]').forEach(function(el){
+    var p=el.dataset.date.split('-'); var d=new Date(+p[0],p[1]-1,+p[2]);
+    var n=Math.round((d-today)/864e5); var c=el.querySelector('.cnt');
+    if(n>0){c.innerHTML='<b>'+ar(n)+'</b><small>'+(n===1?'يوم':n===2?'يومان':n<=10?'أيام':'يوماً')+'</small>';}
+    else if(n===0){c.innerHTML='<b>اليوم</b>';}
+    else{el.style.display='none';}
+  });
+  try{
+    var t=JSON.parse(document.getElementById('pt-data').textContent);
+    var names=['الفجر','الشروق','الظهر','العصر','المغرب','العشاء'];
+    var mins=now.getHours()*60+now.getMinutes(), idx=-1;
+    for(var i=0;i<t.length;i++){if(i===1)continue;var hm=t[i].split(':');if(+hm[0]*60+ +hm[1]>mins){idx=i;break;}}
+    var tm=false;if(idx<0){idx=0;tm=true;}
+    var hm=t[idx].split(':'),h=(+hm[0])%12||12;
+    document.getElementById('np-name').textContent=names[idx]+(tm?' (غداً)':'');
+    document.getElementById('np-time').textContent=ar(h)+':'+ar(hm[1]);
+  }catch(e){}
+  var q=document.getElementById('quiz');
+  if(q){var key=q.dataset.key, saved=null;try{saved=localStorage.getItem(key)}catch(e){}
+    q.querySelectorAll('button').forEach(function(b){
+      if(saved===b.dataset.o)b.classList.add('on');
+      b.addEventListener('click',function(){q.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+        try{localStorage.setItem(key,b.dataset.o)}catch(e){}
+        document.getElementById('qmsg').textContent='اخترت '+b.textContent+'، والجواب الصحيح في عدد الغد.';});
+    });}
+  if('serviceWorker' in navigator){try{navigator.serviceWorker.register('sw.js').catch(function(){})}catch(e){}}
+})();
+</script>
 </body>
 </html>
