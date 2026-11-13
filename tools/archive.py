@@ -29,6 +29,8 @@ main{{max-width:760px;margin:0 auto;padding:12px 14px 30px;display:grid;gap:12px
 .it{{display:grid;grid-template-columns:90px 1fr;gap:12px;align-items:center;background:#fff;border-radius:16px;padding:10px;text-decoration:none;color:inherit;box-shadow:0 2px 0 var(--line)}}
 .it img{{width:90px;height:112px;object-fit:cover;border-radius:10px}} .it b{{display:block;font-size:17px;line-height:1.5}} .it span{{font-size:14px;color:var(--muted);line-height:1.6}}
 </style></head><body><header><img src="logo.png" alt="شعار صدى الجبل"><h1>أرشيف صدى الجبل</h1><p>كل الأعداد السابقة · <a href="./">عدد اليوم</a></p></header>
-<main>{"".join(rows)}</main></body></html>'''
+<main>{"".join(rows)}</main><script>window.goatcounter={{path:function(){{return location.pathname}},no_onload:location.hostname!=="alihuraysi7.github.io"}};</script>
+<script data-goatcounter="https://sada-aljabal.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body></html>'''
 open("archive.html","w",encoding="utf-8").write(page)
 print(len(rows),"issues")
