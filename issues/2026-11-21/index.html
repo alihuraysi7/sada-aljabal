@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>صدى الجبل</title>
+<meta name="description" content="التحالف يدمّر ٣ صواريخ باليستية ومسيّرة باتجاه الرياض والجنوبية · السعودية تتفق على تخزين ١٦ مليون برميل نفط في اليابان · الأهلي يهزم النصر ٣-١">
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="صدى الجبل">
+<meta property="og:locale" content="ar_SA">
+<meta property="og:title" content="صدى الجبل — العدد التاسع · السبت ٢١ نوفمبر ٢٠٢٦">
+<meta property="og:description" content="محليات · حديث الناس · سياسة · تقنية · كرة قدم · طقس جازان ومحافظاتها الجبلية">
+<meta property="og:url" content="https://alihuraysi7.github.io/sada-aljabal/">
+<meta property="og:image" content="https://alihuraysi7.github.io/sada-aljabal/cover.jpg?v=2026-11-21">
+<meta property="og:image:width" content="1080">
+<meta property="og:image:height" content="1350">
+<meta property="og:image:type" content="image/jpeg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://alihuraysi7.github.io/sada-aljabal/cover.jpg?v=2026-11-21">
+<link rel="icon" href="../../logo.png">
+<link rel="manifest" href="../../manifest.webmanifest">
+<meta name="theme-color" content="#1f6b4a">
+<link rel="apple-touch-icon" href="../../apple-touch-icon.png">
+<meta name="apple-mobile-web-app-title" content="صدى الجبل">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Aref+Ruqaa:wght@700&family=Noto+Naskh+Arabic:wght@400;600;700&family=Reem+Kufi:wght@500;700&display=swap">
+<style>
+:root{
+  /* صحيفة ورقية مبهجة للجوال أولاً: لكل قسم لونه، ورسومات SVG أصلية لكل خبر */
+  --paper:#fbf8f1;
+  --card:#ffffff;
+  --ink:#1d1d27;
+  --muted:#6a6a75;
+  --line:#e6e0d2;
+  --coral:#e5533d;   /* الخبر الرئيسي */
+  --blue:#2f6fde;    /* العالم */
+  --orange:#ef8a1f;  /* العالم العربي وأمريكا */
+  --violet:#7b4ddb;  /* تقنية */
+  --green:#1f9d55;   /* كرة محلية */
+  --teal:#0e98a6;    /* كرة عالمية */
+  --sky:#3aa7e8;     /* طقس */
+  --sun:#f5b301;
+  --pink:#e0457b;    /* رقم اليوم */
+  --mtn:#1f6b4a;
+  --f-mast:'Aref Ruqaa','Amiri',serif;
+  --f-head:'Amiri','Noto Naskh Arabic',serif;
+  --f-body:'Noto Naskh Arabic','Amiri',serif;
+  --f-label:'Reem Kufi','Noto Naskh Arabic',sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--paper);color:var(--ink)}
+body{font-family:var(--f-body);font-size:16px;line-height:1.75}
+a{color:inherit}
+h1,h2,h3{font-family:var(--f-head);text-wrap:balance;margin:0;line-height:1.35}
+p{margin:0 0 .6em}
+.num{font-variant-numeric:tabular-nums}
+.sheet{max-width:1100px;margin:0 auto;padding:0 14px 24px}
+
+/* الترويسة */
+.mast{margin:0 -14px;padding:18px 14px 0;text-align:center;
+  background:linear-gradient(180deg,#d9f0fb 0%,#eaf6fc 55%,var(--paper) 100%);position:relative;overflow:hidden}
+.mast .scene{position:absolute;inset:auto 0 0 0;width:100%;height:70px;display:block}
+.brand{position:relative;display:flex;flex-direction:column;align-items:center;gap:2px;padding-bottom:58px}
+.brand svg.logo{width:92px;height:92px}
+.brand .name{font-family:var(--f-mast);font-size:58px;line-height:1.05;color:var(--ink)}
+.brand .slogan{display:inline-block;font-family:var(--f-label);font-weight:700;font-size:15px;color:#fff;background:var(--mtn);padding:3px 14px;border-radius:999px}
+.dateline{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:12px 0 4px}
+.dateline span{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:6px 8px;font-family:var(--f-label);font-size:13.5px;text-align:center}
+.dateline .is{background:var(--sun);border-color:var(--sun);font-weight:700}
+.tags{display:flex;flex-wrap:wrap;gap:6px;justify-content:center;margin:8px 0 2px}
+.tag{font-family:var(--f-label);font-size:12.5px;font-weight:700;color:#fff;padding:2px 10px;border-radius:999px}
+
+/* عناوين الأقسام */
+.sec{margin-top:22px}
+.sec-head{display:flex;align-items:center;gap:10px;color:#fff;border-radius:14px;padding:8px 12px;margin-bottom:12px}
+.sec-head svg{width:30px;height:30px;flex:none}
+.sec-head h2{font-family:var(--f-label);font-size:20px;font-weight:700;line-height:1.2}
+.sec-head small{margin-inline-start:auto;font-family:var(--f-label);font-size:12px;opacity:.9}
+.c-coral{background:var(--coral)}.c-blue{background:var(--blue)}.c-orange{background:var(--orange)}.c-violet{background:var(--violet)}
+.c-green{background:var(--green)}.c-teal{background:var(--teal)}.c-sky{background:var(--sky)}.c-pink{background:var(--pink)}
+
+.kicker{font-family:var(--f-label);font-size:13px;font-weight:700}
+.src{font-family:var(--f-label);font-size:11.5px;color:var(--muted);margin-top:4px}
+.more{display:inline-block;margin-top:6px;font-family:var(--f-label);font-size:13px;font-weight:700;color:var(--blue);text-decoration:none}
+.more:hover{text-decoration:underline}
+.card,.trend li,.week li,.dt{position:relative}
+.card .more::after,.trend .more::after,.week .more::after,.dt .more::after{content:"";position:absolute;inset:0}
+.trend .more,.week .more,.dt .more{font-size:12px;margin-top:3px}
+.trend .more,.dt .more{display:block}
+
+/* الخبر الرئيسي */
+.lead{background:var(--card);border-radius:18px;border-top:6px solid var(--coral);box-shadow:0 2px 0 var(--line);overflow:hidden}
+.lead .art{display:block;width:100%;height:auto;background:#bfe3f7}
+.lead .txt{padding:14px 16px 16px}
+.lead .kicker{color:var(--coral)}
+.lead h1{font-size:29px;margin:4px 0 8px}
+.lead .deck{font-family:var(--f-head);font-size:18px;color:#3b3b48;margin-bottom:10px}
+.lead .body p{text-align:justify}
+.glance{background:#fff1ee;border-radius:14px;padding:12px 14px;margin-top:10px}
+.glance h3{font-family:var(--f-label);font-size:16px;color:var(--coral);margin-bottom:6px}
+.glance ul{margin:0;padding:0;list-style:none;display:grid;gap:6px}
+.glance li{display:flex;gap:8px;align-items:flex-start;font-size:15px;line-height:1.6}
+.glance li b{flex:none;width:22px;height:22px;border-radius:50%;background:var(--coral);color:#fff;font-family:var(--f-label);font-size:12px;display:grid;place-items:center;margin-top:2px}
+
+/* بطاقات الأخبار */
+.cards{display:grid;gap:12px}
+.card{background:var(--card);border-radius:16px;padding:12px 14px;display:grid;grid-template-columns:58px 1fr;gap:12px;align-items:start;border-inline-start:5px solid var(--accent,var(--blue));box-shadow:0 2px 0 var(--line)}
+.card .ic{width:58px;height:58px;border-radius:14px;background:var(--soft,#eaf1fd);display:grid;place-items:center}
+.card .ic svg{width:42px;height:42px}
+.card .kicker{color:var(--accent)}
+.card h3{font-size:20px;margin:2px 0 4px}
+.card p{font-size:15px;line-height:1.7;margin:0}
+.card .full{grid-column:1 / -1}
+.w-blue{--accent:var(--blue);--soft:#e7effd}
+.w-orange{--accent:var(--orange);--soft:#fff0df}
+.w-violet{--accent:var(--violet);--soft:#efe8fc}
+.chart{width:100%;height:auto;display:block;margin-top:8px;background:#f7f3ff;border-radius:12px}
+
+/* الرياضة */
+.match{border-radius:18px;overflow:hidden;background:var(--card);box-shadow:0 2px 0 var(--line)}
+.match .pitch{display:block;width:100%;height:auto}
+.match .info{padding:10px 14px 12px}
+.match .info .kicker{color:var(--green)}
+.match .meta{display:flex;flex-wrap:wrap;gap:6px;margin-top:6px}
+.chip{font-family:var(--f-label);font-size:12.5px;background:#e6f6ec;color:#14683a;border-radius:999px;padding:2px 10px}
+.box{background:var(--card);border-radius:16px;padding:12px 14px;margin-top:12px;box-shadow:0 2px 0 var(--line)}
+.box h3{font-family:var(--f-label);font-size:16px;margin-bottom:8px}
+.bars{display:grid;gap:7px}
+.bar{display:grid;grid-template-columns:18px 70px 1fr 30px;gap:8px;align-items:center;font-size:14.5px}
+.bar .pos{font-family:var(--f-label);color:var(--muted);text-align:center}
+.bar .t{font-weight:700;white-space:nowrap}
+.bar .track{height:14px;background:#eef1ef;border-radius:999px;overflow:hidden}
+.bar .fill{height:100%;border-radius:999px;background:var(--bc,#9fd8b6)}
+.bar .pt{font-family:var(--f-label);font-weight:700;text-align:center}
+.bar.hl .t{color:#b88600}
+.bar.hl .fill{--bc:var(--sun)}
+.results{list-style:none;margin:0;padding:0;display:grid;gap:8px}
+.results li{display:flex;justify-content:space-between;align-items:center;gap:10px;font-size:15px}
+.score{font-family:var(--f-label);font-weight:700;direction:ltr;background:var(--teal);color:#fff;border-radius:8px;padding:1px 10px;white-space:nowrap}
+.when{font-family:var(--f-label);font-size:12.5px;background:#e2f5f7;color:#0b6d77;border-radius:999px;padding:1px 9px;white-space:nowrap}
+.note{font-size:14.5px;margin-top:8px}
+
+/* الطقس */
+.wx{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.wx .c{border-radius:18px;padding:12px;text-align:center;color:#fff}
+.wx .sunny{background:linear-gradient(160deg,#ffb92e,#f27a1a)}
+.wx .rainy{background:linear-gradient(160deg,#4aa8e8,#2f62c9)}
+.wx .mild{background:linear-gradient(160deg,#7cc6ee,#4b8fd6)}
+.wx .city{font-family:var(--f-label);font-weight:700;font-size:17px}
+.wx svg{width:64px;height:64px;display:block;margin:4px auto}
+.wx .t{font-family:var(--f-head);font-size:28px;font-weight:700;line-height:1.1}
+.wx .t small{font-size:16px;opacity:.85;font-weight:400}
+.wx .rain{display:inline-block;margin-top:6px;font-family:var(--f-label);font-size:12.5px;background:rgba(255,255,255,.25);border-radius:999px;padding:1px 10px}
+.wx-note{background:#e7f4fd;border-radius:14px;padding:10px 14px;margin-top:10px;font-size:15px}
+
+/* رقم اليوم والختام */
+.numday{background:linear-gradient(150deg,var(--pink),#f0743b);color:#fff;border-radius:20px;padding:16px;display:grid;grid-template-columns:1fr 92px;gap:10px;align-items:center}
+.numday .big{font-family:var(--f-head);font-size:56px;font-weight:700;line-height:1}
+.numday p{margin:4px 0 0;font-size:15px}
+.numday svg{width:92px;height:92px}
+.about{background:var(--card);border-radius:16px;padding:14px;margin-top:14px;box-shadow:0 2px 0 var(--line);font-size:15px}
+.btn{display:flex;justify-content:center;align-items:center;gap:8px;background:#25a35a;color:#fff;text-decoration:none;font-family:var(--f-label);font-weight:700;font-size:16px;padding:12px 16px;border-radius:14px;margin-top:10px}
+.btn:hover,.btn:focus-visible{background:#1b8547;outline:3px solid #b6e8c9}
+.btn svg{width:22px;height:22px}
+.credit{text-align:center;font-family:var(--f-label);font-size:13px;color:var(--muted);margin-top:8px}
+footer{font-family:var(--f-label);font-size:12px;color:var(--muted);line-height:1.8;margin-top:18px;border-top:2px dashed var(--line);padding-top:10px}
+footer ul{margin:4px 0 0;padding-inline-start:18px}
+
+
+.c-ksa{background:#0c7a3e}.c-hot{background:#4f46e5}
+.w-ksa{--accent:#0c7a3e;--soft:#e2f4ea}
+.alert{display:flex;gap:10px;align-items:flex-start;background:#fff4d6;border:2px solid #f5b301;border-radius:14px;padding:10px 12px;font-size:14.5px;line-height:1.6;margin-bottom:10px}
+.alert svg{width:28px;height:28px;flex:none}
+.trend{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.trend li{display:grid;grid-template-columns:40px 1fr;gap:10px;align-items:start;background:var(--card);border-radius:16px;padding:10px 12px;box-shadow:0 2px 0 var(--line)}
+.trend .rk{width:40px;height:40px;border-radius:12px;background:#eceafd;color:#4f46e5;font-family:var(--f-label);font-weight:700;font-size:18px;display:grid;place-items:center}
+.trend li:nth-child(-n+3) .rk{background:#4f46e5;color:#fff}
+.trend b{font-family:var(--f-head);font-size:18px;display:block;line-height:1.4}
+.trend span.d{font-size:14.5px;line-height:1.65;color:#3b3b48}
+.trend .heat{display:inline-block;margin-top:4px;font-family:var(--f-label);font-size:12px;color:#4f46e5;background:#eceafd;border-radius:999px;padding:0 8px}
+.wx .c.wide{grid-column:1 / -1;display:flex;align-items:center;justify-content:space-around;gap:10px}
+.wx .c.wide svg{margin:0}
+.wx .alt{display:block;font-family:var(--f-label);font-size:11.5px;opacity:.85}
+@media (min-width:860px){ .wx{grid-template-columns:repeat(3,1fr)} .trend{grid-template-columns:1fr 1fr} }
+
+
+.minute{background:#1d1d27;color:#fff;border-radius:18px;padding:14px 16px;margin-top:14px}
+.minute h2{font-family:var(--f-label);font-size:18px;display:flex;align-items:center;gap:8px;margin-bottom:8px;color:var(--sun)}
+.minute h2 svg{width:24px;height:24px}
+.minute ol{margin:0;padding:0;list-style:none;display:grid;gap:8px;counter-reset:m}
+.minute li{counter-increment:m;display:grid;grid-template-columns:26px 1fr;gap:8px;font-size:15px;line-height:1.6}
+.minute li::before{content:counter(m,arabic-indic);width:24px;height:24px;border-radius:50%;background:var(--sun);color:#1d1d27;font-family:var(--f-label);font-weight:700;font-size:13px;display:grid;place-items:center;margin-top:2px}
+.minute small{display:block;margin-top:8px;font-family:var(--f-label);font-size:12px;opacity:.7}
+.markets{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:12px}
+.mk{background:var(--card);border-radius:14px;padding:10px 8px;text-align:center;box-shadow:0 2px 0 var(--line)}
+.mk .n{font-family:var(--f-label);font-size:13px;color:var(--muted)}
+.mk .v{font-family:var(--f-head);font-weight:700;font-size:21px;line-height:1.3;direction:ltr}
+.mk .ch{font-family:var(--f-label);font-size:12.5px;font-weight:700;direction:ltr}
+.up{color:#1f9d55}.dn{color:#e5533d}
+.c-prayer{background:#0f766e}.c-dates{background:#c2410c}.c-week{background:#334155}.c-quiz{background:#a21caf}
+.pray{background:var(--card);border-radius:16px;overflow:hidden;box-shadow:0 2px 0 var(--line)}
+.pray .next{background:linear-gradient(135deg,#0f766e,#14b8a6);color:#fff;padding:12px 14px;display:flex;justify-content:space-between;align-items:center;gap:10px}
+.pray .next b{font-family:var(--f-head);font-size:24px}
+.pray .next span{font-family:var(--f-label);font-size:13px;opacity:.9}
+.pray .wrap{overflow-x:auto}
+.pray table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+.pray th,.pray td{padding:7px 4px;text-align:center;border-bottom:1px solid var(--line);white-space:nowrap}
+.pray th{font-family:var(--f-label);font-size:12.5px;color:#0f766e;background:#ecfdf8}
+.pray td.t{text-align:start;font-weight:700;padding-inline-start:10px}
+.pray tr.main td{background:#f0fdf9;font-weight:700}
+.dates{display:grid;gap:10px}
+.dt{display:grid;grid-template-columns:64px 1fr;gap:12px;align-items:center;background:var(--card);border-radius:16px;padding:10px 12px;box-shadow:0 2px 0 var(--line)}
+.dt .cnt{width:64px;height:64px;border-radius:16px;background:#fff1e6;color:#c2410c;display:grid;place-items:center;text-align:center;line-height:1.05}
+.dt .cnt b{font-family:var(--f-head);font-size:26px;display:block}
+.dt .cnt small{font-family:var(--f-label);font-size:11px}
+.dt h3{font-size:18px;margin:0}
+.dt p{font-size:14px;color:var(--muted);margin:2px 0 0}
+.week{background:var(--card);border-radius:16px;padding:12px 14px;box-shadow:0 2px 0 var(--line)}
+.week ol{margin:0;padding:0;list-style:none;position:relative}
+.week li{position:relative;padding:0 26px 12px 0;font-size:15px;line-height:1.65}
+.week li::before{content:"";position:absolute;right:6px;top:8px;width:12px;height:12px;border-radius:50%;background:#334155}
+.week li::after{content:"";position:absolute;right:11px;top:22px;bottom:0;width:2px;background:#cbd5e1}
+.week li:last-child::after{display:none}
+.week .d{font-family:var(--f-label);font-size:12.5px;color:#334155;font-weight:700;display:block}
+.trio{display:grid;gap:12px}
+.otd{background:var(--card);border-radius:20px;padding:14px;box-shadow:0 2px 0 var(--line);display:grid;grid-template-columns:72px 1fr;gap:12px;align-items:center}
+.otd svg{width:72px;height:72px}
+.otd .y{font-family:var(--f-head);font-size:30px;font-weight:700;color:#334155;line-height:1}
+.otd p{font-size:15px;margin:4px 0 0}
+.quiz{background:linear-gradient(150deg,#a21caf,#7c3aed);color:#fff;border-radius:20px;padding:14px}
+.quiz h3{font-family:var(--f-head);font-size:21px;margin:4px 0 10px}
+.quiz .opts{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.quiz button{font-family:var(--f-label);font-size:17px;font-weight:700;background:rgba(255,255,255,.15);color:#fff;border:2px solid rgba(255,255,255,.45);border-radius:12px;padding:10px;cursor:pointer}
+.quiz button:hover,.quiz button:focus-visible{background:rgba(255,255,255,.28);outline:none}
+.quiz button.on{background:#fff;color:#7c3aed;border-color:#fff}
+.quiz .msg{font-family:var(--f-label);font-size:13px;margin-top:10px;opacity:.92}
+.quiz .prev{background:rgba(255,255,255,.15);border-radius:12px;padding:8px 10px;font-size:14px;margin-bottom:10px}
+.links{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;margin-top:10px}
+.links a{font-family:var(--f-label);font-size:14px;font-weight:700;color:#1f6b4a;background:#e2f4ea;border-radius:999px;padding:6px 14px;text-decoration:none}
+@media (min-width:860px){ .trio{grid-template-columns:1fr 1fr 1fr} .markets{max-width:700px} }
+
+/* شاشات أعرض */
+@media (min-width:860px){
+  .brand{flex-direction:row;justify-content:center;gap:16px}
+  .brand .name{font-size:76px}
+  .brand svg.logo{width:110px;height:110px}
+  .brand .stack{display:flex;flex-direction:column;align-items:center}
+  .dateline{grid-template-columns:repeat(4,1fr)}
+  .lead{display:grid;grid-template-columns:1.3fr 1fr}
+  .lead .art{height:100%;object-fit:cover}
+  .lead .txt{order:-1}
+  .lead h1{font-size:36px}
+  .two{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+  .three{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+  .wx{grid-template-columns:repeat(4,1fr)}
+  .end{display:grid;grid-template-columns:1fr 1.4fr;gap:18px;align-items:start}
+  .end .about{margin-top:0}
+}
+@media (prefers-reduced-motion:no-preference){ .wx .c,.card{transition:transform .2s} .card:hover{transform:translateY(-2px)} }
+</style>
+</head>
+<body>
+<div class="sheet">
+
+<header class="mast">
+  <div class="brand">
+    <svg class="logo" viewBox="0 0 120 120" role="img" aria-label="شعار صدى الجبل">
+      <circle cx="60" cy="60" r="57" fill="#ffffff" stroke="#1d1d27" stroke-width="3"/>
+      <circle cx="60" cy="60" r="51" fill="#d6effb"/>
+      <circle cx="86" cy="40" r="9" fill="#f5b301"/>
+      <path d="M44 34 A22 22 0 0 1 76 34" fill="none" stroke="#e5533d" stroke-width="3.4" stroke-linecap="round"/>
+      <path d="M37 27 A31 31 0 0 1 83 27" fill="none" stroke="#ef8a1f" stroke-width="2.8" stroke-linecap="round"/>
+      <path d="M31 20 A40 40 0 0 1 89 20" fill="none" stroke="#f5b301" stroke-width="2.2" stroke-linecap="round"/>
+      <path d="M12 88 L36 60 L46 70 L60 44 L78 72 L86 64 L108 88 Z" fill="#1f6b4a"/>
+      <path d="M60 44 L66 53 L60 51 L55 54 Z" fill="#ffffff"/>
+      <path d="M22 86 C42 79 78 79 98 86" fill="none" stroke="#5cc489" stroke-width="3"/>
+      <path d="M32 79 C47 74 73 74 88 79" fill="none" stroke="#5cc489" stroke-width="2.2"/>
+      <path d="M42 72 C53 69 67 69 78 72" fill="none" stroke="#5cc489" stroke-width="1.8"/>
+      <path d="M9 90 H111 C104 104 86 110 60 110 C34 110 16 104 9 90 Z" fill="#2f6fde"/>
+    </svg>
+    <div class="stack">
+      <div class="name">صدى الجبل</div>
+      <span class="slogan">كن جزءاً من العالم</span>
+    </div>
+  </div>
+  <svg class="scene" viewBox="0 0 400 70" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 70 V44 L40 26 L70 40 L110 14 L150 38 L190 22 L230 42 L270 18 L310 36 L350 20 L400 40 V70 Z" fill="#9dd6b4"/>
+    <path d="M0 70 V54 L50 40 L95 52 L140 34 L185 50 L235 36 L280 52 L330 38 L400 54 V70 Z" fill="#4fb07a"/>
+    <path d="M0 70 V62 C80 56 160 58 240 62 C300 65 350 60 400 62 V70 Z" fill="#fbf8f1"/>
+  </svg>
+</header>
+
+<div class="dateline">
+  <span class="is">السبت ٢١ نوفمبر ٢٠٢٦م</span>
+  <span>١١ جمادى الآخرة ١٤٤٨هـ</span>
+  <span>العدد التاسع</span>
+  <span>تصدر ٦:٠٠ صباحاً</span>
+</div>
+<div class="tags">
+  <span class="tag c-ksa">محليات</span><span class="tag c-hot">حديث الناس</span><span class="tag c-blue">سياسة</span><span class="tag c-violet">تقنية</span><span class="tag c-green">كرة قدم</span><span class="tag c-sky">طقس</span>
+</div>
+
+
+<!-- في دقيقة -->
+<section class="minute" aria-label="في دقيقة">
+  <h2><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="13" r="9" fill="none" stroke="#f5b301" stroke-width="2.2"/><path d="M12 8v5l3 2M9 2h6" stroke="#f5b301" stroke-width="2.2" fill="none" stroke-linecap="round"/></svg>في دقيقة</h2>
+  <ol>
+    <li>التحالف يدمّر ٣ صواريخ باليستية ومسيّرة أُطلقت باتجاه الرياض والمنطقة الجنوبية، والدفاع المدني يعلن زوال الخطر.</li>
+    <li>ضربات للتحالف على قدرات حوثية في ميناء الحديدة بعد مطالبة المدنيين بإخلائه.</li>
+    <li>السعودية تتفق مع اليابان على سعة تخزين إضافية لـ١٦ مليون برميل من الخام السعودي.</li>
+    <li>الأهلي يقلب تأخره أمام النصر ويفوز ٣-١ في الكلاسيكو المؤجل.</li>
+    <li>ترمب: إيران راغبة في اتفاق... وقرار الضربات الكبرى إلى العام المقبل على ما يبدو.</li>
+  </ol>
+  <small>العدد كاملاً في الأسفل</small>
+</section>
+
+<!-- الخبر الرئيسي -->
+<section class="sec">
+  <article class="lead">
+    <svg class="art" viewBox="0 0 400 250" role="img" aria-label="رسم توضيحي لأفق الرياض مع درع يرمز لاعتراض الصواريخ">
+      <rect width="400" height="250" fill="#d9f0fb"/>
+      <path d="M0 210 H400 V250 H0 Z" fill="#f2d9a6"/>
+      <g fill="#7a8396">
+        <rect x="60" y="120" width="34" height="90"/><rect x="104" y="90" width="40" height="120"/>
+        <rect x="246" y="100" width="38" height="110"/><rect x="294" y="130" width="36" height="80"/>
+      </g>
+      <path d="M170 210 V60 L200 30 L230 60 V210 Z" fill="#5b6475"/>
+      <g fill="#bfe3f7"><rect x="180" y="70" width="40" height="6"/><rect x="180" y="90" width="40" height="6"/><rect x="180" y="110" width="40" height="6"/><rect x="180" y="130" width="40" height="6"/><rect x="180" y="150" width="40" height="6"/></g>
+      <path d="M222 112 l14 -8 M224 120 l16 2" stroke="#e5533d" stroke-width="3" stroke-linecap="round"/>
+      <g transform="translate(330 60)"><path d="M0 -28 L-22 -18 V0 C-22 16 -10 26 0 30 C10 26 22 16 22 0 V-18 Z" fill="#0c7a3e"/><path d="M-9 0 l6 7 l12 -14" stroke="#fff" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round"/></g>
+      <rect x="120" y="176" width="160" height="24" rx="12" fill="#1d1d27"/>
+      <text x="200" y="193" text-anchor="middle" font-family="Reem Kufi" font-size="12" font-weight="700" fill="#f5b301">٣ باليستيات ومسيّرة · اعتراض</text>
+      <text x="200" y="22" text-anchor="middle" font-family="Reem Kufi" font-size="12" font-weight="700" fill="#1d1d27">سماء الرياض · الدفاع الجوي</text>
+      <text x="340" y="244" text-anchor="middle" font-family="Reem Kufi" font-size="10" fill="#7a4b10">رسم توضيحي</text>
+    </svg>
+    <div class="txt">
+      <div class="kicker">الرياض · أمن</div>
+      <h1>التحالف يدمّر ٣ صواريخ باليستية ومسيّرة باتجاه الرياض والجنوبية</h1>
+      <p class="deck">إنذار مبكر في الرياض أعقبه إعلان الدفاع المدني «زوال الخطر»، وضربات على قدرات حوثية في ميناء الحديدة</p>
+      <div class="body">
+        <p>أعلن تحالف دعم الشرعية في اليمن اعتراض وتدمير ثلاثة صواريخ باليستية أطلقتها الميليشيا الحوثية باتجاه الرياض، إلى جانب مسيّرة باتجاه المنطقة الجنوبية، فيما أطلق الدفاع المدني الإنذار المبكر في الرياض ثم أعلن زوال الخطر.</p>
+        <p>وفي سياق متصل، وجّه التحالف ضربات استهدفت قدرات عسكرية للحوثيين في ميناء الحديدة بعد مطالبة المدنيين بإخلائه حرصاً على سلامتهم. وقال المتحدث باسم التحالف اللواء تركي المالكي إن الضربات استهدفت قدرات تشغيلية بالميناء أسهمت في عمليات تهريب ونقل الأسلحة والصواريخ الباليستية.</p>
+      </div>
+      <div class="glance">
+        <h3>في سطور</h3>
+        <ul>
+          <li><b>١</b>اعتراض ٣ صواريخ باليستية باتجاه الرياض.</li>
+          <li><b>٢</b>تدمير مسيّرة باتجاه المنطقة الجنوبية.</li>
+          <li><b>٣</b>الدفاع المدني يعلن زوال الخطر بعد الإنذار المبكر.</li>
+          <li><b>٤</b>ضربات على قدرات حوثية في ميناء الحديدة بعد إنذار بالإخلاء.</li>
+        </ul>
+      </div>
+      <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5343797-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D9%8A%D8%AF%D9%85%D9%91%D8%B1-3-%D8%B5%D9%88%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A8%D8%A7%D9%84%D9%8A%D8%B3%D8%AA%D9%8A%D8%A9-%D9%88%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A9-%D8%A8%D8%A7%D8%AA%D8%AC%D8%A7%D9%87-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a> · <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5343794-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D9%8A%D8%B9%D9%84%D9%86-%D8%B2%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%AE%D8%B7%D8%B1-%D8%B9%D9%86-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%A8%D8%B9%D8%AF-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D8%A5%D9%86%D8%B0%D8%A7%D8%B1" target="_blank" rel="noopener">زوال الخطر ←</a> · <a class="more" href="https://www.okaz.com.sa/local/na/2276566" target="_blank" rel="noopener">عكاظ ←</a>
+      <div class="src">المصدر: الشرق الأوسط، عكاظ</div>
+    </div>
+  </article>
+</section>
+
+
+<!-- محليات -->
+<section class="sec">
+  <div class="sec-head c-ksa">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M6 24h20M8 24V12h16v12" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M5 12 16 5l11 7" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><path d="M12 24v-6h8v6" fill="none" stroke="#fff" stroke-width="2"/></svg>
+    <h2>محليات</h2>
+    <small>المملكة اليوم</small>
+  </div>
+  <div class="cards">
+    <article class="card w-ksa">
+      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="12" y="8" width="24" height="32" rx="5" fill="#0c7a3e"/><path d="M12 18h24M12 30h24" stroke="#7fd1a5" stroke-width="2.4"/><circle cx="38" cy="12" r="7" fill="#e5533d"/><circle cx="38" cy="12" r="3" fill="#fff"/></svg></div>
+      <div>
+        <div class="kicker">طاقة</div>
+        <h3>السعودية تتفق على تخزين ١٦ مليون برميل نفط في اليابان</h3>
+        <p>أكدت اليابان اعتزامها توفير سعة تخزينية إضافية تبلغ ١٦ مليون برميل من الخام السعودي ضمن مرافق التخزين الوطني الياباني لمدة محددة، إلى جانب سعة قائمة تبلغ ٨ ملايين برميل، كما تعتزم شراء ما يصل إلى ٨ ملايين برميل لاحتياطياتها الوطنية وفق ظروف السوق.</p>
+        <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5343622-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%AA%D9%81%D9%82-%D8%B9%D9%84%D9%89-%D8%AA%D8%AE%D8%B2%D9%8A%D9%86-16-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D9%86%D9%81%D8%B7-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D8%A7%D8%A8%D8%A7%D9%86" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a> · <a class="more" href="https://asharqbusiness.com/power/157163/%D8%A7%D9%84%D9%8A%D8%A7%D8%A8%D8%A7%D9%86-%D8%AA%D8%AE%D8%B5%D8%B5-%D8%B3%D8%B9%D8%A9-%D8%AA%D8%AE%D8%B2%D9%8A%D9%86%D9%8A%D8%A9-%D9%84-16-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D9%85%D9%86-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A" target="_blank" rel="noopener">الشرق بلومبرغ ←</a>
+        <div class="src">الشرق الأوسط، الشرق بلومبرغ</div>
+      </div>
+    </article>
+    <article class="card w-ksa">
+      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6 8 12v10c0 10 7 17 16 20 9-3 16-10 16-20V12Z" fill="#0c7a3e"/><path d="M17 23l5 5 9-10" stroke="#fff" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+      <div>
+        <div class="kicker">جمارك</div>
+        <h3>إحباط ٦ محاولات لتهريب أكثر من ٢٫٣ مليون حبة إمفيتامين عبر ميناء ضباء</h3>
+        <p>أحبطت هيئة الزكاة والضريبة والجمارك في ميناء ضباء ٦ محاولات لتهريب ٢٬٣٠٥٬٦٩٥ حبة إمفيتامين مخدر.</p>
+        <a class="more" href="https://www.okaz.com.sa/local/na/2276517" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a>
+        <div class="src">عكاظ</div>
+      </div>
+    </article>
+    <article class="card w-ksa">
+      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M14 28a8 8 0 0 1 1-16 11 11 0 0 1 21 3 7 7 0 0 1-1 13Z" fill="#0c7a3e"/><path d="M16 34l-2 6M25 34l-2 6M34 34l-2 6" stroke="#2f6fde" stroke-width="2.6" stroke-linecap="round"/></svg></div>
+      <div>
+        <div class="kicker">الأرصاد</div>
+        <h3>أمطار غزيرة وسيول على عسير، وأمطار خفيفة إلى متوسطة على مناطق أخرى</h3>
+        <p>نبّه المركز الوطني للأرصاد من هطول أمطار غزيرة وجريان سيول على منطقة عسير، وأمطار خفيفة إلى متوسطة على ثلاث مناطق أخرى.</p>
+        <a class="more" href="https://www.okaz.com.sa/local/na/2276462" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a>
+        <div class="src">عكاظ</div>
+      </div>
+    </article>
+    <article class="card w-ksa">
+      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 10h22v14H14l-6 6v-6H6Z" fill="#0c7a3e"/><path d="M42 18H24v14h12l6 6v-6h0Z" fill="#7fd1a5"/><path d="M11 17h12M29 25h8" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/></svg></div>
+      <div>
+        <div class="kicker">برقيات</div>
+        <h3>خادم الحرمين وولي العهد يهنئان سلطان عُمان باليوم الوطني</h3>
+        <p>بعث خادم الحرمين الشريفين الملك سلمان بن عبدالعزيز وولي العهد الأمير محمد بن سلمان برقيتي تهنئة إلى السلطان هيثم بن طارق بمناسبة اليوم الوطني لسلطنة عُمان.</p>
+        <a class="more" href="https://www.okaz.com.sa/local/na/2276486" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a>
+        <div class="src">عكاظ</div>
+      </div>
+    </article>
+    <article class="card w-ksa">
+      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="8" y="16" width="32" height="22" rx="4" fill="#0c7a3e"/><path d="M18 16v-4h12v4" stroke="#1d1d27" stroke-width="2.4" fill="none"/><path d="M8 25h32" stroke="#7fd1a5" stroke-width="2.4"/></svg></div>
+      <div>
+        <div class="kicker">توظيف</div>
+        <h3>١١٤٨ فرصة وظيفية للسعوديين... جدة تتصدر والرياض تلاحقها</h3>
+        <p>رصد تقرير لعكاظ ١١٤٨ فرصة وظيفية متاحة للسعوديين، تتصدرها جدة تليها الرياض.</p>
+        <a class="more" href="https://www.okaz.com.sa/local/saudi-arabia/2276496" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a>
+        <div class="src">عكاظ</div>
+      </div>
+    </article>
+    <article class="card w-ksa">
+      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 18 10 8h28l4 10Z" fill="#f5b301"/><rect x="9" y="18" width="30" height="20" fill="#0c7a3e"/><rect x="20" y="26" width="8" height="12" fill="#e2f4ea"/></svg></div>
+      <div>
+        <div class="kicker">تراث</div>
+        <h3>ظهران الجنوب تعيد إحياء سوق الخميس الشعبي</h3>
+        <p>أعادت محافظة ظهران الجنوب في منطقة عسير إحياء سوق الخميس الشعبي.</p>
+        <a class="more" href="https://www.okaz.com.sa/local/na/2276495" target="_blank" rel="noopener">اقرأ التفاصيل في عكاظ ←</a>
+        <div class="src">عكاظ</div>
+      </div>
+    </article>
+  </div>
+  <div class="markets" aria-label="الأسواق">
+    <div class="mk"><div class="n">تاسي (إغلاق الخميس)</div><div class="v">10,159</div><div class="ch dn">▼ 0.4%</div></div>
+    <div class="mk"><div class="n">الذهب عيار ٢١ (ريال/غرام، آخر قراءة الخميس)</div><div class="v">394.19</div><div class="ch dn">▼ من 400.89</div></div>
+    <div class="mk"><div class="n">برنت (دولار/برميل، تداولات الجمعة)</div><div class="v">92+</div><div class="ch dn">▼ نحو 4% في الأسبوع</div></div>
+  </div>
+  <div class="src">الأسواق: <a href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5343156-%D8%A7%D9%84%D8%A3%D8%B3%D9%87%D9%85-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D9%86%D9%87%D9%8A-%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9-%D8%B9%D9%84%D9%89-%D8%A7%D9%86%D8%AE%D9%81%D8%A7%D8%B6" target="_blank" rel="noopener">الشرق الأوسط (تاسي)</a> · <a href="https://ajel.sa/thehour/1n37ljh4z" target="_blank" rel="noopener">عاجل (الذهب)</a> · <a href="https://asharqbusiness.com/financial-markets/157120/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D9%8A%D9%88%D9%85-20-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1-2026/" target="_blank" rel="noopener">الشرق بلومبرغ (برنت)</a> · الذهب وبرنت آخر قراءة متاحة وقت الإعداد.</div>
+</section>
+
+<!-- حديث الناس -->
+<section class="sec">
+  <div class="sec-head c-hot">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3c2 6 9 8 9 16a9 9 0 0 1-18 0c0-4 2-6 4-8 0 3 2 4 3 4-1-5 0-9 2-12Z" fill="#fff"/></svg>
+    <h2>حديث الناس اليوم</h2>
+    <small>الأكثر تداولاً</small>
+  </div>
+  <ul class="trend">
+    <li><span class="rk">١</span><div><b>اعتراضات سماء الرياض</b><span class="d">٣ باليستيات ومسيّرة، ثم «زوال الخطر».</span><span class="heat">أمن</span><a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5343797-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D9%8A%D8%AF%D9%85%D9%91%D8%B1-3-%D8%B5%D9%88%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A8%D8%A7%D9%84%D9%8A%D8%B3%D8%AA%D9%8A%D8%A9-%D9%88%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A9-%D8%A8%D8%A7%D8%AA%D8%AC%D8%A7%D9%87-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a></div></li>
+    <li><span class="rk">٢</span><div><b>الأهلي يقلب الكلاسيكو</b><span class="d">فوز ٣-١ على النصر في جدة.</span><span class="heat">رياضة</span><a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343751-%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83%D9%88-%D8%A7%D9%84%D8%A5%D9%86%D9%85%D8%A7%D8%A1-%D9%81%D8%B1%D9%91%D9%8E%D8%B7-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9-%D9%88%D8%B6%D8%AD%D9%83-%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D8%A9" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a></div></li>
+    <li><span class="rk">٣</span><div><b>رونالدو والهدف ٩٨٦</b><span class="d">هدف وركلة جزاء مهدرة.</span><span class="heat">رياضة</span><a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343820-%D8%B1%D9%88%D9%86%D8%A7%D9%84%D8%AF%D9%88-%D9%8A%D8%B3%D8%AC%D9%84-%D9%87%D8%AF%D9%81%D9%87-%D8%A7%D9%84%D9%80986%E2%80%A6-%D9%88%D9%8A%D9%87%D8%AF%D8%B1-%D8%AB%D8%A7%D9%84%D8%AB-%D8%AC%D8%B2%D8%A7%D8%A6%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A2%D8%AE%D8%B1-%D8%A3%D8%B1%D8%A8%D8%B9-%D9%85%D8%AD%D8%A7%D9%88%D9%84%D8%A7%D8%AA" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a></div></li>
+    <li><span class="rk">٤</span><div><b>نفط سعودي في اليابان</b><span class="d">سعة إضافية لـ١٦ مليون برميل.</span><span class="heat">اقتصاد</span><a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5343622-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%AA%D9%81%D9%82-%D8%B9%D9%84%D9%89-%D8%AA%D8%AE%D8%B2%D9%8A%D9%86-16-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D9%86%D9%81%D8%B7-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D8%A7%D8%A8%D8%A7%D9%86" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a></div></li>
+    <li><span class="rk">٥</span><div><b>ضربات الحديدة</b><span class="d">استهداف قدرات حوثية في الميناء.</span><span class="heat">اليمن</span><a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5343827-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D9%8A%D8%B6%D8%B1%D8%A8-%D8%B9%D8%AA%D8%A7%D8%AF-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AF%D8%A9" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a></div></li>
+    <li><span class="rk">٦</span><div><b>ترمب وإيران</b><span class="d">«راغبة في اتفاق... ولكن».</span><span class="heat">العالم</span><a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%8B/5343725-%D8%AA%D8%B1%D9%85%D8%A8-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%B1%D8%A7%D8%BA%D8%A8%D8%A9-%D9%81%D9%8A-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%88%D9%84%D9%83%D9%86" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a></div></li>
+  </ul>
+  <div class="src">رصد لأكثر ما تناولته الصحف السعودية منذ أمس، وليس إحصاءً لمنصات التواصل.</div>
+</section>
+
+<!-- الطقس -->
+<section class="sec">
+  <div class="sec-head c-sky">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="12" cy="12" r="6" fill="#ffe27a"/><path d="M10 26a6 6 0 0 1 1-12 8 8 0 0 1 15 3 4.5 4.5 0 0 1-1 9Z" fill="#fff"/></svg>
+    <h2>طقس جازان ومحافظاتها الجبلية</h2>
+  </div>
+  <div class="alert">
+    <svg viewBox="0 0 28 28" aria-hidden="true"><path d="M14 3 26 24H2Z" fill="#f5b301"/><path d="M14 10v7" stroke="#1d1d27" stroke-width="2.6" stroke-linecap="round"/><circle cx="14" cy="20.5" r="1.6" fill="#1d1d27"/></svg>
+    <div><b>تنبيه:</b> تشير توقعات اليوم إلى فرص مطر مرتفعة على مرتفعات جازان، تصل إلى ٨٨٪ في الريث و٨٤٪ في فيفاء والدائر. ونبّه المركز الوطني للأرصاد من أمطار غزيرة وسيول على منطقة عسير المجاورة. ابتعد عن مجاري الأودية، وتأنَّ على الطرق الجبلية، واطلب الإسعاف على ٩٩٧ عند الحاجة.</div>
+  </div>
+  <div class="wx">
+    <div class="c mild wide">
+      <div><div class="city">مدينة جازان</div><span class="alt">الساحل</span><div class="t num">٣٢° <small>/ ٢٦°</small></div><span class="rain">غائم جزئياً · مطر ٢٪</span></div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="20" r="9" fill="#ffd34d"/><path d="M16 42a11 11 0 0 1 3-21 14 14 0 0 1 27 4 9 9 0 0 1-1 17Z" fill="#fff"/></svg>
+    </div>
+    <div class="c rainy">
+      <div class="city">فيفاء</div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="20" r="9" fill="#ffd34d"/><path d="M16 42a11 11 0 0 1 3-21 14 14 0 0 1 27 4 9 9 0 0 1-1 17Z" fill="#fff"/><g stroke="#cfe9ff" stroke-width="3.4" stroke-linecap="round"><path d="M22 48l-3 7M32 48l-3 7M42 48l-3 7"/></g></svg>
+      <div class="t num">٢٣° <small>/ ١٤°</small></div>
+      <span class="rain">مطر ٨٤٪</span>
+    </div>
+    <div class="c rainy">
+      <div class="city">الدائر بني مالك</div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="20" r="9" fill="#ffd34d"/><path d="M16 42a11 11 0 0 1 3-21 14 14 0 0 1 27 4 9 9 0 0 1-1 17Z" fill="#fff"/><g stroke="#cfe9ff" stroke-width="3.4" stroke-linecap="round"><path d="M22 48l-3 7M32 48l-3 7M42 48l-3 7"/></g></svg>
+      <div class="t num">٢٩° <small>/ ٢٠°</small></div>
+      <span class="rain">مطر ٨٤٪</span>
+    </div>
+    <div class="c mild">
+      <div class="city">العارضة</div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="20" r="9" fill="#ffd34d"/><path d="M16 42a11 11 0 0 1 3-21 14 14 0 0 1 27 4 9 9 0 0 1-1 17Z" fill="#fff"/></svg>
+      <div class="t num">٣٢° <small>/ ٢٤°</small></div>
+      <span class="rain">مطر ١٤٪</span>
+    </div>
+    <div class="c rainy">
+      <div class="city">العيدابي</div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="20" r="9" fill="#ffd34d"/><path d="M16 42a11 11 0 0 1 3-21 14 14 0 0 1 27 4 9 9 0 0 1-1 17Z" fill="#fff"/><g stroke="#cfe9ff" stroke-width="3.4" stroke-linecap="round"><path d="M22 48l-3 7M32 48l-3 7M42 48l-3 7"/></g></svg>
+      <div class="t num">٣٢° <small>/ ٢٣°</small></div>
+      <span class="rain">مطر ٤٧٪</span>
+    </div>
+    <div class="c sunny">
+      <div class="city">هروب</div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="32" cy="32" r="13" fill="#fff3b0"/><g stroke="#fff3b0" stroke-width="4" stroke-linecap="round"><path d="M32 6v8M32 50v8M6 32h8M50 32h8M13 13l6 6M45 45l6 6M13 51l6-6M45 19l6-6"/></g></svg>
+      <div class="t num">٢٤° <small>/ ١٣°</small></div>
+      <span class="rain">مطر ١٦٪</span>
+    </div>
+    <div class="c rainy">
+      <div class="city">الريث</div>
+      <svg viewBox="0 0 64 64" aria-hidden="true"><circle cx="22" cy="20" r="9" fill="#ffd34d"/><path d="M16 42a11 11 0 0 1 3-21 14 14 0 0 1 27 4 9 9 0 0 1-1 17Z" fill="#fff"/><g stroke="#cfe9ff" stroke-width="3.4" stroke-linecap="round"><path d="M22 48l-3 7M32 48l-3 7M42 48l-3 7"/></g></svg>
+      <div class="t num">٢٥° <small>/ ٢٠°</small></div>
+      <span class="rain">مطر ٨٨٪</span>
+    </div>
+  </div>
+  <p class="wx-note">أبرد المحافظات اليوم فيفاء (٢٣°/١٤°)، وأدفؤها العارضة (٣٢°). أعلى فرص المطر في الريث، فيفاء، الدائر بني مالك (٨٤–٨٨٪). القراءات تقريبية لمراكز المحافظات، والقمم أبرد منها.</p>
+  <div class="src">التوقعات: <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo</a> · التنبيه: <a href="https://ncm.gov.sa" target="_blank" rel="noopener">المركز الوطني للأرصاد</a> عبر <a href="https://www.okaz.com.sa/local/na/2276462" target="_blank" rel="noopener">عكاظ</a></div>
+</section>
+
+
+<!-- مواقيت الصلاة -->
+<section class="sec">
+  <div class="sec-head c-prayer">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4c-3 3-5 5-5 8h10c0-3-2-5-5-8Z" fill="#fff"/><rect x="9" y="12" width="14" height="14" rx="2" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M14 26v-5a2 2 0 0 1 4 0v5M5 26h22" stroke="#fff" stroke-width="2.2" fill="none"/></svg>
+    <h2>مواقيت الصلاة</h2><small>تقويم أم القرى</small>
+  </div>
+  <div class="pray">
+    <div class="next" id="nextp"><div><span>الصلاة القادمة في جازان</span><br><b id="np-name">الفجر</b></div><div style="text-align:left"><span>الموعد</span><br><b id="np-time">٤:٥٩</b></div></div>
+    <div class="wrap"><table>
+      <thead><tr><th style="text-align:start;padding-inline-start:10px">المحافظة</th><th>الفجر</th><th>الشروق</th><th>الظهر</th><th>العصر</th><th>المغرب</th><th>العشاء</th></tr></thead>
+      <tbody><tr class="main"><td class="t">جازان</td><td>٤:٥٩</td><td>٦:١٧</td><td>١١:٥٦</td><td>٣:١٠</td><td>٥:٣٤</td><td>٧:٠٤</td></tr><tr class=""><td class="t">فيفاء</td><td>٤:٥٨</td><td>٦:١٥</td><td>١١:٥٣</td><td>٣:٠٧</td><td>٥:٣١</td><td>٧:٠١</td></tr><tr class=""><td class="t">الدائر</td><td>٤:٥٨</td><td>٦:١٥</td><td>١١:٥٣</td><td>٣:٠٧</td><td>٥:٣١</td><td>٧:٠١</td></tr><tr class=""><td class="t">العارضة</td><td>٤:٥٧</td><td>٦:١٥</td><td>١١:٥٤</td><td>٣:٠٧</td><td>٥:٣٢</td><td>٧:٠٢</td></tr><tr class=""><td class="t">العيدابي</td><td>٤:٥٨</td><td>٦:١٦</td><td>١١:٥٤</td><td>٣:٠٨</td><td>٥:٣٢</td><td>٧:٠٢</td></tr><tr class=""><td class="t">هروب</td><td>٤:٥٨</td><td>٦:١٦</td><td>١١:٥٤</td><td>٣:٠٧</td><td>٥:٣١</td><td>٧:٠١</td></tr><tr class=""><td class="t">الريث</td><td>٤:٥٩</td><td>٦:١٧</td><td>١١:٥٤</td><td>٣:٠٨</td><td>٥:٣٢</td><td>٧:٠٢</td></tr></tbody>
+    </table></div>
+  </div>
+  <div class="src">محسوبة بطريقة أم القرى لمراكز المحافظات، وقد تختلف دقيقة أو دقيقتين عن تقويم مسجدك.</div>
+  <script type="application/json" id="pt-data">["04:59", "06:17", "11:56", "15:10", "17:34", "19:04"]</script>
+</section>
+
+<!-- مواعيد تهمك -->
+<section class="sec">
+  <div class="sec-head c-dates">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="5" y="7" width="22" height="20" rx="3" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M5 13h22M11 4v6M21 4v6" stroke="#fff" stroke-width="2.4" stroke-linecap="round"/><circle cx="16" cy="20" r="3" fill="#fff"/></svg>
+    <h2>مواعيد تهمك</h2>
+  </div>
+  <div class="dates">
+    <div class="dt" data-date="2026-11-20"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>إجازة الخريف للمدارس</h3><p>من الجمعة ٢٠ إلى السبت ٢٨ نوفمبر، والعودة الأحد ٢٩ نوفمبر</p><a class="more" href="https://sabq.org/services/school-calendar-date" target="_blank" rel="noopener">اقرأ التفاصيل في سبق ←</a></div></div>
+    <div class="dt" data-date="2026-11-26"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>رواتب الموظفين</h3><p>الخميس ٢٦ نوفمبر، لأن يوم ٢٧ يوافق الجمعة</p></div></div>
+    <div class="dt" data-date="2026-12-01"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>الضمان الاجتماعي ورواتب المتقاعدين</h3><p>الثلاثاء ١ ديسمبر (٢١ جمادى الآخرة)</p></div></div>
+    <div class="dt" data-date="2026-12-10"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>حساب المواطن</h3><p>الخميس ١٠ ديسمبر (١ رجب ١٤٤٨هـ)</p></div></div>
+    <div class="dt" data-date="2027-12-23"><div class="cnt"><b>٠</b><small>يوم</small></div><div><h3>كأس آسيا في السعودية (بعد التأجيل)</h3><p>من ٢٣ ديسمبر ٢٠٢٧ إلى ٢١ يناير ٢٠٢٨</p><a class="more" href="https://sabq.org/article/dl1y8i2" target="_blank" rel="noopener">اقرأ التفاصيل في سبق ←</a></div></div>
+  </div>
+  <div class="src">سبق. المواعيد المالية تقديرية حسب القاعدة المعتادة ما لم تُعلَن رسمياً.</div>
+</section>
+
+<!-- السياسة -->
+<div class="two">
+<section class="sec">
+  <div class="sec-head c-blue">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="13" fill="none" stroke="#fff" stroke-width="2.4"/><path d="M3 16h26M16 3c-7 8-7 18 0 26M16 3c7 8 7 18 0 26" fill="none" stroke="#fff" stroke-width="2"/></svg>
+    <h2>العالم</h2>
+  </div>
+  <div class="cards">
+    <article class="card w-blue">
+      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="10" width="36" height="26" rx="3" fill="#2f6fde"/><path d="M6 18h36M6 26h36" stroke="#fff" stroke-width="3"/><circle cx="14" cy="16" r="4" fill="#fff"/><path d="M12 42h24" stroke="#1d1d27" stroke-width="2.4"/></svg></div>
+      <div>
+        <div class="kicker">الولايات المتحدة · إيران</div>
+        <h3>ترمب: إيران راغبة في اتفاق... ولكن</h3>
+        <p>أرجأ الرئيس الأميركي على ما يبدو أي قرار بشأن شن ضربات كبرى جديدة على إيران إلى العام المقبل، وقال إن طهران تريد اتفاقاً لكنها لا تريد اتفاقاً مقبولاً بالنسبة له، مضيفاً: «لدينا متسع من الوقت».</p>
+        <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%8B/5343725-%D8%AA%D8%B1%D9%85%D8%A8-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%B1%D8%A7%D8%BA%D8%A8%D8%A9-%D9%81%D9%8A-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%88%D9%84%D9%83%D9%86" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a>
+        <div class="src">الشرق الأوسط</div>
+      </div>
+    </article>
+    <article class="card w-blue">
+      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="6" y="26" width="36" height="6" rx="3" fill="#2f6fde"/><circle cx="14" cy="18" r="5" fill="#e5533d"/><circle cx="24" cy="16" r="5" fill="#2f6fde"/><circle cx="34" cy="18" r="5" fill="#f5b301"/><path d="M10 40h28" stroke="#1d1d27" stroke-width="2.4"/></svg></div>
+      <div>
+        <div class="kicker">أوروبا · أوكرانيا</div>
+        <h3>روسيا تدعو «الثلاثي الأوروبي» إلى محادثات في موسكو</h3>
+        <p>أوضح نائب وزير الخارجية الروسي سيرغي ريابكوف أن الدعوة لإجراء محادثات حول الأمن الأوروبي وُجّهت إلى فرنسا وبريطانيا وألمانيا، وأن موسكو تنتظر الرد، فيما لم يرد الأوروبيون رسمياً بعد.</p>
+        <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/5343816-%D8%B1%D9%88%D8%B3%D9%8A%D8%A7-%D9%84%D9%85%D8%AD%D8%A7%D8%AF%D8%AB%D8%A7%D8%AA-%D8%AD%D9%88%D9%84-%D8%A3%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A7-%D9%85%D8%B9-%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D9%8A-%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%8A" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a> · <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/5343726-%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D9%8A-%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%8A-%D9%84%D9%85-%D9%8A%D8%B1%D8%AF-%D8%B1%D8%B3%D9%85%D9%8A%D8%A7%D9%8B-%D8%B9%D9%84%D9%89-%D8%AF%D8%B9%D9%88%D8%A9-%D8%A8%D9%88%D8%AA%D9%8A%D9%86-%D9%84%D9%85%D9%81%D8%A7%D9%88%D8%B6%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%88%D8%B3%D9%83%D9%88" target="_blank" rel="noopener">الرد الأوروبي ←</a>
+        <div class="src">الشرق الأوسط</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head c-orange">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M5 26h22M8 26V14l8-8 8 8v12" fill="none" stroke="#fff" stroke-width="2.4" stroke-linejoin="round"/><path d="M13 26v-7h6v7" fill="none" stroke="#fff" stroke-width="2.2"/><circle cx="16" cy="12" r="2" fill="#fff"/></svg>
+    <h2>العالم العربي وأمريكا</h2>
+  </div>
+  <div class="cards">
+    <article class="card w-orange">
+      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M6 32h36l-5 8H11Z" fill="#ef8a1f"/><path d="M30 8v24M30 10h10" stroke="#1d1d27" stroke-width="2.6"/><path d="M40 10v8" stroke="#1d1d27" stroke-width="2"/><rect x="12" y="24" width="12" height="8" fill="#f5c27a"/><circle cx="38" cy="38" r="6" fill="#e5533d"/></svg></div>
+      <div>
+        <div class="kicker">اليمن</div>
+        <h3>التحالف يضرب عتاد الحوثي في ميناء الحديدة</h3>
+        <p>استهدف التحالف قدرات تشغيلية في ميناء الحديدة قال إنها أسهمت في تهريب ونقل الأسلحة والصواريخ الباليستية، بعد مطالبته المدنيين بإخلاء الميناء. وأكد وزير الإعلام اليمني أن الاستهداف طال مكونات تُستخدم لنقل الأسلحة المهربة، لا الميناء بوصفه منشأة اقتصادية.</p>
+        <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5343827-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D9%8A%D8%B6%D8%B1%D8%A8-%D8%B9%D8%AA%D8%A7%D8%AF-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AF%D8%A9" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a>
+        <div class="src">الشرق الأوسط</div>
+      </div>
+    </article>
+  </div>
+</section>
+</div>
+
+<!-- تقنية -->
+<section class="sec">
+  <div class="sec-head c-violet">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><rect x="8" y="8" width="16" height="16" rx="3" fill="none" stroke="#fff" stroke-width="2.4"/><rect x="12" y="12" width="8" height="8" rx="1.5" fill="#fff"/><path d="M12 4v4M20 4v4M12 24v4M20 24v4M4 12h4M4 20h4M24 12h4M24 20h4" stroke="#fff" stroke-width="2" stroke-linecap="round"/></svg>
+    <h2>تقنية</h2>
+  </div>
+  <div class="cards three">
+    <article class="card w-violet">
+      <div class="ic"><svg viewBox="0 0 48 48" aria-hidden="true"><rect x="10" y="14" width="28" height="22" rx="4" fill="#7b4ddb"/><path d="M16 22l6 8 5-5 5 7" stroke="#fff" stroke-width="2.6" fill="none" stroke-linecap="round"/><path d="M14 40h20" stroke="#c9b6f5" stroke-width="3" stroke-linecap="round"/></svg></div>
+      <div>
+        <div class="kicker">أسواق التقنية</div>
+        <h3>«أنثروبيك» تتعثر بعد أول يوم في البورصة</h3>
+        <p>أغلق سهم «أنثروبيك» أول أيام تداوله في ناسداك مرتفعاً نحو ١٧٪ فوق سعر الطرح البالغ ٨٣ دولاراً، ثم تراجع ٤٫٧٪ في تداولات ما بعد الإغلاق إلى ٩٢٫٦٠ دولار، وسط قلق متزايد بشأن أسهم الذكاء الاصطناعي.</p>
+        <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5343626-%D8%A3%D9%86%D8%AB%D8%B1%D9%88%D8%A8%D9%8A%D9%83-%D8%AA%D8%AA%D8%B9%D8%AB%D8%B1-%D9%81%D9%8A-%D8%A3%D9%88%D9%84-%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%A8%D8%A7%D9%84%D8%A8%D9%88%D8%B1%D8%B5%D8%A9-%D9%88%D8%AA%D8%B9%D9%85%D9%91%D9%82-%D8%A7%D9%84%D9%82%D9%84%D9%82-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A3%D8%B3%D9%87%D9%85-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a> · <a class="more" href="https://asharqbusiness.com/companies/157072/%D8%A3%D8%B3%D9%87%D9%85-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A3%D9%86%D8%AB%D8%B1%D9%88%D8%A8%D9%8A%D9%83-%D8%AA%D9%82%D9%81%D8%B2-%D8%A8%D8%B9%D8%AF-%D8%B7%D8%B1%D8%AD-%D8%B9%D8%A7%D9%85-%D8%A3%D9%88%D9%84%D9%8A-%D9%82%D9%8A%D8%A7%D8%B3%D9%8A/" target="_blank" rel="noopener">الشرق بلومبرغ ←</a>
+        <div class="src">الشرق الأوسط، الشرق بلومبرغ</div>
+      </div>
+    </article>
+  </div>
+</section>
+
+<!-- الرياضة -->
+<div class="two">
+<section class="sec">
+  <div class="sec-head c-green">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="#fff"/><path d="M16 9l5 3.6-1.9 5.9h-6.2L11 12.6Z" fill="#1f9d55"/><path d="M16 9V4M21 12.6l4.6-1.6M19.1 18.5l3 4M12.9 18.5l-3 4M11 12.6 6.4 11" stroke="#1f9d55" stroke-width="1.6"/></svg>
+    <h2>كرة القدم المحلية</h2>
+  </div>
+  <div class="match">
+    <svg class="pitch" viewBox="0 0 400 170" role="img" aria-label="الأهلي ٣ النصر ١ في دوري روشن">
+      <rect width="400" height="170" fill="#2fae64"/>
+      <g fill="#29a05b"><rect x="0" width="50" height="170"/><rect x="100" width="50" height="170"/><rect x="200" width="50" height="170"/><rect x="300" width="50" height="170"/></g>
+      <g fill="none" stroke="#e9fff1" stroke-width="2.5" opacity=".9"><rect x="12" y="12" width="376" height="146"/><line x1="200" y1="12" x2="200" y2="158"/><circle cx="200" cy="85" r="26"/><rect x="12" y="50" width="40" height="70"/><rect x="348" y="50" width="40" height="70"/></g>
+      <rect x="236" y="56" width="134" height="58" rx="14" fill="#ffffff"/>
+      <rect x="30" y="56" width="134" height="58" rx="14" fill="#ffffff"/>
+      <circle cx="352" cy="85" r="10" fill="#0c7a3e"/><circle cx="48" cy="85" r="10" fill="#f5b301" stroke="#1d4fa0" stroke-width="3"/>
+      <text x="292" y="93" text-anchor="middle" font-family="Amiri" font-size="22" font-weight="700" fill="#1d1d27">الأهلي</text>
+      <text x="110" y="93" text-anchor="middle" font-family="Amiri" font-size="22" font-weight="700" fill="#1d1d27">النصر</text>
+      <rect x="172" y="66" width="56" height="38" rx="10" fill="#f5b301"/>
+      <text x="200" y="92" text-anchor="middle" font-family="Reem Kufi" font-size="20" font-weight="700" fill="#1d1d27">٣ - ١</text>
+      <rect x="140" y="128" width="120" height="24" rx="12" fill="#1d1d27"/>
+      <text x="200" y="145" text-anchor="middle" font-family="Reem Kufi" font-size="13" font-weight="700" fill="#f5b301">انتهت المباراة</text>
+    </svg>
+    <div class="info">
+      <div class="kicker">نتيجة الأمس · دوري روشن (مؤجلة الجولة ٩)</div>
+      <p style="font-size:15px;margin:4px 0 0">قلب الأهلي تأخره أمام النصر وفاز ٣-١ في «كلاسيكو الإنماء». تقدّم كريستيانو رونالدو بهدفه الـ٩٨٦ في مسيرته (١٤) ثم أهدر ركلة جزاء ارتطمت بالقائم، وهي الثالثة التي يهدرها في آخر أربع محاولات. وأدرك غالينو التعادل في الوقت بدل الضائع للشوط الأول، ثم أضاف إيفان توني الثاني من ركلة جزاء وروجر إيبانيز الثالث (٧٥). ورفع الأهلي رصيده إلى ٢٤ نقطة، وبقي النصر على ٢٨.</p>
+      <div class="meta"><span class="chip">جدة</span><span class="chip">رونالدو ٩٨٦</span></div>
+      <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343751-%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83%D9%88-%D8%A7%D9%84%D8%A5%D9%86%D9%85%D8%A7%D8%A1-%D9%81%D8%B1%D9%91%D9%8E%D8%B7-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9-%D9%88%D8%B6%D8%AD%D9%83-%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D8%A9" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a> · <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343820-%D8%B1%D9%88%D9%86%D8%A7%D9%84%D8%AF%D9%88-%D9%8A%D8%B3%D8%AC%D9%84-%D9%87%D8%AF%D9%81%D9%87-%D8%A7%D9%84%D9%80986%E2%80%A6-%D9%88%D9%8A%D9%87%D8%AF%D8%B1-%D8%AB%D8%A7%D9%84%D8%AB-%D8%AC%D8%B2%D8%A7%D8%A6%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A2%D8%AE%D8%B1-%D8%A3%D8%B1%D8%A8%D8%B9-%D9%85%D8%AD%D8%A7%D9%88%D9%84%D8%A7%D8%AA" target="_blank" rel="noopener">رونالدو ←</a> · <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343756-%D9%85%D8%AF%D8%B1%D8%A8-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D9%8A%D8%A9-%D8%A3%D9%86%D8%A7-%D9%85%D9%86-%D8%B3%D9%85%D8%AD%D8%AA-%D9%84%D9%80%D9%85%D8%A7%D9%86%D9%8A-%D8%A8%D8%A7%D9%84%D8%BA%D9%8A%D8%A7%D8%A8" target="_blank" rel="noopener">مدرب النصر ←</a>
+    </div>
+  </div>
+  <div class="box">
+    <h3>ترتيب دوري روشن · النقاط</h3>
+    <div class="bars">
+      <div class="bar"><span class="pos">١</span><span class="t">الهلال</span><span class="track"><span class="fill" style="width:100%;display:block"></span></span><span class="pt">٣٠</span></div>
+      <div class="bar"><span class="pos">٢</span><span class="t">القادسية</span><span class="track"><span class="fill" style="width:93%;display:block"></span></span><span class="pt">٢٨</span></div>
+      <div class="bar"><span class="pos">٣</span><span class="t">النصر</span><span class="track"><span class="fill" style="width:93%;display:block"></span></span><span class="pt">٢٨</span></div>
+      <div class="bar hl"><span class="pos">٤</span><span class="t">الأهلي</span><span class="track"><span class="fill" style="width:80%;display:block"></span></span><span class="pt">٢٤</span></div>
+      <div class="bar"><span class="pos">٥</span><span class="t">الاتحاد</span><span class="track"><span class="fill" style="width:80%;display:block"></span></span><span class="pt">٢٤</span></div>
+      <div class="bar"><span class="pos">٦</span><span class="t">نيوم</span><span class="track"><span class="fill" style="width:73%;display:block"></span></span><span class="pt">٢٢</span></div>
+      <div class="bar"><span class="pos">٧</span><span class="t">الاتفاق</span><span class="track"><span class="fill" style="width:63%;display:block"></span></span><span class="pt">١٩</span></div>
+    </div>
+    <p class="note">بعد فوزه على النصر رفع الأهلي رصيده إلى ٢٤ نقطة في المركز الرابع بحسب الشرق الأوسط، متساوياً مع الاتحاد. لعب الهلال والاتحاد ١١ مباراة، والبقية ١٢. في القاع: التعاون (٥ نقاط) والفتح (٦). وأُجّلت الجولة ١٣ لإعادة ترتيب الروزنامة بعد تأجيل كأس آسيا.</p>
+    <div class="src"><a href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343751-%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83%D9%88-%D8%A7%D9%84%D8%A5%D9%86%D9%85%D8%A7%D8%A1-%D9%81%D8%B1%D9%91%D9%8E%D8%B7-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9-%D9%88%D8%B6%D8%AD%D9%83-%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D8%A9" target="_blank" rel="noopener">الشرق الأوسط</a> · <a href="https://www.okaz.com.sa/sport/na/2275563" target="_blank" rel="noopener">عكاظ</a> · <a href="https://www.saff.com.sa/championship.php?id=415" target="_blank" rel="noopener">الاتحاد السعودي لكرة القدم</a> · <a href="https://arriyadiyah.com/903966/%D8%A8%D8%B9%D8%AF-%D8%A7%D9%84%D9%82%D8%B1%D8%A7%D8%B1-%D8%A7%D9%84%D8%A2%D8%B3%D9%8A%D9%88%D9%8A..-%D8%AA%D8%A3%D8%AC%D9%8A%D9%84-%D8%AC%D9%88%D9%84%D8%A9-%C2%AB%D8%B1%D9%88%D8%B4%D9%86%C2%BB" target="_blank" rel="noopener">الرياضية</a></div>
+  </div>
+</section>
+
+<section class="sec">
+  <div class="sec-head c-teal">
+    <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M10 5h12v6a6 6 0 0 1-12 0Z" fill="#fff"/><path d="M10 7H6a4 4 0 0 0 4 6M22 7h4a4 4 0 0 1-4 6" fill="none" stroke="#fff" stroke-width="2"/><path d="M16 17v5M11 27h10l-1-5h-8Z" fill="#fff" stroke="#fff" stroke-width="2" stroke-linejoin="round"/></svg>
+    <h2>كرة القدم العالمية</h2>
+  </div>
+  <div class="box" style="margin-top:0">
+    <h3>حصاد دوري الأمم · الجولة الأخيرة</h3>
+    <ul class="results">
+      <li><span>إسبانيا × إنجلترا <small style="color:var(--muted)">الأحد · مدريد</small></span><span class="score">2 - 3</span></li>
+      <li><span>ألمانيا × هولندا <small style="color:var(--muted)">الاثنين · برلين</small></span><span class="score">5 - 0</span></li>
+    </ul>
+    <p class="note">سجّل لإنجلترا هاري كين (من ركلة جزاء) وإزري كونسا وبن وايت، وقلّص ميكيل أويارزابال ونيكو ويليامز، لتتصدر إنجلترا مجموعتها بـ١٥ نقطة وتُلحق بإسبانيا أول خسارة منذ ٣٢ شهراً. وفي برلين اكتسحت ألمانيا هولندا وتصدرت المجموعة بفارق الأهداف، وتأهل المنتخبان إلى ربع النهائي.</p>
+    <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9/5341745-%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D9%87%D8%B2%D9%8A%D9%85%D8%A9-%D8%A7%D9%84%D8%A3%D9%88%D9%84%D9%89-%D9%85%D9%86%D8%B0-32-%D8%B4%D9%87%D8%B1%D8%A7%D9%8B-%D8%A5%D8%B3%D8%A8%D8%A7%D9%86%D9%8A%D8%A7-%D8%AA%D8%B3%D9%82%D8%B7-%D8%A3%D9%85%D8%A7%D9%85" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a> · <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B9%D8%A7%D9%84%D9%85%D9%8A%D8%A9/5342112-%D8%AF%D9%88%D8%B1%D9%8A-%D8%A7%D9%84%D8%A3%D9%85%D9%85-%D8%A3%D9%84%D9%85%D8%A7%D9%86%D9%8A%D8%A7-%D8%AA%D8%B3%D8%AA%D8%B9%D9%8A%D8%AF-%D9%87%D9%8A%D8%A8%D8%AA%D9%87%D8%A7-%D8%A8%D8%A7%D9%83%D8%AA%D8%B3%D8%A7%D8%AD-%D9%87%D9%88%D9%84%D9%86%D8%AF%D8%A7%E2%80%A6-%D9%88%D9%8A%D8%AA%D8%A3%D9%87%D9%84%D8%A7%D9%86-%D8%A5%D9%84%D9%89-%D8%B1%D8%A8%D8%B9" target="_blank" rel="noopener">ألمانيا وهولندا ←</a>
+  </div>
+  <div class="box">
+    <h3>مواعيد قادمة · بتوقيت مكة</h3>
+    <ul class="results">
+      <li><span>السعودية × فرنسا <small style="color:var(--muted)">كأس العالم للناشئين</small></span><span class="when">الأحد ٢٢ نوفمبر</span></li>
+      <li><span>الجولة ١٣ <small style="color:var(--muted)">دوري روشن</small></span><span class="when">٢٦–٢٨ نوفمبر</span></li>
+    </ul>
+    <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343833-%D8%A3%D8%AE%D8%B6%D8%B1-%D8%A7%D9%84%D9%86%D8%A7%D8%B4%D8%A6%D9%8A%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%88%D9%86%D8%AF%D9%8A%D8%A7%D9%84-%D9%87%D9%84-%D8%A3%D8%AE%D8%B7%D8%A3-%D8%A7%D9%84%D8%AD%D9%86%D9%81%D9%88%D8%B4-%D9%81%D9%8A-%D8%AA%D9%82%D8%AF%D9%8A%D8%B1-%D9%82%D9%88%D8%A9-%D8%A3%D9%88%D8%B1%D9%88%D8%BA%D9%88%D8%A7%D9%8A%D8%9F" target="_blank" rel="noopener">اقرأ التفاصيل في الشرق الأوسط ←</a> · <a class="more" href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5338063-%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D9%84%D9%80%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D8%A7%D9%84%D9%85%D8%A4%D8%AC%D9%84%D8%A9-%D8%B3%D8%AA%D9%82%D8%A7%D9%85-%D9%81%D9%8A-20-%D9%8821-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1" target="_blank" rel="noopener">موعد الجولة ١٣ ←</a> · <a class="more" href="https://www.okaz.com.sa/sport/na/2276262" target="_blank" rel="noopener">جدول الناشئين ←</a>
+    <ul class="results" style="display:none">
+    </ul>
+  </div>
+  <div class="box">
+    <h3>الدوري الإنجليزي · النقاط</h3>
+    <div class="bars" style="--bc:#7fd3db">
+      <div class="bar"><span class="pos">١</span><span class="t">آرسنال</span><span class="track"><span class="fill" style="width:100%;display:block;background:#0e98a6"></span></span><span class="pt">٢٧</span></div>
+      <div class="bar"><span class="pos">٢</span><span class="t">برايتون</span><span class="track"><span class="fill" style="width:81%;display:block"></span></span><span class="pt">٢٢</span></div>
+      <div class="bar"><span class="pos">٣</span><span class="t">مان سيتي</span><span class="track"><span class="fill" style="width:78%;display:block"></span></span><span class="pt">٢١</span></div>
+      <div class="bar"><span class="pos">٤</span><span class="t">ليفربول</span><span class="track"><span class="fill" style="width:67%;display:block"></span></span><span class="pt">١٨</span></div>
+      <div class="bar"><span class="pos">٥</span><span class="t">تشيلسي</span><span class="track"><span class="fill" style="width:59%;display:block"></span></span><span class="pt">١٦</span></div>
+    </div>
+    <p class="note">بعد ١٠ جولات: آرسنال فاز ٩ مرات وخسر مرة واحدة.</p>
+    
+    <div class="src"><a href="https://ar.uefa.com/uefanationsleague/fixtures-results/" target="_blank" rel="noopener">UEFA (المواعيد)</a> · <a href="https://www.espn.com/soccer/standings/_/league/eng.1" target="_blank" rel="noopener">ESPN (الترتيب)</a></div>
+  </div>
+</section>
+</div>
+
+<!-- الختام -->
+<div class="end sec">
+  <div class="trio">
+  <div class="numday">
+    <div>
+      <div class="kicker">رقم اليوم</div>
+      <div class="big num">٩٨٦</div>
+      <p>هدفاً بلغها كريستيانو رونالدو في مسيرته الاحترافية بعد هدفه في مرمى الأهلي.</p>
+    </div>
+    <svg viewBox="0 0 92 92" aria-hidden="true"><circle cx="46" cy="46" r="40" fill="rgba(255,255,255,.2)"/><circle cx="46" cy="46" r="26" fill="#fff"/><path d="M46 30l9 6.5-3.4 10.6H40.4L37 36.5Z" fill="#1d1d27"/><path d="M46 30v-9M55 36.5l8.5-3M51.6 47.1l5.4 7.3M40.4 47.1l-5.4 7.3M37 36.5l-8.5-3" stroke="#1d1d27" stroke-width="2"/><path d="M14 72l6-6M78 72l-6-6M46 84v-6" stroke="#fff" stroke-width="3" stroke-linecap="round"/></svg>
+  </div>
+  
+  <div class="otd">
+    <svg viewBox="0 0 72 72" aria-hidden="true"><circle cx="36" cy="36" r="33" fill="#e2e8f0"/><path d="M14 52h44M18 52V34h36v18" stroke="#334155" stroke-width="3" fill="none"/><path d="M24 34v-6a12 12 0 0 1 24 0v6" fill="#94a3b8"/><path d="M36 10v6M30 24h12" stroke="#334155" stroke-width="2.6"/><path d="M28 52V42h16v10" fill="#334155"/></svg>
+    <div><div class="kicker" style="color:#334155">في مثل هذا اليوم</div><div class="y">١٩٩٥</div><p>الأطراف المتحاربة في البوسنة والهرسك توقّع بالأحرف الأولى اتفاق دايتون للسلام في ولاية أوهايو الأميركية، منهيةً حرباً دامت أكثر من ثلاث سنوات.</p><div class="src">ويكيبيديا</div></div>
+  </div>
+  <div class="quiz" id="quiz" data-key="q-2026-11-21">
+    <div class="kicker" style="color:#fde68a">سؤال اليوم</div>
+    <h3>كم مليون برميل من الخام السعودي تشملها السعة التخزينية الإضافية في اليابان؟</h3>
+    <div class="opts"><button type="button" data-o="أ">٨</button><button type="button" data-o="ب">١٢</button><button type="button" data-o="ج">١٦</button><button type="button" data-o="د">٢٤</button></div>
+    <div class="msg" id="qmsg">اختر إجابتك وناقشها في المجموعة، والجواب الصحيح في عدد الغد.</div>
+    <p style="font-size:13.5px;margin:8px 0 0;opacity:.9"><b>جواب سؤال الأمس:</b> حلّت المملكة رابعةً عالمياً في المؤشر العام لتطور الحكومة الإلكترونية ٢٠٢٦ (الخيار ج).</p>
+  </div>
+  <!-- quiz-answer: ج (١٦) | المصدر: الشرق الأوسط -->
+</div>
+  <div class="about">
+    <b style="font-family:var(--f-label)">عن الصحيفة</b>
+    <p style="margin-top:4px">«صدى الجبل» نشرة يومية تصلكم السادسة صباحاً، تجمع أبرز ما يدور في العالم من سياسة وتقنية وكرة قدم مع طقس جازان ومرتفعاتها. أخبارنا من وسائل إعلام سعودية مرخّصة وجهات رسمية ووكالات دولية متاحة في المملكة، وينقلك الضغط على أي خبر إلى مصدره لقراءة التفاصيل. والصحيفة لا تتبنى موقفاً سياسياً.</p>
+    <a class="btn" id="wa" href="https://wa.me/?text=%D8%B5%D8%AF%D9%89%20%D8%A7%D9%84%D8%AC%D8%A8%D9%84%20%7C%20%D8%A7%D9%84%D8%B9%D8%AF%D8%AF%209%20%7C%20%D8%A7%D9%84%D8%B3%D8%A8%D8%AA%2021%20%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1%202026%0A%D9%83%D9%86%20%D8%AC%D8%B2%D8%A1%D8%A7%D9%8B%20%D9%85%D9%86%20%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85%0Ahttps%3A%2F%2Falihuraysi7.github.io%2Fsada-aljabal%2F%3Fd%3D20261121%26utm_source%3Dwhatsapp" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8s-.4-.1-.6.1-.6.8-.8 1-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6a2.7 2.7 0 0 0 1.8-1.2 2.2 2.2 0 0 0 .2-1.2c-.1-.1-.3-.2-.5-.3Z"/></svg>
+      شارك العدد على واتساب
+    </a>
+    <a class="btn" href="issue.pdf" style="background:#2f6fde">تحميل العدد PDF</a>
+    <div class="links"><a href="../../archive.html">الأعداد السابقة</a><a href="#install" id="inst">أضف الصحيفة لشاشة جوالك</a></div>
+    <p id="install" style="font-size:13.5px;color:var(--muted);margin-top:8px">للإضافة: افتح الصفحة في كروم ثم ⋮ ثم «إضافة إلى الشاشة الرئيسية»، أو في سفاري زر المشاركة ثم «إضافة إلى الشاشة الرئيسية».</p>
+    <div class="credit">إعداد ومراجعة: أبو علاء</div>
+  </div>
+</div>
+
+<footer>
+  <b>مصادر هذا العدد (إعلام سعودي مرخّص، وجهات رسمية، ومصادر رياضية دولية متاحة في المملكة):</b>
+  <ul>
+    <li><a href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5343797-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D9%8A%D8%AF%D9%85%D9%91%D8%B1-3-%D8%B5%D9%88%D8%A7%D8%B1%D9%8A%D8%AE-%D8%A8%D8%A7%D9%84%D9%8A%D8%B3%D8%AA%D9%8A%D8%A9-%D9%88%D9%85%D8%B3%D9%8A%D9%91%D8%B1%D8%A9-%D8%A8%D8%A7%D8%AA%D8%AC%D8%A7%D9%87-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D9%88%D8%A7%D9%84%D9%85%D9%86%D8%B7%D9%82%D8%A9" target="_blank" rel="noopener">الشرق الأوسط: اعتراض الصواريخ</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5343794-%D8%A7%D9%84%D8%AF%D9%81%D8%A7%D8%B9-%D8%A7%D9%84%D9%85%D8%AF%D9%86%D9%8A-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A-%D9%8A%D8%B9%D9%84%D9%86-%D8%B2%D9%88%D8%A7%D9%84-%D8%A7%D9%84%D8%AE%D8%B7%D8%B1-%D8%B9%D9%86-%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6-%D8%A8%D8%B9%D8%AF-%D8%A5%D8%B7%D9%84%D8%A7%D9%82-%D8%A7%D9%84%D8%A5%D9%86%D8%B0%D8%A7%D8%B1" target="_blank" rel="noopener">الشرق الأوسط: زوال الخطر</a> · <a href="https://www.okaz.com.sa/local/na/2276566" target="_blank" rel="noopener">عكاظ: بيان التحالف</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85-%D8%A7%D9%84%D8%B9%D8%B1%D8%A8%D9%8A/%D8%A7%D9%84%D8%AE%D9%84%D9%8A%D8%AC/5343827-%D8%A7%D9%84%D8%AA%D8%AD%D8%A7%D9%84%D9%81-%D9%8A%D8%B6%D8%B1%D8%A8-%D8%B9%D8%AA%D8%A7%D8%AF-%D8%A7%D9%84%D8%AD%D9%88%D8%AB%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D8%AD%D8%AF%D9%8A%D8%AF%D8%A9" target="_blank" rel="noopener">الشرق الأوسط: ضربات الحديدة</a></li>
+    <li><a href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5343622-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D8%AA%D9%81%D9%82-%D8%B9%D9%84%D9%89-%D8%AA%D8%AE%D8%B2%D9%8A%D9%86-16-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D9%86%D9%81%D8%B7-%D9%81%D9%8A-%D8%A7%D9%84%D9%8A%D8%A7%D8%A8%D8%A7%D9%86" target="_blank" rel="noopener">الشرق الأوسط: تخزين النفط في اليابان</a> · <a href="https://asharqbusiness.com/power/157163/%D8%A7%D9%84%D9%8A%D8%A7%D8%A8%D8%A7%D9%86-%D8%AA%D8%AE%D8%B5%D8%B5-%D8%B3%D8%B9%D8%A9-%D8%AA%D8%AE%D8%B2%D9%8A%D9%86%D9%8A%D8%A9-%D9%84-16-%D9%85%D9%84%D9%8A%D9%88%D9%86-%D8%A8%D8%B1%D9%85%D9%8A%D9%84-%D9%85%D9%86-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A" target="_blank" rel="noopener">الشرق بلومبرغ: اليابان</a> · <a href="https://www.okaz.com.sa/local/na/2276517" target="_blank" rel="noopener">عكاظ: ميناء ضباء</a> · <a href="https://www.okaz.com.sa/local/na/2276462" target="_blank" rel="noopener">عكاظ: الأرصاد</a> · <a href="https://www.okaz.com.sa/local/na/2276486" target="_blank" rel="noopener">عكاظ: تهنئة عُمان</a> · <a href="https://www.okaz.com.sa/local/saudi-arabia/2276496" target="_blank" rel="noopener">عكاظ: الفرص الوظيفية</a> · <a href="https://www.okaz.com.sa/local/na/2276495" target="_blank" rel="noopener">عكاظ: سوق الخميس</a></li>
+    <li><a href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5343156-%D8%A7%D9%84%D8%A3%D8%B3%D9%87%D9%85-%D8%A7%D9%84%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9-%D8%AA%D9%86%D9%87%D9%8A-%D8%A7%D9%84%D8%A3%D8%B3%D8%A8%D9%88%D8%B9-%D8%B9%D9%84%D9%89-%D8%A7%D9%86%D8%AE%D9%81%D8%A7%D8%B6" target="_blank" rel="noopener">الشرق الأوسط: تاسي</a> · <a href="https://asharqbusiness.com/financial-markets/157120/%D8%A3%D8%B3%D8%B9%D8%A7%D8%B1-%D8%A7%D9%84%D9%86%D9%81%D8%B7-%D9%8A%D9%88%D9%85-20-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1-2026/" target="_blank" rel="noopener">الشرق بلومبرغ: النفط</a> · <a href="https://ajel.sa/thehour/1n37ljh4z" target="_blank" rel="noopener">عاجل: الذهب</a></li>
+    <li><a href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A7%D9%84%D9%88%D9%84%D8%A7%D9%8A%D8%A7%D8%AA-%D8%A7%D9%84%D9%85%D8%AA%D8%AD%D8%AF%D8%A9%E2%80%8B/5343725-%D8%AA%D8%B1%D9%85%D8%A8-%D8%A5%D9%8A%D8%B1%D8%A7%D9%86-%D8%B1%D8%A7%D8%BA%D8%A8%D8%A9-%D9%81%D9%8A-%D8%A7%D8%AA%D9%81%D8%A7%D9%82-%D9%88%D9%84%D9%83%D9%86" target="_blank" rel="noopener">الشرق الأوسط: ترمب وإيران</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/5343816-%D8%B1%D9%88%D8%B3%D9%8A%D8%A7-%D9%84%D9%85%D8%AD%D8%A7%D8%AF%D8%AB%D8%A7%D8%AA-%D8%AD%D9%88%D9%84-%D8%A3%D9%88%D9%83%D8%B1%D8%A7%D9%86%D9%8A%D8%A7-%D9%85%D8%B9-%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D9%8A-%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%8A" target="_blank" rel="noopener">الشرق الأوسط: روسيا والثلاثي الأوروبي</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B9%D8%A7%D9%84%D9%85/%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D8%A7/5343726-%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D9%8A-%D8%A7%D9%84%D8%A3%D9%88%D8%B1%D9%88%D8%A8%D9%8A-%D9%84%D9%85-%D9%8A%D8%B1%D8%AF-%D8%B1%D8%B3%D9%85%D9%8A%D8%A7%D9%8B-%D8%B9%D9%84%D9%89-%D8%AF%D8%B9%D9%88%D8%A9-%D8%A8%D9%88%D8%AA%D9%8A%D9%86-%D9%84%D9%85%D9%81%D8%A7%D9%88%D8%B6%D8%A7%D8%AA-%D9%81%D9%8A-%D9%85%D9%88%D8%B3%D9%83%D9%88" target="_blank" rel="noopener">الشرق الأوسط: الرد الأوروبي</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%A7%D9%82%D8%AA%D8%B5%D8%A7%D8%AF/5343626-%D8%A3%D9%86%D8%AB%D8%B1%D9%88%D8%A8%D9%8A%D9%83-%D8%AA%D8%AA%D8%B9%D8%AB%D8%B1-%D9%81%D9%8A-%D8%A3%D9%88%D9%84-%D8%A7%D8%AE%D8%AA%D8%A8%D8%A7%D8%B1-%D8%A8%D8%A7%D9%84%D8%A8%D9%88%D8%B1%D8%B5%D8%A9-%D9%88%D8%AA%D8%B9%D9%85%D9%91%D9%82-%D8%A7%D9%84%D9%82%D9%84%D9%82-%D8%A8%D8%B4%D8%A3%D9%86-%D8%A3%D8%B3%D9%87%D9%85-%D8%A7%D9%84%D8%B0%D9%83%D8%A7%D8%A1-%D8%A7%D9%84%D8%A7%D8%B5%D8%B7%D9%86%D8%A7%D8%B9%D9%8A" target="_blank" rel="noopener">الشرق الأوسط: أنثروبيك</a> · <a href="https://asharqbusiness.com/companies/157072/%D8%A3%D8%B3%D9%87%D9%85-%D8%B4%D8%B1%D9%83%D8%A9-%D8%A3%D9%86%D8%AB%D8%B1%D9%88%D8%A8%D9%8A%D9%83-%D8%AA%D9%82%D9%81%D8%B2-%D8%A8%D8%B9%D8%AF-%D8%B7%D8%B1%D8%AD-%D8%B9%D8%A7%D9%85-%D8%A3%D9%88%D9%84%D9%8A-%D9%82%D9%8A%D8%A7%D8%B3%D9%8A/" target="_blank" rel="noopener">الشرق بلومبرغ: أنثروبيك</a></li>
+    <li><a href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343751-%D9%83%D9%84%D8%A7%D8%B3%D9%8A%D9%83%D9%88-%D8%A7%D9%84%D8%A5%D9%86%D9%85%D8%A7%D8%A1-%D9%81%D8%B1%D9%91%D9%8E%D8%B7-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D9%81%D9%8A-%D8%A7%D9%84%D8%A8%D8%AF%D8%A7%D9%8A%D8%A9-%D9%88%D8%B6%D8%AD%D9%83-%D8%A7%D9%84%D8%A3%D9%87%D9%84%D9%8A-%D9%81%D9%8A-%D8%A7%D9%84%D9%86%D9%87%D8%A7%D9%8A%D8%A9" target="_blank" rel="noopener">الشرق الأوسط: كلاسيكو الإنماء</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343820-%D8%B1%D9%88%D9%86%D8%A7%D9%84%D8%AF%D9%88-%D9%8A%D8%B3%D8%AC%D9%84-%D9%87%D8%AF%D9%81%D9%87-%D8%A7%D9%84%D9%80986%E2%80%A6-%D9%88%D9%8A%D9%87%D8%AF%D8%B1-%D8%AB%D8%A7%D9%84%D8%AB-%D8%AC%D8%B2%D8%A7%D8%A6%D9%8A%D8%A9-%D9%81%D9%8A-%D8%A2%D8%AE%D8%B1-%D8%A3%D8%B1%D8%A8%D8%B9-%D9%85%D8%AD%D8%A7%D9%88%D9%84%D8%A7%D8%AA" target="_blank" rel="noopener">الشرق الأوسط: رونالدو</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343756-%D9%85%D8%AF%D8%B1%D8%A8-%D8%A7%D9%84%D9%86%D8%B5%D8%B1-%D8%A8%D8%B9%D8%AF-%D8%A7%D9%84%D8%AE%D8%B3%D8%A7%D8%B1%D8%A9-%D8%A7%D9%84%D8%AB%D9%84%D8%A7%D8%AB%D9%8A%D8%A9-%D8%A3%D9%86%D8%A7-%D9%85%D9%86-%D8%B3%D9%85%D8%AD%D8%AA-%D9%84%D9%80%D9%85%D8%A7%D9%86%D9%8A-%D8%A8%D8%A7%D9%84%D8%BA%D9%8A%D8%A7%D8%A8" target="_blank" rel="noopener">الشرق الأوسط: مدرب النصر</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5343833-%D8%A3%D8%AE%D8%B6%D8%B1-%D8%A7%D9%84%D9%86%D8%A7%D8%B4%D8%A6%D9%8A%D9%86-%D9%81%D9%8A-%D8%A7%D9%84%D9%85%D9%88%D9%86%D8%AF%D9%8A%D8%A7%D9%84-%D9%87%D9%84-%D8%A3%D8%AE%D8%B7%D8%A3-%D8%A7%D9%84%D8%AD%D9%86%D9%81%D9%88%D8%B4-%D9%81%D9%8A-%D8%AA%D9%82%D8%AF%D9%8A%D8%B1-%D9%82%D9%88%D8%A9-%D8%A3%D9%88%D8%B1%D9%88%D8%BA%D9%88%D8%A7%D9%8A%D8%9F" target="_blank" rel="noopener">الشرق الأوسط: الناشئون</a> · <a href="https://aawsat.com/%D8%A7%D9%84%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9/%D8%B1%D9%8A%D8%A7%D8%B6%D8%A9-%D8%B3%D8%B9%D9%88%D8%AF%D9%8A%D8%A9/5338063-%D9%85%D8%B5%D8%A7%D8%AF%D8%B1-%D9%84%D9%80%D8%A7%D9%84%D8%B4%D8%B1%D9%82-%D8%A7%D9%84%D8%A3%D9%88%D8%B3%D8%B7-%D8%A7%D9%84%D9%85%D8%A4%D8%AC%D9%84%D8%A9-%D8%B3%D8%AA%D9%82%D8%A7%D9%85-%D9%81%D9%8A-20-%D9%8821-%D9%86%D9%88%D9%81%D9%85%D8%A8%D8%B1" target="_blank" rel="noopener">الشرق الأوسط: الروزنامة</a> · <a href="https://www.okaz.com.sa/sport/na/2276262" target="_blank" rel="noopener">عكاظ: الناشئون</a> · <a href="https://www.saff.com.sa/championship.php?id=415" target="_blank" rel="noopener">الاتحاد السعودي لكرة القدم</a> · <a href="https://www.espn.com/soccer/standings/_/league/eng.1" target="_blank" rel="noopener">ESPN</a></li>
+    <li><a href="https://sabq.org/services/school-calendar-date" target="_blank" rel="noopener">سبق: التقويم الدراسي</a> · <a href="https://sabq.org/article/dl1y8i2" target="_blank" rel="noopener">سبق: كأس آسيا</a> · <a href="https://ncm.gov.sa" target="_blank" rel="noopener">المركز الوطني للأرصاد</a> · <a href="https://open-meteo.com" target="_blank" rel="noopener">Open-Meteo: توقعات المحافظات</a></li>
+  </ul>
+  <p style="margin-top:8px;text-align:center">© صدى الجبل ٢٠٢٦ — كن جزءاً من العالم</p>
+</footer>
+
+</div>
+
+<script>
+(function(){
+  var ar=function(n){return String(n).replace(/[0-9]/g,function(d){return '٠١٢٣٤٥٦٧٨٩'[d]})};
+  // يوم مكة الحالي
+  var now=new Date(Date.now()+ (3*60+new Date().getTimezoneOffset())*60000);
+  var today=new Date(now.getFullYear(),now.getMonth(),now.getDate());
+  document.querySelectorAll('.dt[data-date]').forEach(function(el){
+    var p=el.dataset.date.split('-'); var d=new Date(+p[0],p[1]-1,+p[2]);
+    var n=Math.round((d-today)/864e5); var c=el.querySelector('.cnt');
+    if(n>0){c.innerHTML='<b>'+ar(n)+'</b><small>'+(n===1?'يوم':n===2?'يومان':n<=10?'أيام':'يوماً')+'</small>';}
+    else if(n===0){c.innerHTML='<b>اليوم</b>';}
+    else{el.style.display='none';}
+  });
+  try{
+    var t=JSON.parse(document.getElementById('pt-data').textContent);
+    var names=['الفجر','الشروق','الظهر','العصر','المغرب','العشاء'];
+    var mins=now.getHours()*60+now.getMinutes(), idx=-1;
+    for(var i=0;i<t.length;i++){if(i===1)continue;var hm=t[i].split(':');if(+hm[0]*60+ +hm[1]>mins){idx=i;break;}}
+    var tm=false;if(idx<0){idx=0;tm=true;}
+    var hm=t[idx].split(':'),h=(+hm[0])%12||12;
+    document.getElementById('np-name').textContent=names[idx]+(tm?' (غداً)':'');
+    document.getElementById('np-time').textContent=ar(h)+':'+ar(hm[1]);
+  }catch(e){}
+  var q=document.getElementById('quiz');
+  if(q){var key=q.dataset.key, saved=null;try{saved=localStorage.getItem(key)}catch(e){}
+    q.querySelectorAll('button').forEach(function(b){
+      if(saved===b.dataset.o)b.classList.add('on');
+      b.addEventListener('click',function(){q.querySelectorAll('button').forEach(function(x){x.classList.remove('on')});b.classList.add('on');
+        try{localStorage.setItem(key,b.dataset.o)}catch(e){}
+        document.getElementById('qmsg').textContent='اخترت '+b.textContent+'، والجواب الصحيح في عدد الغد.';});
+    });}
+  if('serviceWorker' in navigator){try{navigator.serviceWorker.register('../../sw.js').catch(function(){})}catch(e){}}
+})();
+</script>
+<script>window.goatcounter={path:function(){return location.pathname},no_onload:location.hostname!=="alihuraysi7.github.io"};</script>
+<script data-goatcounter="https://sada-aljabal.goatcounter.com/count" async src="//gc.zgo.at/count.js"></script>
+</body>
+</html>
